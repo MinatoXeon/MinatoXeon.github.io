@@ -78,7 +78,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">954字</span>
+            <span class="post-count">991字</span>
         </span>
     </span>
 
@@ -87,7 +87,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">3分钟</span>
+            <span class="post-count">4分钟</span>
         </span>
     </span>
 </div>
@@ -113,57 +113,28 @@ ga('send', 'pageview');
 
       
       <ol>
-<li><p>二维数组行列均从0开始，先行后列 </p>
-</li>
-<li><p>转置二维数组时只遍历上三角阵，如if(i&lt;=j)和for(j=i;j&lt;n;j++) </p>
-</li>
-<li><p>按矩阵输出，外循环内要包含换行 </p>
-</li>
-<li><p>输入字符串以回车结尾时，while((name[n]=getchar())!=’\n’)n++;<br>name[n]=’\0’;</p>
-<a id="more"></a></li>
-<li><p>str[i]-‘0’将数字字符转换成数字 </p>
-</li>
-<li><p>gets()能读空格，gets(str);<br>scanf(“%s”,str);不能读空格<br>puts()输出字符串后会自动换行，而printf(“%s”,str);不会自动换行 </p>
-</li>
-<li><p>用C++有关东西的时候头文件得包括这些<br>#include <iostream><br>using namespace std; </p>
-</li>
-<li><p>#define For(x,a,b) for(x=a;x&lt;=b;x++)<br>方便的宏定义函数 </p>
-</li>
-<li><p>int <em>p=&i;等价于int i,</em>p;  p=&i; </p>
-</li>
-<li><p>自定义函数在传递参数时，数组的实参是a，形参是a[] </p>
-</li>
-<li><p>int a[100],*p;则p=a;和p=&amp;a[0];等价；同理，p=a+1;和p=&amp;a[1];等价 </p>
-</li>
-<li><p>以下语句对数组求和<br>sum=0;<br>for(p=a;p&lt;=&amp;a[99];p++)<br>(也可写作p&lt;=a+99)<br>sum+=<em>p;<br>或：<br>for(i=0;i&lt;100;i++)<br>sum+=</em>(a+i);<br>或：<br>p=a;<br>sum=0;<br>for(i=0;i&lt;100;++i)<br>sum+=p[i]; </p>
-</li>
-<li><p>两个相同类型的指针相减，表示他们之间相隔的数组元素数目；两个指针不能相加、相乘或相除 </p>
-</li>
-<li><p>自定义函数的函数声明里面int a[]等价于int*a </p>
-</li>
-<li><p>pow(double,int)，是求一个double的数的int次方 </p>
-</li>
-<li><p>最后用指针回传某种特定的字符串的时候，要逐位复制 </p>
-</li>
-<li><p>int a[10(可省略)]={1,2,3};<br>char b[10(可省略)]={“Happy”};<br>char b[10]=”Happy”; </p>
-</li>
-<li><p>指针传回东西的时候要用*m(指针)=p(要传的东西) </p>
-</li>
-<li><p>system(“CLS”);用于清屏；对于Windows来说使用DOS命令，DOS不区分大小写即可以写成cls；对于Linux来说区分大小写。</p>
-</li>
-<li><p>size_t和unsigned int<br>size_t是一些C/C++标准在stddef.h中定义的。这个类型足以用来表示对象的大小。size_t的真实类型与操作系统有关。<br>在32位架构中被普遍定义为：<br>typedef   unsigned int size_t;<br>而在64位架构中被定义为：<br>typedef  unsigned long size_t;<br>size_t在32位架构上是4字节，在64位架构上是8字节，在不同架构上进行编译时需要注意这个问题。而int在不同架构下都是4字节，与size_t不同；且int为带符号数，size_t为无符号数。<br>为什么有时候不用int，而是用size_type或者size_t:<br>与int固定四个字节不同有所不同,size_t的取值range是目标平台下最大可能的数组尺寸,一些平台下size_t的范围小于int的正数范围,又或者大于unsigned int. 使用Int既有可能浪费，又有可能范围不够大。</p>
-</li>
-<li><p>布尔类型（bool）<br>布尔类型只有两个值，false和true，通常用来判断条件是否成立。如果变量值为 0 就是 false，否则为 true,布尔变量只有这两个值。如：<br>　　例1：bool pb= -1.5; // pb=true;<br>　　例2：bool pt=0; // pt=false;</p>
-</li>
-<li><p>vector是向量类型，可以容纳许多类型的数据，因此也被称为容器(可以理解为动态数组，是封装好了的类）。进行vector操作前应添加头文件#include <vector> 。<br>vector初始化：</p>
-<ol>
-<li>//定义具有10个整型元素的向量（尖括号为元素类型名，它可以是任何合法的数据类型），不具有初值，其值不确定<br>vector<int>a(10);</li>
-<li>//定义具有10个整型元素的向量，且给出的每个元素初值为1<br>vector<int>a(10,1);</li>
-<li>//用向量b给向量a赋值，a的值完全等价于b的值<br>vector<int>a(b);</li>
-<li>//将向量b中从0-2（共三个）的元素赋值给a，a的类型为int型<br>vector<int>a(b.begin(),b.begin+3);</li>
-<li>//从数组中获得初值<br>int b[7]={1,2,3,4,5,6,7};<br>vector<int> a(b,b+7）;</li>
-</ol>
-</li>
+<li>二维数组行列均从0开始，先行后列 </li>
+<li>转置二维数组时只遍历上三角阵，如if(i&lt;=j)和for(j=i;j&lt;n;j++) </li>
+<li>按矩阵输出，外循环内要包含换行 </li>
+<li>输入字符串以回车结尾时，while((name[n]=getchar())!=’\n’)n++;<br>name[n]=’\0’;<a id="more"></a></li>
+<li>str[i]-‘0’将数字字符转换成数字 </li>
+<li>gets()能读空格，gets(str);<br>scanf(“%s”,str);不能读空格<br>puts()输出字符串后会自动换行，而printf(“%s”,str);不会自动换行 </li>
+<li>用C++有关东西的时候头文件得包括这些<br>#include <iostream><br>using namespace std; </li>
+<li>#define For(x,a,b) for(x=a;x&lt;=b;x++)<br>方便的宏定义函数 </li>
+<li>int <em>p=&i;等价于int i,</em>p;  p=&i; </li>
+<li>自定义函数在传递参数时，数组的实参是a，形参是a[] </li>
+<li>int a[100],*p;则p=a;和p=&amp;a[0];等价；同理，p=a+1;和p=&amp;a[1];等价 </li>
+<li>以下语句对数组求和<br>sum=0;<br>for(p=a;p&lt;=&amp;a[99];p++)<br>(也可写作p&lt;=a+99)<br>sum+=<em>p;<br>或：<br>for(i=0;i&lt;100;i++)<br>sum+=</em>(a+i);<br>或：<br>p=a;<br>sum=0;<br>for(i=0;i&lt;100;++i)<br>sum+=p[i]; </li>
+<li>两个相同类型的指针相减，表示他们之间相隔的数组元素数目；两个指针不能相加、相乘或相除 </li>
+<li>自定义函数的函数声明里面int a[]等价于int*a </li>
+<li>pow(double,int)，是求一个double的数的int次方 </li>
+<li>最后用指针回传某种特定的字符串的时候，要逐位复制 </li>
+<li>int a[10(可省略)]={1,2,3};<br>char b[10(可省略)]={“Happy”};<br>char b[10]=”Happy”; </li>
+<li>指针传回东西的时候要用*m(指针)=p(要传的东西) </li>
+<li>system(“CLS”);用于清屏；对于Windows来说使用DOS命令，DOS不区分大小写即可以写成cls；对于Linux来说区分大小写。</li>
+<li>size_t和unsigned int<br>size_t是一些C/C++标准在stddef.h中定义的。这个类型足以用来表示对象的大小。size_t的真实类型与操作系统有关。<br>在32位架构中被普遍定义为：<br>typedef   unsigned int size_t;<br>而在64位架构中被定义为：<br>typedef  unsigned long size_t;<br>size_t在32位架构上是4字节，在64位架构上是8字节，在不同架构上进行编译时需要注意这个问题。而int在不同架构下都是4字节，与size_t不同；且int为带符号数，size_t为无符号数。<br>为什么有时候不用int，而是用size_type或者size_t:<br>与int固定四个字节不同有所不同,size_t的取值range是目标平台下最大可能的数组尺寸,一些平台下size_t的范围小于int的正数范围,又或者大于unsigned int. 使用Int既有可能浪费，又有可能范围不够大。</li>
+<li>布尔类型（bool）<br>布尔类型只有两个值，false和true，通常用来判断条件是否成立。如果变量值为 0 就是 false，否则为 true,布尔变量只有这两个值。如：<br>　　例1：bool pb= -1.5; // pb=true;<br>　　例2：bool pt=0; // pt=false;</li>
+<li>vector是向量类型，可以容纳许多类型的数据，因此也被称为容器(可以理解为动态数组，是封装好了的类）。进行vector操作前应添加头文件#include <vector> 。<br>vector初始化：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1. &#x2F;&#x2F;定义具有10个整型元素的向量（尖括号为元素类型名，它可以是任何合法的数据类型），不具有初值，其值不确定</span><br><span class="line">vector&lt;int&gt;a(10);</span><br><span class="line">2. &#x2F;&#x2F;定义具有10个整型元素的向量，且给出的每个元素初值为1</span><br><span class="line">vector&lt;int&gt;a(10,1);</span><br><span class="line">3. &#x2F;&#x2F;用向量b给向量a赋值，a的值完全等价于b的值</span><br><span class="line">vector&lt;int&gt;a(b);</span><br><span class="line">4. &#x2F;&#x2F;将向量b中从0-2（共三个）的元素赋值给a，a的类型为int型</span><br><span class="line">vector&lt;int&gt;a(b.begin(),b.begin+3);</span><br><span class="line">5.  &#x2F;&#x2F;从数组中获得初值</span><br><span class="line">int b[7]&#x3D;&#123;1,2,3,4,5,6,7&#125;;</span><br><span class="line">vector&lt;int&gt; a(b,b+7）;</span><br></pre></td></tr></table></figure></li>
 </ol>
 
       
