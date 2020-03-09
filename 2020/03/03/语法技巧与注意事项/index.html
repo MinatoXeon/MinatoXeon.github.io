@@ -79,7 +79,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">1k字</span>
+            <span class="post-count">1.2k字</span>
         </span>
     </span>
 
@@ -88,7 +88,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">4分钟</span>
+            <span class="post-count">5分钟</span>
         </span>
     </span>
 </div>
@@ -120,12 +120,12 @@ ga('send', 'pageview');
 <li>输入字符串以回车结尾时，<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">while((name[n]&#x3D;getchar())!&#x3D;&#39;\n&#39;)n++; </span><br><span class="line">name[n]&#x3D;&#39;\0&#39;;</span><br></pre></td></tr></table></figure>
 <a id="more"></a></li>
 <li><code>str[i]-&#39;0&#39;</code>将数字字符转换成数字 </li>
-<li>gets()能读空格，gets(str);<br>scanf(“%s”,str);不能读空格<br>puts()输出字符串后会自动换行，而printf(“%s”,str);不会自动换行 </li>
+<li>gets()能读空格，<code>gets(str);</code><br><code>scanf(&quot;%s&quot;,str);</code>不能读空格<br><code>puts()</code>输出字符串后会自动换行，而<code>printf(&quot;%s&quot;,str);</code>不会自动换行 </li>
 <li>用C++有关东西的时候头文件得包括这些<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;iostream&gt; </span><br><span class="line">using namespace std;</span><br></pre></td></tr></table></figure></li>
-<li>#define For(x,a,b) for(x=a;x&lt;=b;x++)<br>方便的宏定义函数 </li>
-<li>int <em>p=&i;等价于int i,</em>p;  p=&i; </li>
+<li><code>#define For(x,a,b) for(x=a;x&lt;=b;x++)</code><br>方便的宏定义函数 </li>
+<li><code>int *p=&amp;i;</code>等价于<code>int i,*p;  p=&amp;i;</code></li>
 <li>自定义函数在传递参数时，数组的实参是a，形参是a[] </li>
-<li>int a[100],*p;则p=a;和p=&amp;a[0];等价；同理，p=a+1;和p=&amp;a[1];等价 </li>
+<li><code>int a[100],*p;</code>则<code>p=a;</code>和<code>p=&amp;a[0];</code>等价；同理，<code>p=a+1;</code>和<code>p=&amp;a[1];</code>等价 </li>
 <li>以下语句对数组求和 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sum&#x3D;0; </span><br><span class="line">for(p&#x3D;a;p&lt;&#x3D;&amp;a[99];p++) </span><br><span class="line">(也可写作p&lt;&#x3D;a+99) </span><br><span class="line">  sum+&#x3D;*p;</span><br></pre></td></tr></table></figure>
 或：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">for(i&#x3D;0;i&lt;100;i++) </span><br><span class="line">  sum+&#x3D;*(a+i);</span><br></pre></td></tr></table></figure>
 或： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p&#x3D;a; </span><br><span class="line">sum&#x3D;0; </span><br><span class="line">for(i&#x3D;0;i&lt;100;++i) </span><br><span class="line">  sum+&#x3D;p[i];</span><br></pre></td></tr></table></figure></li>
@@ -139,6 +139,7 @@ ga('send', 'pageview');
 <li>size_t和unsigned int<br>size_t是一些C/C++标准在stddef.h中定义的。这个类型足以用来表示对象的大小。size_t的真实类型与操作系统有关。<br>在32位架构中被普遍定义为：<br><code>typedef   unsigned int size_t;</code><br>而在64位架构中被定义为：<br><code>typedef  unsigned long size_t;</code><br>size_t在32位架构上是4字节，在64位架构上是8字节，在不同架构上进行编译时需要注意这个问题。而int在不同架构下都是4字节，与size_t不同；且int为带符号数，size_t为无符号数。<br>为什么有时候不用int，而是用size_type或者size_t:<br>与int固定四个字节不同有所不同,size_t的取值range是目标平台下最大可能的数组尺寸,一些平台下size_t的范围小于int的正数范围,又或者大于unsigned int. 使用Int既有可能浪费，又有可能范围不够大。</li>
 <li>布尔类型（bool）<br>布尔类型只有两个值，false和true，通常用来判断条件是否成立。如果变量值为 0 就是 false，否则为 true,布尔变量只有这两个值。如：<br>　　例1：<code>bool pb= -1.5;</code> // pb=true;<br>　　例2：<code>bool pt=0;</code> // pt=false;</li>
 <li>vector是向量类型，可以容纳许多类型的数据，因此也被称为容器(可以理解为动态数组，是封装好了的类）。进行vector操作前应添加头文件<code>#include &lt;vector&gt;</code> 。<br>vector初始化：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1. &#x2F;&#x2F;定义具有10个整型元素的向量（尖括号为元素类型名，它可以是任何合法的数据类型），不具有初值，其值不确定</span><br><span class="line">vector&lt;int&gt;a(10);</span><br><span class="line">2. &#x2F;&#x2F;定义具有10个整型元素的向量，且给出的每个元素初值为1</span><br><span class="line">vector&lt;int&gt;a(10,1);</span><br><span class="line">3. &#x2F;&#x2F;用向量b给向量a赋值，a的值完全等价于b的值</span><br><span class="line">vector&lt;int&gt;a(b);</span><br><span class="line">4. &#x2F;&#x2F;将向量b中从0-2（共三个）的元素赋值给a，a的类型为int型</span><br><span class="line">vector&lt;int&gt;a(b.begin(),b.begin+3);</span><br><span class="line">5.  &#x2F;&#x2F;从数组中获得初值</span><br><span class="line">int b[7]&#x3D;&#123;1,2,3,4,5,6,7&#125;;</span><br><span class="line">vector&lt;int&gt; a(b,b+7）;</span><br></pre></td></tr></table></figure></li>
+<li>C语言如何计算算法运行时间：C/C++中的计时函数是<code>clock()</code>，而与其相关的数据类型是<code>clock_t</code>（一个长整型数）。<br>CLOCKS_PER_SEC：标准C的time.h头函数中宏定义的一个常数，表示一秒钟内CPU运行的时钟周期数，用于将clock()函数的结果转化为以秒为单位的量，但是这个量的具体值是与操作系统相关的。<br>应用举例：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">  int main( void )  </span><br><span class="line">&#123;  </span><br><span class="line">   long    i &#x3D; 10000000L;  </span><br><span class="line">   clock_t start, finish;  </span><br><span class="line">   double  duration;  </span><br><span class="line">   &#x2F;* 测量一个事件持续的时间*&#x2F;  </span><br><span class="line">   printf( &quot;Time to do %ld empty loops is &quot;, i );  </span><br><span class="line">   start &#x3D; clock();  </span><br><span class="line">   while( i-- )      ;  </span><br><span class="line">   finish &#x3D; clock();  </span><br><span class="line">   duration &#x3D; (double)(finish - start) &#x2F; CLOCKS_PER_SEC;  </span><br><span class="line">   printf( &quot;%f seconds\n&quot;, duration );  </span><br><span class="line">   system(&quot;pause&quot;);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
 
       
