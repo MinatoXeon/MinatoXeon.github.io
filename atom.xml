@@ -48,15 +48,19 @@
     <link href="http://yoursite.com/2020/03/03/%E8%AF%AD%E6%B3%95%E6%8A%80%E5%B7%A7%E4%B8%8E%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
     <id>http://yoursite.com/2020/03/03/%E8%AF%AD%E6%B3%95%E6%8A%80%E5%B7%A7%E4%B8%8E%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
     <published>2020-03-03T12:02:03.000Z</published>
-    <updated>2020-03-09T09:33:53.602Z</updated>
+    <updated>2020-03-12T04:59:11.851Z</updated>
     
     <summary type="html">
     
       &lt;ol&gt;
-&lt;li&gt;二维数组行列均从0开始，先行后列 &lt;/li&gt;
-&lt;li&gt;转置二维数组时只遍历上三角阵，如&lt;code&gt;if(i&amp;lt;=j)和for(j=i;j&amp;lt;n;j++)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;按矩阵输出，外循环内要包含换行 &lt;/li&gt;
-&lt;li&gt;输入字符串以回车结尾时，&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;while((name[n]&amp;#x3D;getchar())!&amp;#x3D;&amp;#39;\n&amp;#39;)n++; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;name[n]&amp;#x3D;&amp;#39;\0&amp;#39;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;li&gt;&lt;p&gt;二维数组行列均从0开始，先行后列 &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;转置二维数组时只遍历上三角阵，如&lt;code&gt;if(i&amp;lt;=j)和for(j=i;j&amp;lt;n;j++)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;按矩阵输出，外循环内要包含换行 &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;输入字符串以回车结尾时，&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;while((name[n]&amp;#x3D;getchar())!&amp;#x3D;&amp;#39;\n&amp;#39;)n++; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;name[n]&amp;#x3D;&amp;#39;\0&amp;#39;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -75,11 +79,11 @@
     <link href="http://yoursite.com/2020/02/29/%E6%9C%BA%E5%9E%8B%E4%BB%A3%E7%A0%81/"/>
     <id>http://yoursite.com/2020/02/29/%E6%9C%BA%E5%9E%8B%E4%BB%A3%E7%A0%81/</id>
     <published>2020-02-29T00:46:16.000Z</published>
-    <updated>2020-03-08T12:17:58.510Z</updated>
+    <updated>2020-03-12T05:13:32.879Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;em&gt;文章中的机型代码请使用Base64解码器解码后应用在手机/system 目录下的build.prop 文件内（前提是手机已获取root权限且已解锁/system 分区）(应用前请确保自己已具备应对手机无法开机的问题的能力，否则不要瞎折腾！）&lt;/em&gt;&lt;br&gt;如：小米10 Pro的机型代码为TWkgMTAgUHJvQFhpYW9taUBYaWFvbWlAY21pQGNtaQ== ，Base64解密后为Mi 10 Pro@Xiaomi@Xiaomi@cmi@cmi&lt;br&gt;则按如下格式填写&lt;br&gt;ro.product.model=一栏中填入Mi 10 Pro&lt;br&gt;ro.product.brand=一栏中填入Xiaomi&lt;br&gt;ro.product.manufacture=一栏中填入Xiaomi&lt;br&gt;ro.product.product=一栏中填入cmi&lt;br&gt;ro.product.device=一栏中填入cmi&lt;br&gt;保存重启即可！享受自己喜欢的高大上的机型吧！&lt;/p&gt;
+      &lt;p&gt;&lt;em&gt;文章中的机型代码请使用Base64解码器解码后应用在手机 /system 目录下的build.prop 文件内（前提是手机已获取root权限且已解锁/system 分区）(应用前请确保自己已具备应对手机无法开机的问题的能力，否则不要瞎折腾！）&lt;/em&gt;&lt;br&gt;如：小米10 Pro的机型代码为TWkgMTAgUHJvQFhpYW9taUBYaWFvbWlAY21pQGNtaQ== ，Base64解密后为Mi 10 Pro@Xiaomi@Xiaomi@cmi@cmi&lt;br&gt;则按如下格式填写&lt;br&gt;ro.product.model=一栏中填入Mi 10 Pro&lt;br&gt;ro.product.brand=一栏中填入Xiaomi&lt;br&gt;ro.product.manufacture=一栏中填入Xiaomi&lt;br&gt;ro.product.product=一栏中填入cmi&lt;br&gt;ro.product.device=一栏中填入cmi&lt;br&gt;保存重启即可！享受自己喜欢的高大上的机型吧！&lt;br&gt;自带Base64解码器：&lt;a href=&quot;https://github.com/MinatoXeon/c2020/tree/master/level1/p07_encrypt_decrypt&quot; target=&quot;_blank&quot;&gt;encrypt_decrypt&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
