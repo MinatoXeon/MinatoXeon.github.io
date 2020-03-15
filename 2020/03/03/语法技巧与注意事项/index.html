@@ -79,7 +79,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">2.3k字</span>
+            <span class="post-count">2.5k字</span>
         </span>
     </span>
 
@@ -88,7 +88,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">9分钟</span>
+            <span class="post-count">10分钟</span>
         </span>
     </span>
 </div>
@@ -181,6 +181,14 @@ ga('send', 'pageview');
 <li><p><code>strstr(str1,str2)</code>函数用于判断字符串str2是否是str1的子串。如果是，则该函数返回str1字符串从str2第一次出现的位置开始到str1结尾的字符串；否则，返回NULL。</p>
 </li>
 <li><p>一种连接两个数字的小技巧<br><code>a&gt;&gt;2</code>是指将a所对应的二进制数向右移位2位（a可以是字符，数字等）（其实字符也算一种数字？只不过是字符的呈现形式），前面空余出来的地方补0，即原本10100111向右移位两位后变为00101001；同理，<code>a&lt;&lt;3</code>是将a所对应的二进制数向左移3位，后面多出来的部分补零，即10100111变为1010011100（当特殊情况时丢弃前几位，如本来它只能存储八位，这下前几位越界了，就只能把前几位丢掉了）<br>之前在24条处学习了与运算、或运算，在这里也有很大的用处。&amp;，按位与，可以把两个数或者字符等的二进制数字按位取与。于是，可以使用这种方法取出两者中的一者的二进制数的后几位。比如a=77，其对应二进制数为01001101；0x3是16进制数字，对应二进制数为00000011。那么，运行<code>a &amp; 0x3</code>，也就是01001101&amp;00000011,由于0与1或0取与均为0，所以就可以得到a的二进制字符的后两位，即00000001。同理，<code>a &amp; 0xf</code>就是01001101&amp;00001111，也就是将a的后四位取出来，即00001101。然后，我们再使用移位符……比如<code>(a &amp; 0xf)&lt;&lt;4</code>呢？当然是能得到000011010000了，暂时不看前面的无用的0（起码在这里无用），就成了11010000了。这看似并没有什么用处。但是，再加上或运算呢？就可以把两个二进制数首尾拼接起来了啊。比如a=01001101,b=11101001,现在要取a的后两位和b的前六位重新组合形成一个二进制数，就要先使用<code>a &amp; 0x3</code>取出最后两位，然后<code>(a &amp; 0x3)&lt;&lt;6</code>为后面留出一个六位的空间，随后再取出b的前六位，即<code>b&gt;&gt;2</code>，最后两位就没了，b被它的前六位覆盖。随后使用<code>(a &amp; 0x3)&lt;&lt;6 | b&gt;&gt;2</code>，即可把二者和为一体。<br>总的来说，&amp;负责取出数字的后几位，&lt;&lt;负责移动数字为待拼接的数字腾出空间，|则负责拼接数字。</p>
+</li>
+<li><p><code>getchar()</code>和<code>getch()</code>的区别：</p>
+</li>
+<li><p><code>getchar();</code>从键盘读取一个字符并输出，该函数的返回值是输入第一个字符的ASCII码；若用户输入的是一连串字符，函数直到用户输入回车时结束，输入的字符连同回车一起存入键盘缓冲区。若程序中有后继的getchar();函数，则直接从缓冲区逐个读取已输入的字符并输出，直到缓冲区为空时才重新读取用户的键盘输入。</p>
+</li>
+<li><p><code>getch();</code>接受一个任意键的输入，不用按回车就返回。该函数的返回值是所输入字符的ASCII码，且该函数的输入不会自动显示在屏幕上，需要putchar();函数输出显示。<code>getch();</code>函数常用于中途暂停程序方便调试和查看。</p>
+</li>
+<li><p><code>getchar();</code>和<code>getch();</code>的另一个区别就是所需要包含的头文件不同。<br><code>getchar();</code>用<code>#include&lt;stdio.h&gt;</code><br><code>getch();</code>用<code>#include&lt;conio.h&gt;</code></p>
 </li>
 </ol>
 
