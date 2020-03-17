@@ -79,7 +79,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">2.5k字</span>
+            <span class="post-count">3.1k字</span>
         </span>
     </span>
 
@@ -88,7 +88,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">10分钟</span>
+            <span class="post-count">12分钟</span>
         </span>
     </span>
 </div>
@@ -191,6 +191,16 @@ ga('send', 'pageview');
 <li><p><code>getchar();</code>和<code>getch();</code>的另一个区别就是所需要包含的头文件不同。<br><code>getchar();</code>用<code>#include&lt;stdio.h&gt;</code><br><code>getch();</code>用<code>#include&lt;conio.h&gt;</code></p>
 </li>
 <li><p>在Windows下，方向键由两个字节组成，分别为:’\244’和<br>‘\72’ up<br>‘\80’ down<br>‘\75’ left<br>‘\77’ right</p>
+</li>
+<li><p>波兰数学家Jan Lukasiewicz提出了另一种数学表示法——波兰表达式，它有两种表示形式：<br>把运算符写在操作数之前，称为波兰表达式(Polish Expression)或前缀表达式(Prefix Expression)，如+AB；把运算符写在操作数之后，称为逆波兰表达式(Reverse Polish Expression)或后缀表达式(Suffix Expression)，如AB+；前后缀表达式的出现是为了方便计算机处理，它的运算符是按照一定的顺序出现，所以求值过程中并不需要使用括号来指定运算顺序，也不需要考虑运算符号（比如加减乘除）的优先级。<br>先介绍中简单的人工转化方法：<br>假设有一个中缀表达式<code>a+b*c-(d+e)</code>，<br>①首先将这个中缀表达式的所有运算加括号<code>((a+(b*c))-(d+e))</code>；<br>②然后将所有运算符放到括号后面，这样就变成了<code>((a(bc)*)+(de)+)-</code>；<br>③把所有括号去掉<code>abc*+de+-</code>，最后得出的结果就是后缀表达式。</p>
+</li>
+<li><p>为一个n<em>m的二维数组分配动态内存<br>首先需要注意的是，不要这样一次性分配为数组内存空间：<br>`int *</em>arr = (int**)malloc(n *m * sizeof(int));`<br>正确的做法是先分配行，再分配列。释放内存的时候，也要先释放列，再释放行。<br>注意，顺序反了的话，会把列的地址擦除，导致释放列时内存时找不到地址，程序崩溃。<br>正确的分配空间代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int **arr &#x3D; (int **)malloc(n*sizeof(int *));</span><br><span class="line">for(i&#x3D;0;i&lt;n;i++)</span><br><span class="line">arr[i] &#x3D; (int *)malloc(m*sizeof(int));</span><br></pre></td></tr></table></figure>
+<p>正确的释放空间代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for(i&#x3D;0;i&lt;n;i++)</span><br><span class="line">free(arr[i]);&#x2F;*释放列*&#x2F;</span><br><span class="line">free(arr);&#x2F;*释放行*&#x2F;</span><br></pre></td></tr></table></figure>
+<p>注：这种分配方式得到的其实并不是真正意义上的二维数组，因为其行与行之间的内存并不连续，虽然可以用下标arr[i][j]的方式访问，但当用指向该二维数组的指针来访问时候，不能通过指针值的增加来跨行获取元素，不过这种情况一般用的也不多，因此上述分配方式在大多数情况下的操作都能得到正确的结果。</p>
+</li>
+<li><p>记录一些没见过的ASCII码（以下记录的均为十进制）。<br>ESC:27<br>Backspace:8<br>方向键:由两个ASCII码组成，具体见29<br>Shift:19<br>CapsLock:20<br>Tab:9<br>Enter:13</p>
 </li>
 </ol>
 
