@@ -79,7 +79,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">3.5k字</span>
+            <span class="post-count">3.9k字</span>
         </span>
     </span>
 
@@ -88,7 +88,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">13分钟</span>
+            <span class="post-count">15分钟</span>
         </span>
     </span>
 </div>
@@ -200,9 +200,18 @@ ga('send', 'pageview');
 </li>
 <li><p>文件打开方式r+与a+的区别<br>如果仅仅是读：r+就可以读取到原文件内容（使用read）；a+是追加模式，读的时候是将指针已经放在文件末尾了，所以读取到的文件是空的。<br>如果仅仅是写：r+是从头开始写的，你写了多少就会覆盖原文件多少；a+因为指针已经放在文件末尾了，所以你写的时候就是追加在后面的。<br>如果是先读在写：这样就有点麻烦了。r+当你使用read读完之后再使用write写的时候，指针已经在文件末尾了，所以你再写的时候就感觉是追加在末尾似的。a+因为你先读的时候指针已经在末尾了，读不到任何内容。</p>
 </li>
-<li><p>以w方式打开已存在的文件然后再关闭，会清除文件的全部内容。</p>
+<li><p>以w方式打开已存在的文件然后不做改动再直接关闭，会清除文件的全部内容。</p>
 </li>
 <li><p>scanf和fscanf使用%s读取字符串时，能读取中文，但是不能读取空格。</p>
+</li>
+<li><p><code>#ifndef</code>是”if not defined”的简写，是宏定义的一种，它是可以根据是否已经定义了一个变量来进行分支选择，一般用于调试等。<br><code>#ifndef</code> 标识1 //判断”标识1”是否定义，如果被定义则返回假，如果没有被定义则返回真。<br>例如：<br>语句1 <code>#ifndef</code> 标识1<br>语句2 <code>#define</code> 标识1<br>语句3 <code>#endif</code><br>语句4 <code>……</code><br>语句5 <code>……</code><br>该段代码意思是：如果标识1没有被定义，则重定义标识1，即执行语句2、语句3;如果标识1已经被定义，则直接跳过语句2、语句3，直接执行语句4、语句5、……<br>备注：<code>#ifndef</code> 和 <code>#endif</code> 要一起使用，如果丢失<code>#endif</code>，可能会报错。</p>
+</li>
+<li><p>typedef为C语言的关键字，作用是为一种数据类型定义一个新名字。这里的数据类型包括内部数据类型（int,char等）和自定义的数据类型（struct等）。<br>在编程中使用typedef目的一般有两个，一个是给变量一个易记且意义明确的新名字，另一个是简化一些比较复杂的类型声明。<br>例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">typedef char Line[81];</span><br><span class="line">Line　text,line;</span><br><span class="line">getline(text);</span><br></pre></td></tr></table></figure>
+<p>相当于</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">char　line[81];</span><br><span class="line">char　text[81];</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>i++是先赋值，然后再自增；++i是先自增，后赋值。<br>用代码表示就是：<br>若<code>a = i++;</code>则等价于<code>a=i;i=i+1;</code><br>而<code>a = ++i;</code>则等价于<code>i=i+1;a=i;</code></p>
 </li>
 </ol>
 
