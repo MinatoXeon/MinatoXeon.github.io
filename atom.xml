@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-01-23T09:41:52.779Z</updated>
+  <updated>2021-01-27T14:15:51.734Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,17 +21,11 @@
     <link href="http://yoursite.com/2021/01/19/Win-10-Pro%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
     <id>http://yoursite.com/2021/01/19/Win-10-Pro%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</id>
     <published>2021-01-19T12:12:00.000Z</published>
-    <updated>2021-01-23T09:41:52.779Z</updated>
+    <updated>2021-01-27T14:15:51.734Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;之前购买了心水一年之久的iPad Pro 2018 11 inch，为了使iPad避免沦为“买前生产力，买后爱奇艺”的尴尬局面，于是总想让iPad Pro变得有那么一点生产力。后来在酷安上看到有大佬@biugi 发了一个不使用其他第三方软件而使用路由器端口映射实现远程桌面的教程，并且当时使用的电脑暗影精灵5 Air 过于厚重，于是萌生了使用iPad Pro来使电脑更加便携的想法。但是由于学校里面的宿舍网络的IP地址都是内网IP而不是公网IP，所以当时无法使用路由器端口转接，也就是无法在非同一个Wifi网络下实现远程桌面。经过自己摸索，实现了一种较为简单的可以说是免费的基于Windows 10的远程桌面方案。之前酷安大佬的方法我也会在下面给出，如果可以获得自己电脑的公网IP可以自己试一下那个方案。事实上我认为那个方法更加好用，但是在学校这种没有公网IP的环境下只能退而求其次。提前说明，这个远程桌面的延迟并不能达到可以玩游戏的水平，并且由于微软自身软件原因存在一些Bug（如偶现客户端闪退，及一些硬件适配问题等），经本人测试仅能达到可以写代码、写文档的水准。&lt;/p&gt;
     
     </summary>
     
