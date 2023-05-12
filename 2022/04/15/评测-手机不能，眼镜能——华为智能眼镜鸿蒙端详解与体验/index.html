@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-Hans">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta name="description" content="科技、文明、信念，样样Xeon如其名。" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>手机不能，眼镜能——华为智能眼镜鸿蒙端详解与体验 |  Minato Xeon</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/images/Minato.png" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
+      />
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+       
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-159231519-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <link rel="stylesheet" href="/css/zhyBlogTitle.css">
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <link rel="alternate" href="/atom.xml" title="Minato Xeon" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-评测-手机不能，眼镜能——华为智能眼镜鸿蒙端详解与体验"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  手机不能，眼镜能——华为智能眼镜鸿蒙端详解与体验
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/04/15/%E8%AF%84%E6%B5%8B-%E6%89%8B%E6%9C%BA%E4%B8%8D%E8%83%BD%EF%BC%8C%E7%9C%BC%E9%95%9C%E8%83%BD%E2%80%94%E2%80%94%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E9%B8%BF%E8%92%99%E7%AB%AF%E8%AF%A6%E8%A7%A3%E4%B8%8E%E4%BD%93%E9%AA%8C/" class="article-date">
+  <time datetime="2022-04-15T14:31:49.000Z" itemprop="datePublished">2022-04-15</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AF%84%E6%B5%8B/">评测</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">8.2k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">27 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/20220416_090518.jpg"/>
+
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&emsp;&emsp;在体验过非华为生态的基础功能之后，我转去使用Mate 30 Pro，去享受其他功能带来的新鲜感。偶尔换换手机使用的口味，就相当于能够获取新的生活，我并不反感这样。想要看看iOS上华为智能眼镜有什么功能、适不适合自己的人，欢迎去阅读我的上一篇长达1.3万字的文章。上次把体验和功能分开写导致文章过长让很多人没有阅读欲望，这次试着把体验直接融入了功能介绍一栏，这样应该能使整体性更强，希望老哥们喜欢。</p>
+<p>&emsp;&emsp;该文章共有四个部分，功能详解评价、漏洞统计、上升空间和后记，字数太多如果感觉不愿意看全篇也可以下拉到对应板块浏览，感谢支持。</p>
+<p>&emsp;&emsp;言归正传，我们来看看华为智能眼镜配上华为生态能够碰撞出什么新的火花。</p>
+<span id="more"></span>
+
+<h2 id="功能详解与个人评价"><a href="#功能详解与个人评价" class="headerlink" title="功能详解与个人评价"></a>功能详解与个人评价</h2><p>&emsp;&emsp;这里我会讲得非常啰嗦，但是我相信里面很多细节，你从别的地方看不到。都是评测就很容易变得非常同质化，我还是希望我能展现出别人没有的东西。</p>
+<p>&emsp;&emsp;是个这两年的智能手机都能用的那些功能之前在上个帖子说过了，鸿蒙作为和智能眼镜的一家人，自然多出很多功能，再把之前那堆讲一遍实在太长，所以想知道的话麻烦老哥们去上一篇阅览。</p>
+<p>&emsp;&emsp;首先还是展示一下智慧生活里面智能眼镜的主界面。畅连捏聊是眼镜在3月31日发布的2.1.0.172版本固件新增加的功能，之前没有这个选项。</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Screenshot_20220405_095136_com.huawei.smarthome.jpg" alt="主界面" width="360"/>
+
+<p>&emsp;&emsp;颈椎健康，终于轮到这个备受瞩目的功能出场了！它通过内置陀螺仪检测颈椎使用姿势，记录一天中的使用时间和低头使用时间，以此帮助用户改善颈椎健康。首次使用时会提示用户校准传感器，此时只需要摘下眼镜放在桌面没几秒就好了。然后就可以看到颈椎健康主页面。</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Screenshot_20220415_194508_com.huawei.smarthome.jpg" alt="颈椎健康" width="360"/>
+
+<p>&emsp;&emsp;最顶上的是一个展示目前头部姿势的示意小人，它能够实时展示用户的姿势，目测这个展示延迟大约在75毫秒左右（从头部抬起到小人画面改变）。最外侧的曲线会随低头程度的改变而改变，具体如下图所示。</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Collage_20220414_105247.jpg" alt="不同角度的曲线颜色"/>
+
+<p>&emsp;&emsp;说起这个小人的展示准确度，取决于校准和佩戴效果是否一致。有些人的鼻梁和耳朵高度是不一样的，可能导致即使是自己觉得已经在平视，甚至头轻微上抬有略高傲的感觉但示意图仍显示处于低头状态。这种情况还没有闭环自解决方案，只能要么调整眼镜的鼻架，要么校准时把镜腿或镜框部分垫高。而且，小人建模挺粗糙的，像素很低而且边缘锯齿感非常明显，和眼镜的质感实在不相符。</p>
+<p>&emsp;&emsp;然后下面给出了当天的颈椎承重柱状图，分颜色展示了颈椎承重状态，下方还有更加直观的环状图和数字比例统计，能够非常直观地展示出承重情况。点击颈椎承重标签页右侧的小箭头能看到详细统计情况，其中“日”标签下能查看过去每天的每小时佩戴情况，“周”和“月”标签下可以查看一周或一个月内每天使用情况，无法具体到小时。“年”标签页下则是对具体到月的使用情况进行统计。其他的再多说可能就得再多出几百字了，直接看图吧。</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Collage_20220414_105819.jpg" alt="各个标签页"/>
+
+<p>&emsp;&emsp;颈椎健康还有个蛮有意思的小功能——活动度评估，它可以帮助用户自测颈椎的可活动范围。评估前就是这样一个简单的介绍界面。</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Screenshot_20220405_115132_com.huawei.smarthome.jpg" alt="活动度评估介绍页面" width="360"/>
+
+<p>&emsp;&emsp;项目依次是左右旋、前屈后伸、左右侧屈，具体过程如下图所示。</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Collage_20220414_105952.jpg" alt="测试过程示例"/>
+
+<p>&emsp;&emsp;然后就能够得到一份评估报告了。这是我随便测的一个报告，之前测试还是全绿来着（咋感觉跟爱思测果子一样了doge）这次测就有个黄了。感觉这个其实和跑分差不多，和人体的状态有很大关系，说不准哪天没睡好脖子硌着了就会让结果不好看，把自己多“送测”几次可能就全绿了（笑）。报告还是会给出它测得的详细数据的，并且能够给出较为贴切的建议，如图所示。</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Screenshot_20220405_114810_com.huawei.smarthome.jpg" alt="测试报告示例" width="360"/>
+
+<p>&emsp;&emsp;这个测试过程其实我挺想吐槽，在进行每个动作评估的时候它的语音类似于先说出项目名称，然后一个小的原因介绍，但是不说什么时候开始，几秒沉默后立即说三二一然后完成或者评估失败，会让我摸不着头脑，不知道该什么时候开始和结束，只能抓紧时间看它的提示然后赶紧很费劲维持一个姿势，很不方便。在我们的交流群也见到有群友让爸妈测试几次都失败了的情况，说明这个语音提示很有待优化。另外，这个报告是完全一次性的，它不会记录你过去测出的任何一次报告——如果你刚测完，不小心按了下返回键，那可能就得重来一遍了，在我看来不合理，它理应要保存至少最后一次测试的结果。尽管如此，这个功能还是让我感觉十分新颖，它让我注意到了一个我从未关注但确实重要的健康数据。</p>
+<p>&emsp;&emsp;虽然已经扯的够多了，但负责起见我还是要讲讲设置页面。顺便吐槽，这个产品的设置界面光我找到的就有仨了，一个主页面设置一个右上角设置一个颈椎健康设置，这也太乱了吧？这个颈椎健康设置在颈椎健康页面里面设置入口没毛病，但是不能同时整合进另外俩中的一个吗，感觉蛮神秘的。颈椎健康设置界面东西不多，如图。</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Screenshot_20220414_110210_com.huawei.smarthome.jpg" alt="颈椎健康设置" width="360"/>
+
+<p>&emsp;&emsp;性别就是改那个示意图的小人的性别，和颈椎健康的其他功能应该没有关系。这里也为传感器校准设置了入口，可能就是防止用户使用出现姿势识别错误的问题吧。然后就是重要的颈椎健康提醒了。这个虽然是个再简单不过的功能，但很值得大费周章地谈一下。说它简单，因为它就是在用户长时间持续低头后，会进行手机通知并在耳机内播报提示。其中这个时间可以自行选择，有15、30、45、60分钟四个档位。这个通知内容为“低头时间过长，请注意休息，保持颈椎健康”，如果你连接了两台设备，那么通知会在两台设备上都弹出。而它值得说，那还是因为这个小功能确实能带来便利。之前没有这个眼镜的时候，我从来没有注意过颈椎健康，而事实上我作为学生经常会坐在图书馆一整天低头。在配戴这个眼镜之后，刚开始觉得这个功能新鲜，会不由自主去查看一下面板数据，然后每次都会看到橙色的“低头过多”提示，就会注意在看考研网课的时候把头往上抬一点，每隔一段时间再稍微活动一下。后来新鲜感过了不再看面板，它也能在我低头看学习30分钟之后提示我已经低头时间过长，稍微活动下头部真的能够让颈部舒服一点，也不知道究竟是真的好还是心理作用。很遗憾我只看到那个比例略微下降，现在每天还都是“低头过多”，希望将来我的习惯能继续改变。隐私声明就不多说了吧，我觉得也没有人会特意去看这个东西（它就是这么没有排面hhh）。</p>
+<p>&emsp;&emsp;按照这个字数讲下去，恐怕光把功能说完就让人看的厌烦了，所以下面我尽量把话说的简单点。在颈椎健康的上面还有一个音频连接中心，这个功能在iOS端没有，但是普通安卓端具备。我不打算专门再写文章来介绍安卓的功能，因为它实在和iOS差不多，只是多出这一个功能而已，就单独拿出来了。这个连接中心模块中展示了这台智能眼镜所有配对过并且没有取消配对的设备，左右滑动就可以看到全部。然后打开这个模块，就是这个样子：</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Screenshot_20220414_110223_com.huawei.smarthome.jpg" alt="音频连接中心界面" width="360"/>
+
+<p>&emsp;&emsp;我想这个已经很显而易见了。下面这个“已配对设备”更直白地展示了所有已经被配对过且未取消配对的设备，正在连接的设备会被标蓝并提示已连接，同时左侧的图标可以展示出这是什么类型的设备。点击右侧的设置图标，可以设置取消配对和自动连接，自动连接就是设置设备在蓝牙有效范围内时眼镜是否与其连接。然后这个优先设备我也不多讲了，直接把界面放出来，它给的解释我认为足够详细，请读者自行查看。</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Screenshot_20220414_113642_com.huawei.smarthome.jpg" alt="优先设备设置界面" width="360"/>
+
+<p>&emsp;&emsp;早问候功能比iOS那边的智能问候多了个性内容播报的功能。这里先放图，看看各个功能是什么样子。</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Collage_20220414_110541.jpg" alt="主界面和详细可选功能"/>
+
+<p>&emsp;&emsp;每当早上第一次戴上眼镜的时候，除了会问候一声“早上好”之外，在5秒无操作的情况下，会播放所选内容。比方说，在播报天气时，它会语音非常自然流畅地播报“地区+最高温+最低温+空气质量+评价或提示”，顷刻就能知道天气的大部分信息，非常实用。播报今日安排的时候，如果没有日程就会播报“今日已无日程安排”，设置了提醒则会先提示今天有日程，然后告知日程名称、地点和时间。就是这个指定音频内容的设置非常少（具体每个软件的可选内容请看下一项功能），华为音乐、华为收音机、喜马拉雅我均不使用，好歹整点第三方音乐软件，什么网易云QQ音乐我觉得都挺实用的。本来蛮有意思的功能，报完天气日程可以播放音乐听听每日推荐，结果现在我感觉实用性低了很多，一手好牌打的稀烂，实在可惜。</p>
+<p>&emsp;&emsp;然后随心听这个功能完全就是播报指定音频内容的Plus版，只要按捏左镜腿就可以播放预先设定的内容，可选的和上面那个早问候的功能完全一致。</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Collage_20220414_113924.jpg" alt="随心听主界面和可选内容"/>
+
+<p>&emsp;&emsp;我对这个的评价也是，本来是一个非常好的创意，但是过于牢固地黏附在了华为生态上，把本来很让人眼前一亮的东西的格局做小了。我感到非常惋惜。</p>
+<p>&emsp;&emsp;下来要说的是新兴的畅连捏聊功能——3月31日释出，新的不能再新了吧？</p>
+<p>&emsp;&emsp;在设置里面开启畅联捏聊功能之后，就是这样了，还会有操作提示：</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Collage_20220415_202531.jpg" alt="畅连捏聊主界面与提示"/>
+
+<p>&emsp;&emsp;指定联系人可以从开通了畅联的联系人中选，甚至可以选自己，可是自己发出去的东西不会再收到一次。开启之后，只要按捏左镜腿，听到“噔噔”的提示音后，继续按住左镜腿说话即可，说完再把手放开，然后会有“呜”的提示音。在说完的五秒内，可以使用滑动手势向后滑动任意镜腿取消发送信息，此时会有和刚才不同的“噔噔”提示音。如果没有执行取消发送，那么眼镜就会向之前选定的联系人完成发送。若正在听音乐或看视频时进行按捏，则会在播放的同时播放提示音（播放提示音时媒体音量不会降低），然后立即暂停播放，松手后音乐会继续播放，但视频不会（笔者测试用的是QQ音乐和哔哩哔哩）。实测这个按捏的按下和松手识别非常灵敏准确，很多人经常都需要和一个固定的人频繁发送信息，这个功能对这些人来说无疑是个福音——一直打电话手机续航也不够，可能说一会就不知道说什么了，并且突然有急事需要留言时打电话和发短信可能都不是最佳选择。接收消息呢，下个功能快提醒中选中畅连后就能够朗读消息内容，格式大致为“畅连+名字+（多条时会提示几条未读）+最新收到的消息的朗读”，语音也能够播放（而微信的语音就不行），撤回消息也提醒对方已撤回。</p>
+<p>&emsp;&emsp;播报通知是现在同生态耳机不可少的功能，对于这副眼镜来讲亦如此。快提醒能够在用户佩戴眼镜的时候播报重要通知，这样有重要通知时不用从口袋里掏出手机就可以全盘掌握。老规矩看一下界面！</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Screenshot_20220414_113950_com.huawei.smarthome.jpg" alt="快提醒界面" width="360"/>
+
+<p>&emsp;&emsp;也就相当于手表和手环的同步手机通知的功能，只不过它是读出来。通知功能其实就是在下方应用区打开允许播报通知的开关，然后有重要通知和所有通知可选，重要通知内容比所有通知少了静默通知部分。附加提醒可选的内容有图里面几个，航班、来电和天气，很遗憾笔者很少坐飞机，所以无法体验第一个功能。第二个功能很多耳机也都有，来电之后先在眼镜里面响铃几声然后播报来电联系人和号码。第三个，我打开之后完全没有听到过，可能是因为我没有遇上异常天气吧。</p>
+<p>&emsp;&emsp;关于这一部分的体验，通知的播报基本准确——因为就是把内容原封不动地读出来而已。但有时候也蛮滑稽的。如下面这三个通知：</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Collage_20220414_114154.jpg" alt="三个让人啼笑皆非的通知" width="360"/>
+
+<p>&emsp;&emsp;第一个它把下面那一行读成了“点击查看快递信息大于”，第二个它把Humble Bundle英文单词读错了（好像读成了Humbleb Undle），第三个对那串邮箱的播报也非常滑稽，具体是什么已经想不起来了。只要一涉及符号和英文单词就可能出问题，其他的倒还好。单词混一块不认识倒说得过去，可是你图片都能智能识物了，按照词库分割个单词总不至于做不到吧？符号我觉得可以直接不读结尾的，星号啥的可以替换成看情况“某”。不过这都问题不大，播报嘛大概知道它说了什么就可以了，没必要非常准确。还有一点，人声语音听起来还算自然，不会非常生硬，不会让人产生不适。</p>
+<p>&emsp;&emsp;手势的大部分内容上期说过了，这里主要强调它的按捏功能。看一下按捏页面都展示了哪些功能：</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Screenshot_20220414_114234_com.huawei.smarthome.jpg" alt="按捏手势可选功能" width="360"/>
+
+<p>&emsp;&emsp;有些老哥可能已经发现，咦这个按捏功能好像才见过啊，刚才有个什么畅连捏聊和随心听不就是用这个功能吗，怎么这里又出现了？我也感觉奇怪，把这两个功能独立放在主页来吸引用户我理解，但不把捏聊功能同时整合进这来我不理解。可能这就是所谓的错落有致吧，我没学设计就不懂。先说面对面翻译，在按捏之后会在手机端打开面对面翻译界面（如果黑屏状态开启则需要解锁），然后长按镜腿就可以识别设置的被翻译语言，对方说完话之后即可松开手，然后就会完成翻译然后从眼镜内传出声音给用户。给对方说话时亦如此，只不过语言会从手机扬声器发出，设置的两种语言可以自动识别。当然也可以长按上面相应的按钮，完成说话后松开按键即可。目前我没有刻意用过这个功能，但和外国友人交流时应该非常方便（外国友人：他咋这么厉害QAQ）。多次测试之后我发现了个细节，它能够根据声音来源区分己方和对方（所以说对方的语言时眼镜无法翻译）。放张图意思一下：</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Collage_20220415_200002.jpg" alt="面对面翻译界面与测试，DNA动了！"/>
+
+<p>&emsp;&emsp;听歌识曲也是自行车功能，任何状态按捏之后就可以持续从眼镜麦克风监听声音，在手机上进行歌曲识别，截图如下所示：</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Collage_20220415_200121.jpg" alt="听歌识曲相关，右侧两个是悬浮窗，左边是识别手机音乐和历史记录"/>
+
+<p>&emsp;&emsp;识别过程中手机边上会出现悬浮窗（拖到屏幕底部即可关闭），然后点击窗口右侧图标即可最小化，右上角图标是识别记录（关闭浮窗再开启会清空记录）。听起来很普通，但是亲测它也可以识别眼镜里面播放的歌曲，只是声音要开大（见上图左起第二张）。不错过每一首生活中偶然遇见的歌曲，这就是它存在的意义。准确率也不错，我听的歌曲自以为都十分小众也基本识别出来了（上图最左边的一张）。</p>
+<p>&emsp;&emsp;查找眼镜功能，这个就会拉起“查找设备”页面，然后和展示其他平板或手机那样展示出眼镜的位置，如图所示。</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Screenshot_20220415_203301.jpg" alt="查找设备界面" width="360"/>
+
+<p>&emsp;&emsp;点进去只有播放铃声、导航和移除此设备三个选项，播放铃声试了一下，会发出非常非常大的滴滴声，大到试的时候它提示我不要戴着眼镜使用本功能，我都不敢相信是它发出的。</p>
+<p>&emsp;&emsp;固件更新和设置没啥好说的，上次该说的也说了，直接放图。</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Collage_20220414_114426.jpg" alt="设置页面和固件更新页面"/>
+
+<p>&emsp;&emsp;倒是之前说固件更新界面在鸿蒙端是看不到更新日志的，这回看来终于想起亲儿子系统，在172更新之后更新日志恢复了正常。关于功能“嘈杂环境增大媒体音量”，上次忘记细讲，体验了一下明白它为什么不默认开启了。打开这个开关后，不会提高音量上限，在音量临近最大值三格时，它会直接将音质置之度外强行增大音量，使得你听起来就像耳朵里塞了俩五毛钱的耳机一样，从具有立体声效果的声音变成了扁平的奇怪感觉。但是很遗憾，这是全通透式“耳机”，当遇到强噪声的时候，比如站在地铁内听到的轰鸣和换气扇的咆哮，天王老子来了也没用。并且这个功能开启时音质极大损耗，本质上是从不清变成了不清，个人感觉使用场景很少，因此不建议开启，鸡肋。</p>
+<p>&emsp;&emsp;下来说说这个服务卡片，它是这个眼镜独有的，只能从这个选项卡里面添加而不能从桌面添加，有排面。卡片有两个规格，如图所示：</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Screenshot_20220412_122250_com.huawei.android.launcher.jpg" alt="两个服务卡片的样式" width="360"/>
+
+<p>&emsp;&emsp;两个一大一小，整体功能都一致，其实就是相当于快捷的音频连接中心功能，蓝色的是正在连接的设备，如果某台设备在播放那么它的右侧还会有如图的图标。要管理连接的设备直接点击没有标蓝的设备即可，连接两个设备就会不二次确认地断开除正在操作的这台设备之外的另一台设备，然后尝试连接所选设备，如果失败不会自动回连原设备。卡片的确提供了方便，但我感觉方向错了——独有卡片的创意挺好的，可为啥不把颈椎健康的数据做成卡片呢？蛮神秘的.jpg。</p>
+<p>然后主页右上角的四个点点，轻点之后打开欸还有一个设备设置。界面如下，直接拼个图就展示清楚了，这里就不过多介绍了。</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Collage_20220414_114808.jpg" alt="设备设置界面"/>
+
+<p>&emsp;&emsp;还有其他的一点小细节，当眼镜电量降到20%和10%的时候，眼镜都会播报提示，同时鸿蒙系统设备的顶部会进行提示，如图所示。这个功能在耳机和笔等其他设备上应该也都有的，还是考虑比较周到的。在调节音量的时候，设备音量条旁边的图标会适配为眼镜图标，而不是耳机或扬声器，细节好评。</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Collage_20220414_115023_edit_352555897987348.jpg" alt="低电量提醒，请忽视高等数学" width="360"/>
+
+<p>&emsp;&emsp;那么功能就详细介绍完了，感谢老哥们耐心看到这里。</p>
+<h2 id="漏洞统计报告"><a href="#漏洞统计报告" class="headerlink" title="漏洞统计报告"></a>漏洞统计报告</h2><p>&emsp;&emsp;还是很想讲一讲我在使用过程中遇到的问题和槽点，让其他想要购买的人有合适的心理预期。事先说明，有漏洞不代表问题很大，有的问题听起来可能唬人但是可复现的场景和概率并不多，所以请理性看待。没有漏洞的产品完全不存在，如果强求那根本是痴人说梦。我只是希望将最客观的一面尽可能展示出来，顺便希望官方统计然后改进产品，至于读者怎么想我都无所谓，毕竟我的初衷就不是博取热度。哦这个漏洞代号纯粹是我自己统计的时候整活，和官方无关。那么，开始。</p>
+<ol>
+<li>点击通知栏“低头时间过长”通知后需进行选择 / MX-800</li>
+</ol>
+<p>&emsp;&emsp;当眼镜在手机或平板端发出通知提示用户低头时间过长提示后，点击通知会显示选择要使用的应用程序但两个选项完全一致，并且打开后均进入颈椎健康页面，如图：</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Screenshot_20220314_154916_com.huawei.android.internal.app.jpg" alt="问题直观展示"/>
+
+<p>&emsp;&emsp;该状态下打开的颈椎健康页面顶部小人失灵，不随头部运动改变姿势。该选择漏洞在音频管家12.0.0.120被修复，但是很遗憾截至4月5日我的平板电脑仍没有接收到这个发布半月多的推送。作为小米用户偷渡是我的基本功，但是也很遗憾我在酷安没有找到这个安装包，偷渡失败。现在终于更新了，不知道下次牵扯音频管家的时候我又该怎么办。</p>
+<ol start="2">
+<li>戴起时偶现断连问题 / MX-801</li>
+</ol>
+<p>&emsp;&emsp;用户摘下眼镜一段时间再戴起时，偶现不会自动与任何设备连接，打开蓝牙界面轻点眼镜进行连接几秒后提示错误，眼镜直接从蓝牙设备列表消失。此时只能通过最开始的重连方法进行连接，再次连接后部分设置被重置，如快提醒的日程播报开关和眼镜名称。该问题在一个月的使用过程中共出现2次。</p>
+<ol start="3">
+<li>手势误操作 / MX-808</li>
+</ol>
+<p>&emsp;&emsp;在放下眼镜或扶正眼镜时低概率触发误操作，即使手势完全未达到触发条件，可能触发播放音乐或调整音量，其他无监测记录。该问题在一个月内触发次数约为4次。</p>
+<ol start="4">
+<li>息屏显示图标空位 / MX-810</li>
+</ol>
+<p>&emsp;&emsp;偶现息屏显示通知图标处出现空位，即在两个通知图标间出现间隔为一个图标的空白。</p>
+<ol start="5">
+<li>连接第二台设备时仍播报早问候 / MX-820</li>
+</ol>
+<p>&emsp;&emsp;在已连接一台设备后，在连接第二台已配对的设备时，偶现再次播报问候语，即使用户在此过程中未摘下眼镜。并且据测试该问题多伴随问候语在单耳播报问题共同出现。一个月内触发次数约为5次。</p>
+<ol start="6">
+<li>打开颈椎健康页面显示游戏中心图标 / MX-821</li>
+</ol>
+<p>&emsp;&emsp;如图所示。该问题在每日首次查看颈椎健康页面时基本必现。</p>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/Screenshot_20220403_135005_com.huawei.smarthome.jpg" alt="顶部出现游戏中心弹窗" width="360"/>
+
+<ol start="7">
+<li><p>通知低头时间过长时偶现重复播报 / MX-835<br>&emsp;&emsp;即在两台设备先后进行提示，效果为眼镜内播放两次。该问题出现概率很低，一个月内共计出现2次。</p>
+</li>
+<li><p>摘下眼镜后不会立即停止音乐播放 / MX-845<br>&emsp;&emsp;按官方表述，摘下眼镜后应该像摘下耳机一样立即识别并暂停在播放的内容，但实测听音乐时摘下眼镜经常不会自动停止，而是有一段延迟。而不播放音乐时摘下眼镜，十秒后再戴上也能听见佩戴提示音，说明此时识别到用户已摘下。发生时使用的软件为QQ音乐，此问题发生概率较大。</p>
+</li>
+<li><p>畅连不自动发送信息 / MX-850<br>&emsp;&emsp;使用畅连捏聊功能时，偶现松手后不会发出的情况，要发出必须再次进行捏聊，当再次触发捏聊时上一条消息才会被发出，即使畅连软件处于前台运行。期间不论相隔多少时间，向后滑动取消都可用。要使其恢复正常，目前已知只能卸下使其自然关机再重新佩戴。</p>
+</li>
+<li><p>卸下眼镜自动将音量降低 / MX-855<br>&emsp;&emsp;偶现卸下眼镜再重新佩戴后手机连接眼镜音量条降为一格的问题。</p>
+</li>
+</ol>
+<p>&emsp;&emsp;暂已遇到的就是上述这些问题了，如果官方看见麻烦进行收集改进，十分感谢。对一个用户来说，最欣慰的时刻就是官方认真对待反馈和建议了，哪怕回复只是“本地没有复现”或是“该建议不现实”，也比什么都不回复强太多太多，两个是截然不同的态度。</p>
+<h2 id="上升空间"><a href="#上升空间" class="headerlink" title="上升空间"></a>上升空间</h2><p>&emsp;&emsp;有了新的体验之后，我觉得可改进的地方也就相应更多了。酷安有个老哥说的话当时给我了很深的思考，“多亏他们没有随便听取用户的建议，所以才能稳于高端”。后来我想，还是该在自己的坚持和用户的需求之间做好权衡，找到自己认为最佳的点，人云亦云和固步自封都是自取灭亡。所以我提的建议还请华为三思，仅提供改进方向，不作为指导性意见——毕竟我不专业，我只希望用户体验更佳。同时这里也有我的一点小吐槽，是我自己感觉不方便的地方。</p>
+<ol>
+<li><p>快提醒和华为生态绑定问题。小米手环和OPPO手表都可以在别家机子上使用的时候显示通知，按理说华为这个也一样。语音引擎应该可以集成在眼镜里面，毕竟根据时段进行问候并不需要鸿蒙系统加持。</p>
+</li>
+<li><p>服务卡片展示不高效。我觉得可以成譬如苹果上显示配件电量的组件，在每个图标下面加上设备名称，如果设备比较多可以左右或上下滑动从而完全展示。</p>
+</li>
+<li><p>为随心听和早提醒的自选音乐内容加入第三方音乐APP适配。</p>
+</li>
+<li><p>有一种设想，这类眼镜未来能不能向手表趋同呢？现在它更像是一个手环需要依赖手机，如果将来能内置eSIM和WiFi模块就好了，这样很多功能可以完全脱离手机，例如语音助手和打电话。不过这样可能导致重量成为大问题，还请仔细权衡。</p>
+</li>
+<li><p>适配微信、QQ等的语音消息，使其能够像文字消息一样播放。</p>
+</li>
+<li><p>整合所有设置页面，增强易用性。</p>
+</li>
+<li><p>提高颈椎健康小人模型分辨率。</p>
+</li>
+<li><p>保留颈椎活动度测试的最后一次报告，最好能保留历次报告。</p>
+</li>
+<li><p>在各个设备不更改名称的前提下，能够为每个设备设置备注，该备注只对眼镜生效。</p>
+</li>
+<li><p>把颈椎健康做成服务卡片。</p>
+</li>
+</ol>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>&emsp;&emsp;搭配华为手机使用智能眼镜之后，我对它的功能基本摸清了，这样一个原本对我来说非常新鲜的东西现在也就成了我的老朋友。总体来看我仍然认为这是一个非常新颖的设备，虽然它并没有完成我理想中的眼镜的模样，即Google Glass那样真正的智能。虽然它的重量的确对我很有劝退，但是我发现目前来看已经离不开它了，戴错了眼镜走在路上要听歌会发现自己很无助——特别是掏出兜里的耳机发现它的电也跑完了的时候。估计这篇文章下面还是有人很不屑地说，“这是智能眼镜？智能？”，上次我已经声明过这个产品只有适合不适合的问题没必要不喜欢还过来踩一脚，似乎也没有根绝这种现象，不过也无所谓了。</p>
+<p>&emsp;&emsp;这次就没有专门分一块写适合人群了，因为它比在iOS上的主要提升虽然不小但筛选出的用户不复杂。对使用华为手机的人来说，无疑就是上一篇写的适宜人群，加上对自己颈椎健康更加关心，和需要频繁和一个人进行语音沟通的人了。我相信对这两方面有很大需求的人还是很多的。</p>
+<p>&emsp;&emsp;还是希望官方能把漏洞多注意修复一下，我也不知道我把自己感知到的漏洞全然列举能起到多大作用，但是不努力怎么试试呢。稳立于于高端需要听取多少用户建议我不知道，但是我知道不修复问题一定不是良好的维护支持。我希望能够明白，用户列举漏洞没有任何敌对的意愿，而是真心希望产品能够优化改善，让贵司风评更加优秀。</p>
+<p>&emsp;&emsp;闲谈也被我砍掉了，因为我觉得他会让详解文章有点四不像。所以下一篇我准备写点杂谈出来，然后再试着稍微整点活给大伙看看。还有之前我挖的一个大坑，那就是智能眼镜的孔都是干啥的。要识别每个孔是什么还是很简单的，但我更想试着弄清楚它的发声原理，而这种东西目前我还没找到有人讲过，所以希望比较渺茫。</p>
+<p>&emsp;&emsp;谢谢你看到这里。还有什么没提到的问题都请来问我，我能够做的都会尽可能去试。如果你喜欢，还请关注下一期，再次表示感谢。</p>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          Donate
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        共享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://minatoxeon.github.io/2022/04/15/%E8%AF%84%E6%B5%8B-%E6%89%8B%E6%9C%BA%E4%B8%8D%E8%83%BD%EF%BC%8C%E7%9C%BC%E9%95%9C%E8%83%BD%E2%80%94%E2%80%94%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E9%B8%BF%E8%92%99%E7%AB%AF%E8%AF%A6%E8%A7%A3%E4%B8%8E%E4%BD%93%E9%AA%8C/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%89%93%E5%B7%A5/" rel="tag">打工</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%90%9E%E6%9C%BA/" rel="tag">搞机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%84%E6%B5%8B/" rel="tag">评测</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2022/05/10/%E6%95%B0%E7%A0%81%E4%BA%A7%E5%93%81%E4%B9%9F%E8%A6%81%E6%9C%89%E8%BF%BD%E6%98%9F%E5%BC%8F%E6%80%9D%E7%BB%B4%E5%90%97/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            数码产品也要有追星式思维吗——浅谈我为什么不站队
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2022/03/25/%E8%AF%84%E6%B5%8B-%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9CiOS%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C%E3%80%81%E8%AF%A6%E8%A7%A3%E4%B8%8E%E9%97%B2%E8%B0%88/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">评测-华为智能眼镜iOS使用体验、详解与闲谈</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "xCerGDrVQOv5NwuxeGEHsgC9-gzGzoHsz",
+    app_key: "SBmXMbgyYDyfEQakbz0hyqaK",
+    path: window.location.pathname,
+    avatar: "mp",
+    placeholder: "告诉我们您的想法。",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2020-2023
+        <i class="ri-heart-fill heart_icon"></i> Minato Xeon Microsoft
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Supercharged by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+    <!-- 运行天数 -->
+    <ul>
+      <li><span id="runtime_span"></span></li>
+    </ul>
+  </div>
+    <script type="text/javascript">			
+      function show_runtime() {
+          window.setTimeout("show_runtime()", 1000);
+          X = new Date("02/27/2020 09:43:24");
+          Y = new Date();
+          T = (Y.getTime() - X.getTime());
+          M = 24 * 60 * 60 * 1000;
+          a = T / M;
+          A = Math.floor(a);
+          b = (a - A) * 24;
+          B = Math.floor(b);
+          c = (b - B) * 60;
+          C = Math.floor((b - B) * 60);
+          D = Math.floor((c - C) * 60);
+          runtime_span.innerHTML = "小站在各种崩坏中坚持了: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+      }
+    show_runtime();
+  </script>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/head.jpg" alt="Minato Xeon"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">🏡首页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">📁归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">📜分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">🏷️标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E8%AF%84%E6%B5%8B/">🪟评测</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://minatoxeon.lofter.com/">📷摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">🤺友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/player">📻音乐</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/games">🎮游戏</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2021/11/21/about/">🧔关于</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>别和金钱过不去。</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+ <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true,
+  };
+</script>
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+ 
+<script src="/js/clickBoom2.js"></script>
+ 
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+ 
+<script src="/js/dz.js"></script>
+ 
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=27961148&auto=1&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
+
+  </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":80,"vOffset":0},"mobile":{"show":true,"scale":0.5},"react":{"opacity":0.7},"log":false});</script></body>
+
+</html>

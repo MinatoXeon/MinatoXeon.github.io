@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-Hans">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta name="description" content="科技、文明、信念，样样Xeon如其名。" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title> Minato Xeon</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/images/Minato.png" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
+      />
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+       
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-159231519-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <link rel="stylesheet" href="/css/zhyBlogTitle.css">
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <link rel="alternate" href="/atom.xml" title="Minato Xeon" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+      
+    <main class="content on">
+      
+<section class="cover">
+    
+      
+      <a class="forkMe" href="https://github.com/MinatoXeon"
+        target="_blank"><img width="149" height="149" src="/images/forkme.png"
+          class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+    
+  <div class="cover-frame">
+    <div class="bg-box">
+      <img src="/images/cover9.jpg" alt="image frame" />
+    </div>
+    <div class="cover-inner text-center text-white">
+      <!-- 特效标题 <h1><a href="/">Minato Xeon</a></h1> -->
+      <h1 class="center-text glitch" data-text="Minato Xeon">Minato Xeon</h1>
+      <div id="subtitle-box">
+        
+        <span id="subtitle"></span>
+        
+      </div>
+      <div>
+        
+        <img
+          src="/images/Minato.png"
+          class="cover-logo"
+          alt="Minato Xeon"
+        />
+        
+      </div>
+    </div>
+  </div>
+  <div class="cover-learn-more">
+    <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
+  </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+
+
+<!-- Subtitle -->
+
+  <script>
+    try {
+      var typed = new Typed("#subtitle", {
+        strings: ['科技、文明、信念，样样Xeon如其名。', 'We do the right thing, even when it&#39;s not easy.', '以赋能为使命，予力众生，成就不凡。'],
+        startDelay: 0,
+        typeSpeed: 200,
+        loop: true,
+        backSpeed: 100,
+        showCursor: true
+      });
+    } catch (err) {
+      console.log(err)
+    }
+  </script>
+  
+<div id="main">
+  <section class="outer">
+  
+  <ul class="ads">
+    
+        <li>
+            <a target="_blank" rel="noopener" href="https://www.apple.com/">
+                <img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures/img/Apple_environment.jpg" width="300" alt="Apple Environment">
+            </a>
+        </li>
+    
+        <li>
+            <a target="_blank" rel="noopener" href="https://www.microsoft.com/">
+                <img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures/img/Microsoft_Better_future.png" width="300" alt="Microsoft Ethics">
+            </a>
+        </li>
+    
+</ul>
+  
+  
+  
+
+<div class="notice" style="margin-top:50px">
+    <i class="ri-heart-fill"></i>
+    <div class="notice-content" id="broad"></div>
+</div>
+<script type="text/javascript">
+    fetch('https://v1.hitokoto.cn')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("broad").innerHTML = data.hitokoto;
+        })
+        .catch(console.error)
+</script>
+
+<style>
+    .notice {
+        padding: 20px;
+        border: 1px dashed #e6e6e6;
+        color: #969696;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        background: #fbfbfb50;
+        border-radius: 10px;
+    }
+
+    .notice i {
+        float: left;
+        color: #999;
+        font-size: 16px;
+        padding-right: 10px;
+        vertical-align: middle;
+        margin-top: -2px;
+    }
+
+    .notice-content {
+        display: initial;
+        vertical-align: middle;
+    }
+</style>
+  
+  <article class="articles">
+    
+    
+    
+    
+    <article
+  id="post-评测-vivo-X60-Pro-，蓝厂的「新生」旗舰"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/04/28/%E8%AF%84%E6%B5%8B-vivo-X60-Pro-%EF%BC%8C%E8%93%9D%E5%8E%82%E7%9A%84%E3%80%8C%E6%96%B0%E7%94%9F%E3%80%8D%E6%97%97%E8%88%B0/"
+    >评测-vivo X60 Pro+，蓝厂的「新生」旗舰</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/04/28/%E8%AF%84%E6%B5%8B-vivo-X60-Pro-%EF%BC%8C%E8%93%9D%E5%8E%82%E7%9A%84%E3%80%8C%E6%96%B0%E7%94%9F%E3%80%8D%E6%97%97%E8%88%B0/" class="article-date">
+  <time datetime="2021-04-28T14:12:56.000Z" itemprop="datePublished">2021-04-28</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AF%84%E6%B5%8B/">评测</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="评分：8-9-10"><a href="#评分：8-9-10" class="headerlink" title="评分：8.9 / 10"></a>评分：8.9 / 10</h3><hr>
+<h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ol>
+<li><p>   想了半天，还是得从系统说起。老早就听说蓝厂脱胎换骨推倒Funtouch OS之后新生而来的Origin OS，当时看设计图片和视频感觉，哇帅爆了，但是一直没有用过蓝厂的机子，没能体验到这个玩意。直到上周我的一朋友受不了自己的魅族16s的发热和小米10的卡顿（我不知道他为啥用这俩都卡，让他试着重启啥的都弄过了都不行）于是从Find X3，三星S20，X60 Pro+里面蹲了一台买下来了（咱不要讨论他为啥觉得卡和这三台当初应该选哪个好吗，他的选择是他的事情与我们无关）手机到了之后哥们就好心拿来借我玩玩，我拿我的Note10+和他暂换于是我才第一次体验到烂橘子（又有人要说我词汇量不够这单词是源？建议百度搜烂橘子）。用了好久MIUI 90Hz之后这系统上手就感觉很流畅，动画丝滑不掉帧，UI也还还不错。然后在使用过程中就会发现之前有人说的话——Origin OS和One UI有点像这句话很对了。设置里面它的设置项多得离谱，比如光一个桌面上的变形器，就能调好多东西，比如视窗风格天空特效啊啥的，还有那个平行世界可以进入另一个风格的桌面，像别人说的那里面能看见Windows Phone的影子，不过能将这个东西用在安卓上vivo应该是第一家，而且变形器这个东西给了用户足够的选择权。其他的东西，比如默认铃声“新生”，我感觉比蓝厂之前那个铃声好听的多，我甚至都想找一个放到我的iPhone 5c上拿来当起床铃声了（现任起床铃声是Xperia的VOICES），这个命名也足以看出蓝厂对自己的新系统多么有自信。原子组件就跟Windows的cities一样，但是有一点还是想说一下，有些系统自带组件比如屏幕使用时间，天气，随身听什么的我感觉很方便，并且这东西应该已经超越原生安卓的桌面小工具了，因为——就比如哪个天气组件，当左右滑动的时候，温度线上的指示原点也会跟着上下浮动而且非常流畅，这个效果可以说很惊艳。还有负一屏很简洁，广告资讯都可以关掉，查快递非常准（点名批评MIUI，快递更新随缘，有的又丢了有的还炒冷饭），一般甚至先发通知提示到菜鸟驿站然后桌面主屏上弹出原子组件提示，紧接着短信才到，这一点必须赞。还有跟随步数变化并能每天自动更换的桌面背景，那几款花都很美丽，我觉得已经胜过了MIUI的一部分超级壁纸。这个系统，很不错。</p> 
+      <a class="article-more-link" href="/2021/04/28/%E8%AF%84%E6%B5%8B-vivo-X60-Pro-%EF%BC%8C%E8%93%9D%E5%8E%82%E7%9A%84%E3%80%8C%E6%96%B0%E7%94%9F%E3%80%8D%E6%97%97%E8%88%B0/"
+        >进一步了解&gt;</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%90%9E%E6%9C%BA/" rel="tag">搞机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%84%E6%B5%8B/" rel="tag">评测</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+    
+    <article
+  id="post-评测-Redmi-K30-Pro-Zoom-Edition，红米全面屏的取与舍 - 副本"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/04/03/%E8%AF%84%E6%B5%8B-Redmi-K30-Pro-Zoom-Edition%EF%BC%8C%E7%BA%A2%E7%B1%B3%E5%85%A8%E9%9D%A2%E5%B1%8F%E7%9A%84%E5%8F%96%E4%B8%8E%E8%88%8D%20-%20%E5%89%AF%E6%9C%AC/"
+    >评测-Redmi K30 Pro Zoom Edition，红米全面屏的取与舍</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/04/03/%E8%AF%84%E6%B5%8B-Redmi-K30-Pro-Zoom-Edition%EF%BC%8C%E7%BA%A2%E7%B1%B3%E5%85%A8%E9%9D%A2%E5%B1%8F%E7%9A%84%E5%8F%96%E4%B8%8E%E8%88%8D%20-%20%E5%89%AF%E6%9C%AC/" class="article-date">
+  <time datetime="2021-04-03T14:05:24.000Z" itemprop="datePublished">2021-04-03</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AF%84%E6%B5%8B/">评测</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="评分：8-2-10"><a href="#评分：8-2-10" class="headerlink" title="评分：8.2 / 10"></a>评分：8.2 / 10</h3><hr>
+<h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><p>1.真全面屏设计，不至于在打游戏的时候某个选择界面突然出现奇怪的空白边（如氪金忍者的活动界面），并且屏幕观感极强，一眼望去除了下巴就只有屏幕（虽然没有一加7Pro那种曲面屏加成），再去看异形屏总会感觉多了点什么不习惯了。</p> 
+      <a class="article-more-link" href="/2021/04/03/%E8%AF%84%E6%B5%8B-Redmi-K30-Pro-Zoom-Edition%EF%BC%8C%E7%BA%A2%E7%B1%B3%E5%85%A8%E9%9D%A2%E5%B1%8F%E7%9A%84%E5%8F%96%E4%B8%8E%E8%88%8D%20-%20%E5%89%AF%E6%9C%AC/"
+        >进一步了解&gt;</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%90%9E%E6%9C%BA/" rel="tag">搞机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%84%E6%B5%8B/" rel="tag">评测</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+    
+    <article
+  id="post-评测-OPPO-Find-X2-Pro，绿厂的不将就"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/03/27/%E8%AF%84%E6%B5%8B-OPPO-Find-X2-Pro%EF%BC%8C%E7%BB%BF%E5%8E%82%E7%9A%84%E4%B8%8D%E5%B0%86%E5%B0%B1/"
+    >评测-OPPO Find X2 Pro，绿厂的不将就</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/03/27/%E8%AF%84%E6%B5%8B-OPPO-Find-X2-Pro%EF%BC%8C%E7%BB%BF%E5%8E%82%E7%9A%84%E4%B8%8D%E5%B0%86%E5%B0%B1/" class="article-date">
+  <time datetime="2021-03-27T02:05:41.000Z" itemprop="datePublished">2021-03-27</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AF%84%E6%B5%8B/">评测</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="评分：9-1-10"><a href="#评分：9-1-10" class="headerlink" title="评分：9.1 / 10"></a>评分：9.1 / 10</h3><hr>
+<h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ol>
+<li><p>屏幕十分优秀。光听参数就已经知道厉害了——2K 120Hz可以同时开启，在保证屏幕显示细腻的情况下仍能最大限度出色地展示动画，用起来很爽。并且，个人日常用着屏幕跟手度很好，非常舒适。曲面屏观感也不错，没太有某米两边屏幕发绿的情况，倒是黑边咋感觉略大emm，但是感知不强无所谓hhh</p> 
+      <a class="article-more-link" href="/2021/03/27/%E8%AF%84%E6%B5%8B-OPPO-Find-X2-Pro%EF%BC%8C%E7%BB%BF%E5%8E%82%E7%9A%84%E4%B8%8D%E5%B0%86%E5%B0%B1/"
+        >进一步了解&gt;</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%90%9E%E6%9C%BA/" rel="tag">搞机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%84%E6%B5%8B/" rel="tag">评测</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+    
+    <article
+  id="post-评测-HUAWEI-Mate-30-Pro，一台高端的艺术品 - 副本"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/01/30/%E8%AF%84%E6%B5%8B-HUAWEI-Mate-30-Pro%EF%BC%8C%E4%B8%80%E5%8F%B0%E9%AB%98%E7%AB%AF%E7%9A%84%E8%89%BA%E6%9C%AF%E5%93%81%20-%20%E5%89%AF%E6%9C%AC/"
+    >评测-HUAWEI Mate 30 Pro，一台高端的艺术品</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/01/30/%E8%AF%84%E6%B5%8B-HUAWEI-Mate-30-Pro%EF%BC%8C%E4%B8%80%E5%8F%B0%E9%AB%98%E7%AB%AF%E7%9A%84%E8%89%BA%E6%9C%AF%E5%93%81%20-%20%E5%89%AF%E6%9C%AC/" class="article-date">
+  <time datetime="2021-01-30T11:24:01.000Z" itemprop="datePublished">2021-01-30</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AF%84%E6%B5%8B/">评测</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="评分：9-6-10"><a href="#评分：9-6-10" class="headerlink" title="评分：9.6 / 10"></a>评分：9.6 / 10</h3><hr>
+<h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ol>
+<li><p>这个外观在我看来真的很棒，这也是我一个米粉买第一部华为的主要原因。具体是哪里吸引我我说不出来，可能是后面摄像头旁边的光圈，还有前面的两边高曲率屏幕吧。详细的下面再说。反正一堆说不清到底哪里好看的东西合在一起，我就觉得很漂亮，总之喜欢这个机子的样子。颜色方面其实我觉得素皮更好，但是我是从朋友手里买来的这部机子，所以只能选这个半蓝不紫的也不知道叫什么色（懒得查，老懒狗了，虽然也很美但是相比之下我认为素皮更好看摸起来更好叭。</p> 
+      <a class="article-more-link" href="/2021/01/30/%E8%AF%84%E6%B5%8B-HUAWEI-Mate-30-Pro%EF%BC%8C%E4%B8%80%E5%8F%B0%E9%AB%98%E7%AB%AF%E7%9A%84%E8%89%BA%E6%9C%AF%E5%93%81%20-%20%E5%89%AF%E6%9C%AC/"
+        >进一步了解&gt;</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%90%9E%E6%9C%BA/" rel="tag">搞机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%84%E6%B5%8B/" rel="tag">评测</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+    
+    <article
+  id="post-Win-10-Pro远程桌面使用技巧"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/01/19/Win-10-Pro%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"
+    >Win 10 Pro远程桌面使用技巧</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/01/19/Win-10-Pro%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" class="article-date">
+  <time datetime="2021-01-19T12:12:00.000Z" itemprop="datePublished">2021-01-19</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>之前购买了心水一年之久的iPad Pro 2018 11 inch，为了使iPad避免沦为“买前生产力，买后爱奇艺”的尴尬局面，于是总想让iPad Pro变得有那么一点生产力。后来在酷安上看到有大佬@biugi 发了一个不使用其他第三方软件而使用路由器端口映射实现远程桌面的教程，并且当时使用的电脑暗影精灵5 Air 过于厚重，于是萌生了使用iPad Pro来使电脑更加便携的想法。但是由于学校里面的宿舍网络的IP地址都是内网IP而不是公网IP，所以当时无法使用路由器端口转接，也就是无法在非同一个Wifi网络下实现远程桌面。经过自己摸索，实现了一种较为简单的可以说是免费的基于Windows 10的远程桌面方案。之前酷安大佬的方法我也会在下面给出，如果可以获得自己电脑的公网IP可以自己试一下那个方案。事实上我认为那个方法更加好用，但是在学校这种没有公网IP的环境下只能退而求其次。提前说明，这个远程桌面的延迟并不能达到可以玩游戏的水平，并且由于微软自身软件原因存在一些Bug（如偶现客户端闪退，及一些硬件适配问题等），经本人测试仅能达到可以写代码、写文档的水准。</p> 
+      <a class="article-more-link" href="/2021/01/19/Win-10-Pro%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"
+        >进一步了解&gt;</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%90%9E%E6%9C%BA/" rel="tag">搞机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+    
+    <article
+  id="post-2020总结与展望"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/11/06/2020%E6%80%BB%E7%BB%93%E4%B8%8E%E5%B1%95%E6%9C%9B/"
+    >2020总结与展望：悟以往之不谏，知来者之可追</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/11/06/2020%E6%80%BB%E7%BB%93%E4%B8%8E%E5%B1%95%E6%9C%9B/" class="article-date">
+  <time datetime="2020-11-06T04:42:57.000Z" itemprop="datePublished">2020-11-06</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>&emsp;&emsp;2019年，终于从高考的牢笼中解脱出来的我，满怀憧憬地进入了电子科技大学，开始了我的大学生活。转眼间一年就这样过去了，蓦然回首只感觉时光飞逝，却不知道自己学到了什么、成就了什么。</p> 
+      <a class="article-more-link" href="/2020/11/06/2020%E6%80%BB%E7%BB%93%E4%B8%8E%E5%B1%95%E6%9C%9B/"
+        >进一步了解&gt;</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%80%BB%E7%BB%93/" rel="tag">总结</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+    
+    <article
+  id="post-评测-荣耀智慧屏X1，名副其实的音画表现力"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/06/15/%E8%AF%84%E6%B5%8B-%E8%8D%A3%E8%80%80%E6%99%BA%E6%85%A7%E5%B1%8FX1%EF%BC%8C%E5%90%8D%E5%89%AF%E5%85%B6%E5%AE%9E%E7%9A%84%E9%9F%B3%E7%94%BB%E8%A1%A8%E7%8E%B0%E5%8A%9B/"
+    >图文评测-荣耀智慧屏X1，名副其实的音画表现力</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/06/15/%E8%AF%84%E6%B5%8B-%E8%8D%A3%E8%80%80%E6%99%BA%E6%85%A7%E5%B1%8FX1%EF%BC%8C%E5%90%8D%E5%89%AF%E5%85%B6%E5%AE%9E%E7%9A%84%E9%9F%B3%E7%94%BB%E8%A1%A8%E7%8E%B0%E5%8A%9B/" class="article-date">
+  <time datetime="2020-06-15T12:18:45.000Z" itemprop="datePublished">2020-06-15</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AF%84%E6%B5%8B/">评测</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/2871582_e4677127_0248_3534@1080x485.jpeg"/>
+
+<h3 id="评分：9-0-10"><a href="#评分：9-0-10" class="headerlink" title="评分：9.0 / 10"></a>评分：9.0 / 10</h3><hr>
+<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>&emsp;&emsp;这是我第一次发开箱评测，我有自己的独特风格，如果有不足之处欢迎讨论指出。其次本文是一个米粉第一次主动给父母推荐并最终购买荣耀产品的评测经历，所以文中肯定有很多主观因素，如果与你意见不同欢迎一起讨论，不喜勿喷，如果实在和你意见不一样那就是你是对的。</p> 
+      <a class="article-more-link" href="/2020/06/15/%E8%AF%84%E6%B5%8B-%E8%8D%A3%E8%80%80%E6%99%BA%E6%85%A7%E5%B1%8FX1%EF%BC%8C%E5%90%8D%E5%89%AF%E5%85%B6%E5%AE%9E%E7%9A%84%E9%9F%B3%E7%94%BB%E8%A1%A8%E7%8E%B0%E5%8A%9B/"
+        >进一步了解&gt;</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%90%9E%E6%9C%BA/" rel="tag">搞机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%84%E6%B5%8B/" rel="tag">评测</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+    
+    <article
+  id="post-刷机小记-小米3W刷入MIUI11"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/04/11/%E5%88%B7%E6%9C%BA%E5%B0%8F%E8%AE%B0-%E5%B0%8F%E7%B1%B33W%E5%88%B7%E5%85%A5MIUI11/"
+    >刷机小记-小米3W刷入MIUI11</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/04/11/%E5%88%B7%E6%9C%BA%E5%B0%8F%E8%AE%B0-%E5%B0%8F%E7%B1%B33W%E5%88%B7%E5%85%A5MIUI11/" class="article-date">
+  <time datetime="2020-04-11T12:56:07.000Z" itemprop="datePublished">2020-04-11</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%90%9E%E6%9C%BA/">搞机</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>4月3日，从铜川回到西安。在路上习惯性地翻了翻酷安头条，于是就发现头条推荐的有人评测他刷的小米4的自制官改MIUI11刷机包（小米4的刷机包与小米3W/C的刷机包基本通用  PS:小米3W/C分别为小米3联通版/电信版，使用高通骁龙800处理器，官方包止于MIUI10；小米3TD为小米3移动版，使用nVidia Tegra 4处理器，官方包止于MIUI9；小米4使用高通骁龙801处理器，与小米W/C相同官方包止于MIUI10），然后我就去搜了一下小米3W的话题然后找到了那个MIUI11的刷机包。于是我想起了我的抽屉里搁置已久的换过不知道从哪里拆下来的屏幕的触摸起来质感极差的小米3W。毕竟MIUI11比MIUI10还是有一些提升的，这手机屏幕极其难用续航极其尿崩，也没法日用了，于是我就想试试刷一下我那个小米3W玩玩。</p> 
+      <a class="article-more-link" href="/2020/04/11/%E5%88%B7%E6%9C%BA%E5%B0%8F%E8%AE%B0-%E5%B0%8F%E7%B1%B33W%E5%88%B7%E5%85%A5MIUI11/"
+        >进一步了解&gt;</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%88%B7%E6%9C%BA/" rel="tag">刷机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%90%9E%E6%9C%BA/" rel="tag">搞机</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+    
+    <article
+  id="post-刷机小记-红米Note拯救基带"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/03/20/%E5%88%B7%E6%9C%BA%E5%B0%8F%E8%AE%B0-%E7%BA%A2%E7%B1%B3Note%E6%8B%AF%E6%95%91%E5%9F%BA%E5%B8%A6/"
+    >刷机小记-红米Note拯救基带</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/03/20/%E5%88%B7%E6%9C%BA%E5%B0%8F%E8%AE%B0-%E7%BA%A2%E7%B1%B3Note%E6%8B%AF%E6%95%91%E5%9F%BA%E5%B8%A6/" class="article-date">
+  <time datetime="2020-03-20T00:42:29.000Z" itemprop="datePublished">2020-03-20</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%90%9E%E6%9C%BA/">搞机</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>18号那天，我的亲戚（一直呆在单位）想在他的手机上登录他的妻子的钉钉账号以来帮忙打卡，我遂向他推荐了手机自带的应用双开功能。结果狡猾的钉钉居然知道这手机是那个亲戚一直用来打卡的手机（钉钉把这IMEI和IP地址什么的用的好啊），然后让他刷脸……于是我又提出了让她用微信视频聊天来帮忙刷脸。意料之中，钉钉一直报错，双开应用这一计失败告终。钉钉这个糟老头子坏得很！倒是亲戚还有一个之前用的换下来的手机——红米Note，但是不知道为啥没法连上WiFi，说是重置了手机还不行。于是我就帮他刷个机试试看，可能不是硬件问题呢。</p> 
+      <a class="article-more-link" href="/2020/03/20/%E5%88%B7%E6%9C%BA%E5%B0%8F%E8%AE%B0-%E7%BA%A2%E7%B1%B3Note%E6%8B%AF%E6%95%91%E5%9F%BA%E5%B8%A6/"
+        >进一步了解&gt;</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%88%B7%E6%9C%BA/" rel="tag">刷机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%90%9E%E6%9C%BA/" rel="tag">搞机</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+    
+    <article
+  id="post-常用网站"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/03/06/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/"
+    >常用网站</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/03/06/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/" class="article-date">
+  <time datetime="2020-03-06T04:36:58.000Z" itemprop="datePublished">2020-03-06</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>书签，记录自己那不可多得的芳华与期冀。</p> 
+      <a class="article-more-link" href="/2020/03/06/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/"
+        >进一步了解&gt;</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A7%91%E6%8A%80/" rel="tag">科技</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BD%91%E7%AB%99/" rel="tag">网站</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+    
+  </article>
+  
+
+  
+  <nav class="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">下一页</a>
+  </nav>
+  
+</section>
+</div>
+
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2020-2023
+        <i class="ri-heart-fill heart_icon"></i> Minato Xeon Microsoft
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Supercharged by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+    <!-- 运行天数 -->
+    <ul>
+      <li><span id="runtime_span"></span></li>
+    </ul>
+  </div>
+    <script type="text/javascript">			
+      function show_runtime() {
+          window.setTimeout("show_runtime()", 1000);
+          X = new Date("02/27/2020 09:43:24");
+          Y = new Date();
+          T = (Y.getTime() - X.getTime());
+          M = 24 * 60 * 60 * 1000;
+          a = T / M;
+          A = Math.floor(a);
+          b = (a - A) * 24;
+          B = Math.floor(b);
+          c = (b - B) * 60;
+          C = Math.floor((b - B) * 60);
+          D = Math.floor((c - C) * 60);
+          runtime_span.innerHTML = "小站在各种崩坏中坚持了: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+      }
+    show_runtime();
+  </script>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/head.jpg" alt="Minato Xeon"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">🏡首页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">📁归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">📜分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">🏷️标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E8%AF%84%E6%B5%8B/">🪟评测</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://minatoxeon.lofter.com/">📷摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">🤺友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/player">📻音乐</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/games">🎮游戏</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2021/11/21/about/">🧔关于</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>别和金钱过不去。</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+ <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true,
+  };
+</script>
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+ 
+<script src="/js/clickBoom2.js"></script>
+ 
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+ 
+<script src="/js/dz.js"></script>
+ 
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=27961148&auto=1&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
+
+  </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":80,"vOffset":0},"mobile":{"show":true,"scale":0.5},"react":{"opacity":0.7},"log":false});</script></body>
+
+</html>

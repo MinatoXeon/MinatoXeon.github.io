@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Minato Xeon</title>
+  
+  <subtitle>科技、文明、信念，样样Xeon如其名。</subtitle>
+  <link href="https://minatoxeon.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://minatoxeon.github.io/"/>
+  <updated>2023-05-12T16:05:06.020Z</updated>
+  <id>https://minatoxeon.github.io/</id>
+  
+  <author>
+    <name>Minato Xeon Microsoft</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>六七百元低配黑苹果小主机方案</title>
+    <link href="https://minatoxeon.github.io/2023/04/18/%E5%85%AD%E4%B8%83%E7%99%BE%E5%85%83%E4%BD%8E%E9%85%8D%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%B0%8F%E4%B8%BB%E6%9C%BA%E6%96%B9%E6%A1%88/"/>
+    <id>https://minatoxeon.github.io/2023/04/18/%E5%85%AD%E4%B8%83%E7%99%BE%E5%85%83%E4%BD%8E%E9%85%8D%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%B0%8F%E4%B8%BB%E6%9C%BA%E6%96%B9%E6%A1%88/</id>
+    <published>2023-04-18T05:55:58.000Z</published>
+    <updated>2023-05-12T16:05:06.020Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&amp;emsp;&amp;emsp;作为一个对硬件生态感兴趣的人，我长时间仅持有iPhone 13mini和iPad Pro 2021，但一直没有一台搭载macOS的电脑。半年前我曾拥有一台小米笔记本Pro 2017，那玩意装了六个实体机系统（Win 11正式版+Win 11 Beta+Win 11 Insider+macOS Ventura+Ubuntu 20.04 LTS+Fyde OS 13），后来我换了荣耀MagicBook V14之后，这台电脑就送回家给老爸当玩具了，所以我就失去了我的黑苹果。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/categories/%E6%90%9E%E6%9C%BA/"/>
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+    <category term="硬件" scheme="https://minatoxeon.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数码产品也要有追星式思维吗——浅谈我为什么不站队</title>
+    <link href="https://minatoxeon.github.io/2022/05/10/%E6%95%B0%E7%A0%81%E4%BA%A7%E5%93%81%E4%B9%9F%E8%A6%81%E6%9C%89%E8%BF%BD%E6%98%9F%E5%BC%8F%E6%80%9D%E7%BB%B4%E5%90%97/"/>
+    <id>https://minatoxeon.github.io/2022/05/10/%E6%95%B0%E7%A0%81%E4%BA%A7%E5%93%81%E4%B9%9F%E8%A6%81%E6%9C%89%E8%BF%BD%E6%98%9F%E5%BC%8F%E6%80%9D%E7%BB%B4%E5%90%97/</id>
+    <published>2022-05-10T09:39:12.000Z</published>
+    <updated>2022-05-14T15:57:00.206Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&amp;emsp;&amp;emsp;研究数码产品是我坚持比较久的一项爱好，入这个圈子纯粹是被手机的各种参数吸引。由于对大众式兴趣都不感冒，高中毕业之后我在这方面的好奇心就愈发彰显。同样我对大部分追星行为也没有感觉，甚至有一种微妙的厌恶，因此我原本以为我这辈子和追星不会有任何联系。可是现在回头看来，之前的我和某些被明星冲昏头脑的人似乎并没有两样。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;开始之前我想先谈谈人们究竟为什么要追星。据我观察，有人是为了与朋友有共同语言，有人是喜欢明星俊美的容貌，有人看重他们在某一领域的高超能力或品德，有人则是完全为了跟风和新鲜感，诸如此类。随便构造的理由就能成为一个人迷上明星的动力，就像一个人喜欢上另一个人不需要理由一样。但是在我看来，要我追随一个人或者组织，应当让我在他们身上看到突出的才能或贡献，拥有能够为我指引前进方向的东西。至少我之前是这么想的，直到后来我的看法又发生了变化。或许是因为有光的地方必有影又或是我有着完美主义和少量功利主义的特质，也可能是因为我认识到我就是我自己——我决定不再完全追随任何人。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="思维" scheme="https://minatoxeon.github.io/categories/%E6%80%9D%E7%BB%B4/"/>
+    
+    
+    <category term="生活" scheme="https://minatoxeon.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="碎碎念" scheme="https://minatoxeon.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    <category term="思考" scheme="https://minatoxeon.github.io/tags/%E6%80%9D%E8%80%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手机不能，眼镜能——华为智能眼镜鸿蒙端详解与体验</title>
+    <link href="https://minatoxeon.github.io/2022/04/15/%E8%AF%84%E6%B5%8B-%E6%89%8B%E6%9C%BA%E4%B8%8D%E8%83%BD%EF%BC%8C%E7%9C%BC%E9%95%9C%E8%83%BD%E2%80%94%E2%80%94%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E9%B8%BF%E8%92%99%E7%AB%AF%E8%AF%A6%E8%A7%A3%E4%B8%8E%E4%BD%93%E9%AA%8C/"/>
+    <id>https://minatoxeon.github.io/2022/04/15/%E8%AF%84%E6%B5%8B-%E6%89%8B%E6%9C%BA%E4%B8%8D%E8%83%BD%EF%BC%8C%E7%9C%BC%E9%95%9C%E8%83%BD%E2%80%94%E2%80%94%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E9%B8%BF%E8%92%99%E7%AB%AF%E8%AF%A6%E8%A7%A3%E4%B8%8E%E4%BD%93%E9%AA%8C/</id>
+    <published>2022-04-15T14:31:49.000Z</published>
+    <updated>2022-05-14T16:01:27.621Z</updated>
+    
+    
+    <summary type="html">&lt;img src=&quot;https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/20220416_090518.jpg&quot;/&gt;
+
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;在体验过非华为生态的基础功能之后，我转去使用Mate 30 Pro，去享受其他功能带来的新鲜感。偶尔换换手机使用的口味，就相当于能够获取新的生活，我并不反感这样。想要看看iOS上华为智能眼镜有什么功能、适不适合自己的人，欢迎去阅读我的上一篇长达1.3万字的文章。上次把体验和功能分开写导致文章过长让很多人没有阅读欲望，这次试着把体验直接融入了功能介绍一栏，这样应该能使整体性更强，希望老哥们喜欢。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;该文章共有四个部分，功能详解评价、漏洞统计、上升空间和后记，字数太多如果感觉不愿意看全篇也可以下拉到对应板块浏览，感谢支持。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;言归正传，我们来看看华为智能眼镜配上华为生态能够碰撞出什么新的火花。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/categories/%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/tags/%E8%AF%84%E6%B5%8B/"/>
+    
+    <category term="打工" scheme="https://minatoxeon.github.io/tags/%E6%89%93%E5%B7%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>评测-华为智能眼镜iOS使用体验、详解与闲谈</title>
+    <link href="https://minatoxeon.github.io/2022/03/25/%E8%AF%84%E6%B5%8B-%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9CiOS%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C%E3%80%81%E8%AF%A6%E8%A7%A3%E4%B8%8E%E9%97%B2%E8%B0%88/"/>
+    <id>https://minatoxeon.github.io/2022/03/25/%E8%AF%84%E6%B5%8B-%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9CiOS%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C%E3%80%81%E8%AF%A6%E8%A7%A3%E4%B8%8E%E9%97%B2%E8%B0%88/</id>
+    <published>2022-03-25T10:06:23.000Z</published>
+    <updated>2022-05-13T15:49:29.474Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&amp;emsp;&amp;emsp;写在前面：本文长达13k+字，分为8个部分：“前言”、 “iOS上的智能眼镜能用什么功能？”、“使用起来体验怎么样”、“回答老哥们的问题”、“哪些iOS用户适合购买这副眼镜”、“眼镜的工作逻辑”、“我对这副眼镜的期待和愿景”和“后记”，如果老哥们嫌太长可以直接下拉到相应的板块去阅读有关内容，感谢你对这篇文章的关注。我写这么些一大堆纯粹是兴趣使然，所以我觉得把这篇写同样东西的文章拆成两篇是在水贴，不好。&lt;/p&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;3月10日，我怀着激动的心情开始体验这副华为智能眼镜，从此我刚配的新眼镜立即退休了（说实话，我还蛮怀念刚刚换上金属边框眼镜的感觉）。不过，华为这个不戴耳机就能听音乐的功能实在是太吸引我了，相比之下换个风格完全不算什么。所以我开始了到今天为止为期长达十余天的体验。虽然我有华为Mate 30 Pro 5G手机，由于我在白天更喜欢携带屏幕小的手机，所以这段时间一直沿用了之前使用的iPhone 13 mini，恰好在智能眼镜这块见到更多的是大佬们分享自己使用华为手机的使用体验，所以我觉得我想聊点iOS这种不是同一生态的使用体验。关于这个问题我也与负责人谈过，我问过他我能不能使用iOS设备连接，如果不能我可以立即换成华为设备，他也告诉我可以两个都体验一下，所以并没有给上级带来不便。除了聊聊iOS上智能眼镜的表现，我还想回答一下之前老哥们，以及网络上其他地方对这个眼镜的一些疑问，以及我对它的一些看法和评价。我发现很多地方更偏重讲它的功能，这确实是必不可少的，但是我还想谈谈它的多设备连接逻辑，以回应想要购买或者还在观望的人的一些期待。或许我的评测总是这么小众和特立独行吧。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/categories/%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/tags/%E8%AF%84%E6%B5%8B/"/>
+    
+    <category term="打工" scheme="https://minatoxeon.github.io/tags/%E6%89%93%E5%B7%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开箱-开箱一台华为智能眼镜方形全框</title>
+    <link href="https://minatoxeon.github.io/2022/03/10/%E5%BC%80%E7%AE%B1-%E5%BC%80%E7%AE%B1%E4%B8%80%E5%8F%B0%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E6%96%B9%E5%BD%A2%E5%85%A8%E6%A1%86/"/>
+    <id>https://minatoxeon.github.io/2022/03/10/%E5%BC%80%E7%AE%B1-%E5%BC%80%E7%AE%B1%E4%B8%80%E5%8F%B0%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E6%96%B9%E5%BD%A2%E5%85%A8%E6%A1%86/</id>
+    <published>2022-03-10T09:28:15.000Z</published>
+    <updated>2022-03-28T13:40:12.837Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;上个月14号，我收到了华为智能眼镜进行体验的消息，于是作为一个对电子产品，尤其是这种没有玩过的东西有着极度热爱的人，我立即点击消息去报名。不过当时在报名的时候，有一项是问我有没有自媒体和粉丝数，我一看这里，然后再看看我的酷安账号那时仅有的103粉丝，我就知道已经凉了。不过那还是得试试，所以最后还是认真填完了然后再没管。结果后来有一天突然有人在微信加我，我才知道原来是我被选上了这次体验。高兴与兴奋之余，我还是对我能入选体验的原因完全摸不着头脑——我深知粉丝数103在酷安是一个很小的数量。不过管他那么多，尽自己的职责完成这次体验吧！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="开箱" scheme="https://minatoxeon.github.io/categories/%E5%BC%80%E7%AE%B1/"/>
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/tags/%E8%AF%84%E6%B5%8B/"/>
+    
+    <category term="开箱" scheme="https://minatoxeon.github.io/tags/%E5%BC%80%E7%AE%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开箱-开箱一台华为智能眼镜方形全框</title>
+    <link href="https://minatoxeon.github.io/2022/03/10/%E5%BC%80%E7%AE%B1-%E5%BC%80%E7%AE%B1%E5%8D%8E%E4%B8%BA%C3%97GM%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E4%BA%8C%E4%BB%A3%C2%B7%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E8%AF%84%E6%B5%8B%E7%95%AA%E5%A4%96%E7%AF%87EX/"/>
+    <id>https://minatoxeon.github.io/2022/03/10/%E5%BC%80%E7%AE%B1-%E5%BC%80%E7%AE%B1%E5%8D%8E%E4%B8%BA%C3%97GM%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E4%BA%8C%E4%BB%A3%C2%B7%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E8%AF%84%E6%B5%8B%E7%95%AA%E5%A4%96%E7%AF%87EX/</id>
+    <published>2022-03-10T09:28:15.000Z</published>
+    <updated>2022-03-28T13:40:12.837Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;上个月14号，我收到了华为智能眼镜进行体验的消息，于是作为一个对电子产品，尤其是这种没有玩过的东西有着极度热爱的人，我立即点击消息去报名。不过当时在报名的时候，有一项是问我有没有自媒体和粉丝数，我一看这里，然后再看看我的酷安账号那时仅有的103粉丝，我就知道已经凉了。不过那还是得试试，所以最后还是认真填完了然后再没管。结果后来有一天突然有人在微信加我，我才知道原来是我被选上了这次体验。高兴与兴奋之余，我还是对我能入选体验的原因完全摸不着头脑——我深知粉丝数103在酷安是一个很小的数量。不过管他那么多，尽自己的职责完成这次体验吧！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="开箱" scheme="https://minatoxeon.github.io/categories/%E5%BC%80%E7%AE%B1/"/>
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/tags/%E8%AF%84%E6%B5%8B/"/>
+    
+    <category term="开箱" scheme="https://minatoxeon.github.io/tags/%E5%BC%80%E7%AE%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大三第一学期总结：我做正确的事情，即使它并不简单</title>
+    <link href="https://minatoxeon.github.io/2022/01/21/%E5%A4%A7%E4%B8%89%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F%E6%80%BB%E7%BB%93/"/>
+    <id>https://minatoxeon.github.io/2022/01/21/%E5%A4%A7%E4%B8%89%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F%E6%80%BB%E7%BB%93/</id>
+    <published>2022-01-21T03:17:32.000Z</published>
+    <updated>2022-01-21T03:19:58.835Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://minatoxeon.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://minatoxeon.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="总结" scheme="https://minatoxeon.github.io/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于我 | 使命与愿景</title>
+    <link href="https://minatoxeon.github.io/2021/11/21/about/"/>
+    <id>https://minatoxeon.github.io/2021/11/21/about/</id>
+    <published>2021-11-21T13:37:04.000Z</published>
+    <updated>2022-01-20T11:03:17.816Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/headline.png&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一个向往各种黑科技的兴趣使然的纯粹予力者。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;以赋能为使命&quot;&gt;&lt;a href=&quot;#以赋能为使命&quot; class=&quot;headerlink&quot; title=&quot;以赋能为使命&quot;&gt;&lt;/a&gt;以赋能为使命&lt;/h1&gt;&lt;h4 id=&quot;我的使命是予力全球每一人，成就不凡。&quot;&gt;&lt;a href=&quot;#我的使命是予力全球每一人，成就不凡。&quot; class=&quot;headerlink&quot; title=&quot;我的使命是予力全球每一人，成就不凡。&quot;&gt;&lt;/a&gt;我的使命是予力全球每一人，成就不凡。&lt;/h4&gt;&lt;h4 id=&quot;我做正确的事情，即使它并不简单，甚至知道后果是什么。&quot;&gt;&lt;a href=&quot;#我做正确的事情，即使它并不简单，甚至知道后果是什么。&quot; class=&quot;headerlink&quot; title=&quot;我做正确的事情，即使它并不简单，甚至知道后果是什么。&quot;&gt;&lt;/a&gt;我做正确的事情，即使它并不简单，甚至知道后果是什么。&lt;/h4&gt;</summary>
+    
+    
+    
+    
+    <category term="随笔" scheme="https://minatoxeon.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>评测-iPhone SE 2020，小而美的又一大步</title>
+    <link href="https://minatoxeon.github.io/2021/11/15/%E8%AF%84%E6%B5%8B-iPhone-SE-2020%EF%BC%8C%E5%B0%8F%E8%80%8C%E7%BE%8E%E7%9A%84%E5%8F%88%E4%B8%80%E5%A4%A7%E6%AD%A5/"/>
+    <id>https://minatoxeon.github.io/2021/11/15/%E8%AF%84%E6%B5%8B-iPhone-SE-2020%EF%BC%8C%E5%B0%8F%E8%80%8C%E7%BE%8E%E7%9A%84%E5%8F%88%E4%B8%80%E5%A4%A7%E6%AD%A5/</id>
+    <published>2021-11-15T01:06:34.000Z</published>
+    <updated>2022-01-18T12:18:04.753Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;评分：9-5-10&quot;&gt;&lt;a href=&quot;#评分：9-5-10&quot; class=&quot;headerlink&quot; title=&quot;评分：9.5 / 10&quot;&gt;&lt;/a&gt;评分：9.5 / 10&lt;/h3&gt;&lt;hr&gt;
+&lt;h2 id=&quot;优点&quot;&gt;&lt;a href=&quot;#优点&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;   性价比极高，这是我买它最开始的原因。目前应该还是二手市场性能最强的一千元左右的机器（只是性能最强，其他的我可没谈），毕竟就是iPhone 8换了个处理器罢了。日用完全不会卡，反应迅速灵敏，非常好。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/categories/%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/tags/%E8%AF%84%E6%B5%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2021总结与规划：以赋能为使命，予力众生</title>
+    <link href="https://minatoxeon.github.io/2021/09/06/2021%E6%80%BB%E7%BB%93%E4%B8%8E%E8%A7%84%E5%88%92/"/>
+    <id>https://minatoxeon.github.io/2021/09/06/2021%E6%80%BB%E7%BB%93%E4%B8%8E%E8%A7%84%E5%88%92/</id>
+    <published>2021-09-05T17:00:40.000Z</published>
+    <updated>2023-05-12T13:19:00.586Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&amp;emsp;&amp;emsp;和大一在电子科大生活的第一年相比，大二这一年对我来说要过得快得多，快到我不知道该从何处来谈起我这一年。回望去年此时写下的2020年展望，其中有一句话让我印象深刻，“在明年这时候坐在这里写总结和展望的时候，希望不要再写下完全一样的东西了吧”。我很欣慰我的大二并没有像大一那样茫然和平庸地度过，给我更多的感觉是充实与独特。我感觉我想写的东西实在太多了，慢慢来说吧。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://minatoxeon.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://minatoxeon.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="总结" scheme="https://minatoxeon.github.io/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>评测-vivo X60 Pro+，蓝厂的「新生」旗舰</title>
+    <link href="https://minatoxeon.github.io/2021/04/28/%E8%AF%84%E6%B5%8B-vivo-X60-Pro-%EF%BC%8C%E8%93%9D%E5%8E%82%E7%9A%84%E3%80%8C%E6%96%B0%E7%94%9F%E3%80%8D%E6%97%97%E8%88%B0/"/>
+    <id>https://minatoxeon.github.io/2021/04/28/%E8%AF%84%E6%B5%8B-vivo-X60-Pro-%EF%BC%8C%E8%93%9D%E5%8E%82%E7%9A%84%E3%80%8C%E6%96%B0%E7%94%9F%E3%80%8D%E6%97%97%E8%88%B0/</id>
+    <published>2021-04-28T14:12:56.000Z</published>
+    <updated>2022-01-18T11:50:36.559Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;评分：8-9-10&quot;&gt;&lt;a href=&quot;#评分：8-9-10&quot; class=&quot;headerlink&quot; title=&quot;评分：8.9 / 10&quot;&gt;&lt;/a&gt;评分：8.9 / 10&lt;/h3&gt;&lt;hr&gt;
+&lt;h2 id=&quot;优点&quot;&gt;&lt;a href=&quot;#优点&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;   想了半天，还是得从系统说起。老早就听说蓝厂脱胎换骨推倒Funtouch OS之后新生而来的Origin OS，当时看设计图片和视频感觉，哇帅爆了，但是一直没有用过蓝厂的机子，没能体验到这个玩意。直到上周我的一朋友受不了自己的魅族16s的发热和小米10的卡顿（我不知道他为啥用这俩都卡，让他试着重启啥的都弄过了都不行）于是从Find X3，三星S20，X60 Pro+里面蹲了一台买下来了（咱不要讨论他为啥觉得卡和这三台当初应该选哪个好吗，他的选择是他的事情与我们无关）手机到了之后哥们就好心拿来借我玩玩，我拿我的Note10+和他暂换于是我才第一次体验到烂橘子（又有人要说我词汇量不够这单词是源？建议百度搜烂橘子）。用了好久MIUI 90Hz之后这系统上手就感觉很流畅，动画丝滑不掉帧，UI也还还不错。然后在使用过程中就会发现之前有人说的话——Origin OS和One UI有点像这句话很对了。设置里面它的设置项多得离谱，比如光一个桌面上的变形器，就能调好多东西，比如视窗风格天空特效啊啥的，还有那个平行世界可以进入另一个风格的桌面，像别人说的那里面能看见Windows Phone的影子，不过能将这个东西用在安卓上vivo应该是第一家，而且变形器这个东西给了用户足够的选择权。其他的东西，比如默认铃声“新生”，我感觉比蓝厂之前那个铃声好听的多，我甚至都想找一个放到我的iPhone 5c上拿来当起床铃声了（现任起床铃声是Xperia的VOICES），这个命名也足以看出蓝厂对自己的新系统多么有自信。原子组件就跟Windows的cities一样，但是有一点还是想说一下，有些系统自带组件比如屏幕使用时间，天气，随身听什么的我感觉很方便，并且这东西应该已经超越原生安卓的桌面小工具了，因为——就比如哪个天气组件，当左右滑动的时候，温度线上的指示原点也会跟着上下浮动而且非常流畅，这个效果可以说很惊艳。还有负一屏很简洁，广告资讯都可以关掉，查快递非常准（点名批评MIUI，快递更新随缘，有的又丢了有的还炒冷饭），一般甚至先发通知提示到菜鸟驿站然后桌面主屏上弹出原子组件提示，紧接着短信才到，这一点必须赞。还有跟随步数变化并能每天自动更换的桌面背景，那几款花都很美丽，我觉得已经胜过了MIUI的一部分超级壁纸。这个系统，很不错。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/categories/%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/tags/%E8%AF%84%E6%B5%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>评测-Redmi K30 Pro Zoom Edition，红米全面屏的取与舍</title>
+    <link href="https://minatoxeon.github.io/2021/04/03/%E8%AF%84%E6%B5%8B-Redmi-K30-Pro-Zoom-Edition%EF%BC%8C%E7%BA%A2%E7%B1%B3%E5%85%A8%E9%9D%A2%E5%B1%8F%E7%9A%84%E5%8F%96%E4%B8%8E%E8%88%8D%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>https://minatoxeon.github.io/2021/04/03/%E8%AF%84%E6%B5%8B-Redmi-K30-Pro-Zoom-Edition%EF%BC%8C%E7%BA%A2%E7%B1%B3%E5%85%A8%E9%9D%A2%E5%B1%8F%E7%9A%84%E5%8F%96%E4%B8%8E%E8%88%8D%20-%20%E5%89%AF%E6%9C%AC/</id>
+    <published>2021-04-03T14:05:24.000Z</published>
+    <updated>2022-01-16T11:41:13.065Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;评分：8-2-10&quot;&gt;&lt;a href=&quot;#评分：8-2-10&quot; class=&quot;headerlink&quot; title=&quot;评分：8.2 / 10&quot;&gt;&lt;/a&gt;评分：8.2 / 10&lt;/h3&gt;&lt;hr&gt;
+&lt;h2 id=&quot;优点&quot;&gt;&lt;a href=&quot;#优点&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h2&gt;&lt;p&gt;1.真全面屏设计，不至于在打游戏的时候某个选择界面突然出现奇怪的空白边（如氪金忍者的活动界面），并且屏幕观感极强，一眼望去除了下巴就只有屏幕（虽然没有一加7Pro那种曲面屏加成），再去看异形屏总会感觉多了点什么不习惯了。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/categories/%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/tags/%E8%AF%84%E6%B5%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>评测-OPPO Find X2 Pro，绿厂的不将就</title>
+    <link href="https://minatoxeon.github.io/2021/03/27/%E8%AF%84%E6%B5%8B-OPPO-Find-X2-Pro%EF%BC%8C%E7%BB%BF%E5%8E%82%E7%9A%84%E4%B8%8D%E5%B0%86%E5%B0%B1/"/>
+    <id>https://minatoxeon.github.io/2021/03/27/%E8%AF%84%E6%B5%8B-OPPO-Find-X2-Pro%EF%BC%8C%E7%BB%BF%E5%8E%82%E7%9A%84%E4%B8%8D%E5%B0%86%E5%B0%B1/</id>
+    <published>2021-03-27T02:05:41.000Z</published>
+    <updated>2022-01-16T11:41:13.065Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;评分：9-1-10&quot;&gt;&lt;a href=&quot;#评分：9-1-10&quot; class=&quot;headerlink&quot; title=&quot;评分：9.1 / 10&quot;&gt;&lt;/a&gt;评分：9.1 / 10&lt;/h3&gt;&lt;hr&gt;
+&lt;h2 id=&quot;优点&quot;&gt;&lt;a href=&quot;#优点&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;屏幕十分优秀。光听参数就已经知道厉害了——2K 120Hz可以同时开启，在保证屏幕显示细腻的情况下仍能最大限度出色地展示动画，用起来很爽。并且，个人日常用着屏幕跟手度很好，非常舒适。曲面屏观感也不错，没太有某米两边屏幕发绿的情况，倒是黑边咋感觉略大emm，但是感知不强无所谓hhh&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/categories/%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/tags/%E8%AF%84%E6%B5%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>评测-HUAWEI Mate 30 Pro，一台高端的艺术品</title>
+    <link href="https://minatoxeon.github.io/2021/01/30/%E8%AF%84%E6%B5%8B-HUAWEI-Mate-30-Pro%EF%BC%8C%E4%B8%80%E5%8F%B0%E9%AB%98%E7%AB%AF%E7%9A%84%E8%89%BA%E6%9C%AF%E5%93%81%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>https://minatoxeon.github.io/2021/01/30/%E8%AF%84%E6%B5%8B-HUAWEI-Mate-30-Pro%EF%BC%8C%E4%B8%80%E5%8F%B0%E9%AB%98%E7%AB%AF%E7%9A%84%E8%89%BA%E6%9C%AF%E5%93%81%20-%20%E5%89%AF%E6%9C%AC/</id>
+    <published>2021-01-30T11:24:01.000Z</published>
+    <updated>2022-01-16T11:41:13.064Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;评分：9-6-10&quot;&gt;&lt;a href=&quot;#评分：9-6-10&quot; class=&quot;headerlink&quot; title=&quot;评分：9.6 / 10&quot;&gt;&lt;/a&gt;评分：9.6 / 10&lt;/h3&gt;&lt;hr&gt;
+&lt;h2 id=&quot;优点&quot;&gt;&lt;a href=&quot;#优点&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;这个外观在我看来真的很棒，这也是我一个米粉买第一部华为的主要原因。具体是哪里吸引我我说不出来，可能是后面摄像头旁边的光圈，还有前面的两边高曲率屏幕吧。详细的下面再说。反正一堆说不清到底哪里好看的东西合在一起，我就觉得很漂亮，总之喜欢这个机子的样子。颜色方面其实我觉得素皮更好，但是我是从朋友手里买来的这部机子，所以只能选这个半蓝不紫的也不知道叫什么色（懒得查，老懒狗了，虽然也很美但是相比之下我认为素皮更好看摸起来更好叭。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/categories/%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/tags/%E8%AF%84%E6%B5%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Win 10 Pro远程桌面使用技巧</title>
+    <link href="https://minatoxeon.github.io/2021/01/19/Win-10-Pro%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    <id>https://minatoxeon.github.io/2021/01/19/Win-10-Pro%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</id>
+    <published>2021-01-19T12:12:00.000Z</published>
+    <updated>2022-01-16T11:41:13.066Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;之前购买了心水一年之久的iPad Pro 2018 11 inch，为了使iPad避免沦为“买前生产力，买后爱奇艺”的尴尬局面，于是总想让iPad Pro变得有那么一点生产力。后来在酷安上看到有大佬@biugi 发了一个不使用其他第三方软件而使用路由器端口映射实现远程桌面的教程，并且当时使用的电脑暗影精灵5 Air 过于厚重，于是萌生了使用iPad Pro来使电脑更加便携的想法。但是由于学校里面的宿舍网络的IP地址都是内网IP而不是公网IP，所以当时无法使用路由器端口转接，也就是无法在非同一个Wifi网络下实现远程桌面。经过自己摸索，实现了一种较为简单的可以说是免费的基于Windows 10的远程桌面方案。之前酷安大佬的方法我也会在下面给出，如果可以获得自己电脑的公网IP可以自己试一下那个方案。事实上我认为那个方法更加好用，但是在学校这种没有公网IP的环境下只能退而求其次。提前说明，这个远程桌面的延迟并不能达到可以玩游戏的水平，并且由于微软自身软件原因存在一些Bug（如偶现客户端闪退，及一些硬件适配问题等），经本人测试仅能达到可以写代码、写文档的水准。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="教程" scheme="https://minatoxeon.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+    <category term="教程" scheme="https://minatoxeon.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020总结与展望：悟以往之不谏，知来者之可追</title>
+    <link href="https://minatoxeon.github.io/2020/11/06/2020%E6%80%BB%E7%BB%93%E4%B8%8E%E5%B1%95%E6%9C%9B/"/>
+    <id>https://minatoxeon.github.io/2020/11/06/2020%E6%80%BB%E7%BB%93%E4%B8%8E%E5%B1%95%E6%9C%9B/</id>
+    <published>2020-11-06T04:42:57.000Z</published>
+    <updated>2023-05-12T13:19:03.116Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&amp;emsp;&amp;emsp;2019年，终于从高考的牢笼中解脱出来的我，满怀憧憬地进入了电子科技大学，开始了我的大学生活。转眼间一年就这样过去了，蓦然回首只感觉时光飞逝，却不知道自己学到了什么、成就了什么。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://minatoxeon.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://minatoxeon.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="总结" scheme="https://minatoxeon.github.io/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图文评测-荣耀智慧屏X1，名副其实的音画表现力</title>
+    <link href="https://minatoxeon.github.io/2020/06/15/%E8%AF%84%E6%B5%8B-%E8%8D%A3%E8%80%80%E6%99%BA%E6%85%A7%E5%B1%8FX1%EF%BC%8C%E5%90%8D%E5%89%AF%E5%85%B6%E5%AE%9E%E7%9A%84%E9%9F%B3%E7%94%BB%E8%A1%A8%E7%8E%B0%E5%8A%9B/"/>
+    <id>https://minatoxeon.github.io/2020/06/15/%E8%AF%84%E6%B5%8B-%E8%8D%A3%E8%80%80%E6%99%BA%E6%85%A7%E5%B1%8FX1%EF%BC%8C%E5%90%8D%E5%89%AF%E5%85%B6%E5%AE%9E%E7%9A%84%E9%9F%B3%E7%94%BB%E8%A1%A8%E7%8E%B0%E5%8A%9B/</id>
+    <published>2020-06-15T12:18:45.000Z</published>
+    <updated>2022-01-20T03:52:51.213Z</updated>
+    
+    
+    <summary type="html">&lt;img src=&quot;https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/2871582_e4677127_0248_3534@1080x485.jpeg&quot;/&gt;
+
+&lt;h3 id=&quot;评分：9-0-10&quot;&gt;&lt;a href=&quot;#评分：9-0-10&quot; class=&quot;headerlink&quot; title=&quot;评分：9.0 / 10&quot;&gt;&lt;/a&gt;评分：9.0 / 10&lt;/h3&gt;&lt;hr&gt;
+&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;这是我第一次发开箱评测，我有自己的独特风格，如果有不足之处欢迎讨论指出。其次本文是一个米粉第一次主动给父母推荐并最终购买荣耀产品的评测经历，所以文中肯定有很多主观因素，如果与你意见不同欢迎一起讨论，不喜勿喷，如果实在和你意见不一样那就是你是对的。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/categories/%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+    <category term="评测" scheme="https://minatoxeon.github.io/tags/%E8%AF%84%E6%B5%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>刷机小记-小米3W刷入MIUI11</title>
+    <link href="https://minatoxeon.github.io/2020/04/11/%E5%88%B7%E6%9C%BA%E5%B0%8F%E8%AE%B0-%E5%B0%8F%E7%B1%B33W%E5%88%B7%E5%85%A5MIUI11/"/>
+    <id>https://minatoxeon.github.io/2020/04/11/%E5%88%B7%E6%9C%BA%E5%B0%8F%E8%AE%B0-%E5%B0%8F%E7%B1%B33W%E5%88%B7%E5%85%A5MIUI11/</id>
+    <published>2020-04-11T12:56:07.000Z</published>
+    <updated>2022-01-16T11:41:13.065Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;4月3日，从铜川回到西安。在路上习惯性地翻了翻酷安头条，于是就发现头条推荐的有人评测他刷的小米4的自制官改MIUI11刷机包（小米4的刷机包与小米3W/C的刷机包基本通用  PS:小米3W/C分别为小米3联通版/电信版，使用高通骁龙800处理器，官方包止于MIUI10；小米3TD为小米3移动版，使用nVidia Tegra 4处理器，官方包止于MIUI9；小米4使用高通骁龙801处理器，与小米W/C相同官方包止于MIUI10），然后我就去搜了一下小米3W的话题然后找到了那个MIUI11的刷机包。于是我想起了我的抽屉里搁置已久的换过不知道从哪里拆下来的屏幕的触摸起来质感极差的小米3W。毕竟MIUI11比MIUI10还是有一些提升的，这手机屏幕极其难用续航极其尿崩，也没法日用了，于是我就想试试刷一下我那个小米3W玩玩。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/categories/%E6%90%9E%E6%9C%BA/"/>
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+    <category term="刷机" scheme="https://minatoxeon.github.io/tags/%E5%88%B7%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>刷机小记-红米Note拯救基带</title>
+    <link href="https://minatoxeon.github.io/2020/03/20/%E5%88%B7%E6%9C%BA%E5%B0%8F%E8%AE%B0-%E7%BA%A2%E7%B1%B3Note%E6%8B%AF%E6%95%91%E5%9F%BA%E5%B8%A6/"/>
+    <id>https://minatoxeon.github.io/2020/03/20/%E5%88%B7%E6%9C%BA%E5%B0%8F%E8%AE%B0-%E7%BA%A2%E7%B1%B3Note%E6%8B%AF%E6%95%91%E5%9F%BA%E5%B8%A6/</id>
+    <published>2020-03-20T00:42:29.000Z</published>
+    <updated>2022-01-16T11:41:13.066Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;18号那天，我的亲戚（一直呆在单位）想在他的手机上登录他的妻子的钉钉账号以来帮忙打卡，我遂向他推荐了手机自带的应用双开功能。结果狡猾的钉钉居然知道这手机是那个亲戚一直用来打卡的手机（钉钉把这IMEI和IP地址什么的用的好啊），然后让他刷脸……于是我又提出了让她用微信视频聊天来帮忙刷脸。意料之中，钉钉一直报错，双开应用这一计失败告终。钉钉这个糟老头子坏得很！倒是亲戚还有一个之前用的换下来的手机——红米Note，但是不知道为啥没法连上WiFi，说是重置了手机还不行。于是我就帮他刷个机试试看，可能不是硬件问题呢。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/categories/%E6%90%9E%E6%9C%BA/"/>
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+    <category term="刷机" scheme="https://minatoxeon.github.io/tags/%E5%88%B7%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用网站</title>
+    <link href="https://minatoxeon.github.io/2020/03/06/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/"/>
+    <id>https://minatoxeon.github.io/2020/03/06/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/</id>
+    <published>2020-03-06T04:36:58.000Z</published>
+    <updated>2022-01-23T11:50:42.297Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;书签，记录自己那不可多得的芳华与期冀。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://minatoxeon.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://minatoxeon.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="学习" scheme="https://minatoxeon.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="网站" scheme="https://minatoxeon.github.io/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="科技" scheme="https://minatoxeon.github.io/tags/%E7%A7%91%E6%8A%80/"/>
+    
+  </entry>
+  
+</feed>

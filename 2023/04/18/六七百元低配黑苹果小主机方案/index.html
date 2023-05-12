@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-Hans">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta name="description" content="科技、文明、信念，样样Xeon如其名。" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>六七百元低配黑苹果小主机方案 |  Minato Xeon</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/images/Minato.png" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
+      />
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+       
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-159231519-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <link rel="stylesheet" href="/css/zhyBlogTitle.css">
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <link rel="alternate" href="/atom.xml" title="Minato Xeon" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-六七百元低配黑苹果小主机方案"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  六七百元低配黑苹果小主机方案
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/04/18/%E5%85%AD%E4%B8%83%E7%99%BE%E5%85%83%E4%BD%8E%E9%85%8D%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%B0%8F%E4%B8%BB%E6%9C%BA%E6%96%B9%E6%A1%88/" class="article-date">
+  <time datetime="2023-04-18T05:55:58.000Z" itemprop="datePublished">2023-04-18</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%90%9E%E6%9C%BA/">搞机</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">2.7k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">10 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>&emsp;&emsp;作为一个对硬件生态感兴趣的人，我长时间仅持有iPhone 13mini和iPad Pro 2021，但一直没有一台搭载macOS的电脑。半年前我曾拥有一台小米笔记本Pro 2017，那玩意装了六个实体机系统（Win 11正式版+Win 11 Beta+Win 11 Insider+macOS Ventura+Ubuntu 20.04 LTS+Fyde OS 13），后来我换了荣耀MagicBook V14之后，这台电脑就送回家给老爸当玩具了，所以我就失去了我的黑苹果。</p>
+<span id="more"></span>
+
+<p>&emsp;&emsp;但是事实上缺一台macOS的玩具有时候挺让人心里痒痒的，用习惯了Windows之后总想试试别的，并且我在iPad上用GoodNotes写的笔记要在电脑上看最好的方案还是使用macOS，用网页太难受了，而且像Xcode这种开发工具只能在macOS上运行。其实说白了就是图个新鲜，macOS很多人都说不适合做这个不适合做那个，但是不试试怎么知道有多不适合呢XD</p>
+<p>&emsp;&emsp;所以我考完研后，就想重新弄一台黑苹果回来，但是预算有限，没法再去一千多买一台笔记本回来。于是在酷安搜了一下黑苹果小主机，看到了HP ProDesk 400G2的方案，有点感兴趣。此后又在远景和b站以及Github上搜了一下相关的东西，觉得这个400G2好像是个不错的方案。再仔细一看，好家伙，这玩意用的是笔记本DDR4 2133MHz内存，硬盘同时支持nvme（虽然是PCIe 2.0 x4）和SATA接口，而寒假我刚把我的暗影精灵5Air笔记本从双8升级到了双16内存以应对毕业设计，把MagicBook V14从512G的SN810升级到了2T PM9A1，之前还在河畔捡过一个爱国嘉的240G SATA固态，于是这些材料我都有，四舍五入等于固态和内存不要钱（乐于是更坚定了我采用400G2方案的决心。</p>
+<p>&emsp;&emsp;然后我就买回来了，先给大家看看装好的图片：<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/20230512230442.png" alt="装好之后的小主机"/></p>
+<p>&emsp;&emsp;机器很小，真的很小很小。</p>
+<p>&emsp;&emsp;下面是我的方案和选择原因：</p>
+<ol start="0">
+<li><p><strong>机箱&amp;&amp;主板</strong>：<a target="_blank" rel="noopener" href="https://support.hp.com/us-en/document/c04843458" title="HP ProDesk 400 G2 迷你型台式电脑低压版准系统">HP ProDesk 400 G2 迷你型台式电脑低压版准系统</a>，支持1151针的6代带T的低压U（如我采用的i5-6600T）和同代奔腾（如G4500T），据说刷BIOS可以上6代标压U和魔改U如i7-6400T ES版测试处理器但是估计要魔改散热了。拥有一个nvme接口的无线网卡接口和一个nvme接口的硬盘接口，还有一个SATA硬盘口（支持2.5寸硬盘，不支持3.5寸）以及两个DDR4内存位。接口的话，有4个USB 3.0口和2个USB 2.0口（这口的数量把我惊到了），一个DP口和一个VGA口（<strong>没有HDMI</strong>），还有网口（似乎是百兆，不清楚）和3.5mm麦克风和音频接口，接口极其丰富。这玩意带65W原装电源价格在270左右，拼多多凑单叠券可以做到220元。兄弟们也可以选择800G2，相比400G2多了一个Type-C口，但是这个的EFI很少有人维护了，移植400G2的话还需要自己定制USB</p>
+</li>
+<li><p><strong>CPU</strong>：i5-6600T，价格在250元左右，pdd叠券凑单可以做到220元左右，不选择i5-6500T和i5-6400T的原因是这俩的价格和i5-6600T差距也就十来块，由此带来的那点性能差距不值得，而且我也不推荐大家买ES版处理器，坑比较深，大佬随意。不采用i7-6700T的原因也很简单，它的价格还在330+左右，贵了100性能提升也就那样，不如采用i5-6600T当玩具呢</p>
+</li>
+<li><p><strong>内存</strong>：三星DDR4 2666MHz 8G x2 SO-DIMM内存条，也就是笔记本内存条，我用这个的原因纯粹是因为多出来的，有人要买的话建议随便买一根8G DDR4的内存（比如铨兴的，我的暗影5Air新换的双16就是铨兴的，一共花了350，镁光颗粒，跑完MT5的extreme模式没有报错，目前做毕设日均占用16G左右峰值到过26G使用一切正常，没有蓝屏和黑屏过），<strong>频率只要是DDR4且高于2133MHz即可，看哪个频率的便宜买哪个</strong>。而且这个东西说实话你只是体验黑苹果的话8G就够了，毕竟性能就那么点，4G的话又有点小，除非你真准备在用macOS的同时在win下办公，不需要像我这样上16G，单条DDR4 2666的价格也就80以内吧，2133说不定能更便宜</p>
+</li>
+<li><p><strong>硬盘</strong>：Western Digital SN810 512G+爱国嘉240G固态，都是没用的所以就拿来用了，<strong>PCIe 2.0x4</strong>的接口带PCIe 4接口的硬盘也是够搞笑的，如果没有多的硬盘要买的话就随便买根1T或者2T的硬盘就行了，反正PCIe 4的国产杂牌硬盘现在2T也就400多块，不需要2T的话买1T甚至512就行了，<strong>如果单纯体验黑果连win都不需要的话，那256可能都够了</strong>，512也就100来块</p>
+</li>
+<li><p><strong>网卡</strong>：Broadcom BCM943224PCIEBT2 / Broadcom BCM943224PCIEBT2X / Broadcom BCM94360CS2白苹果拆机网卡，三个都支持双频WiFi，但是前两者的5GHz都只支持300Mbps，并且在我这里前两者在Win 11下装好驱动之后连接5GHz的WiFi经常会出现冻屏卡死的现象，两者的差距就在BCM943224PCIEBT2是蓝牙3.0，而BCM943224PCIEBT2X是蓝牙4.0，且二者在macOS 10.15之后在macOS下都不再免驱。而BCM94360CS2目前仍然免驱，会省下很多麻烦事，并且<strong>亲测运行正常之后macOS下BCM943224PCIEBT2X和BCM94360CS2都能随航和双向隔空投送，但是BCM943224PCIEBT2X就不支持拿iPad扩展屏幕，BCM94360CS2就可以</strong>，推测是5GHz信道的速率问题。此外，BCM943224PCIEBT2的两款即添加了AirportBCMfixup和BlueToolFixup之后，仍旧有可能出现蓝牙无法驱动的情况，这是因为网卡固件过旧，需要现在电脑上安装一次macOS Big Sur的任意版本之后将其固件版本升级至1.56或1.50（推测原理和升级MagSafe充电板类似，将MagSafe充电板插到MacBook上两分钟就能自动升级固件），然后格式化EFI和黑苹果硬盘重新安装Monterey和Ventura即可。所以本人还是推荐直接用BCM94360CS2网卡，毕竟免驱而且网速快。但是这两个都不是nvme接口的，<strong>所以同时还要购买转接卡或者反向转接线</strong>，BCM943224PCIEBT2转接线和反向转接卡都可以用（正向转接卡不能用，会被一颗电容挡住），<strong>BCM94360CS2只能用转接线了</strong>，空间不够。BCM943224PCIEBT2约25元，BCM94360CS2闲鱼买目前50元包邮（听说大船靠岸了），价格相差不多。但是如果BCM94360CS2又涨到七八十了，那各位还是根据自己情况继续思考有没有必要加这个钱上BCM94360CS2吧。反向转接卡25元左右，转接线30元左右。</p>
+</li>
+<li><p><strong>其他杂七杂八的东西</strong>：天线约20元（连接网卡用的，不用天线很可能蓝牙和WiFi直接罢工，买准系统的时候可以加钱让老板装好天线），DP线（毕竟DP可以跑1080 144Hz，2K没测），以及提升性能的贴纸（什么RTX就别贴了，那也太假了，贴个13代i7糊弄糊弄人就行了），<strong>还有HP薯条标贴纸</strong></p>
+</li>
+<li><p><strong>EFI</strong>：<a target="_blank" rel="noopener" href="https://github.com/QAQstar/Hackintosh-HP-ProDesk-400G2-Mini-EFI" title="EFI">QAQstar/Hackintosh-HP-ProDesk-400G2-Mini-EFI: Hackintosh OpenCore EFI for HP ProDesk 400 G2 Disktop Mini PC (HP400G2DM HP400G2 DM HP400 G2 DM HP 400 G2 DM)</a>，我加过这位大佬的QQ，和他讨论过网卡的问题，他的机器还在，还在继续更新。但是他这个EFI是针对网卡为BCM943224PCIEBT2的，<strong>如果用了BCM94360CS2网卡需要把AirportBCMfixup和BlueToolFixup驱动删除掉，同时还要在OpenCore Configurator里面的deviceproperties里面把pci14e4,4353改成pci14e4,43a0</strong>（硬件地址不一样），否则macOS下会引起蓝牙可用而WiFi不可用的情况，修改教程请网上自搜，或者问我要EFI——我也把这位大佬的EFI给fork出去了准备改成适用BCM94360CS2网卡的，但是最近忙于毕设没时间编辑修改。另外，<strong>如果要装Big Sur的话，需要在release页面往下翻翻到最后一个支持Big Sur版本的EFI（应该是0.7.6）</strong>，其实Monterey和Big Sur同理。</p>
+</li>
+<li><p><strong>BIOS</strong>：N23 Ver 02.58，先从<a target="_blank" rel="noopener" href="https://support.hp.com/cn-zh/drivers/selfservice/hp-prodesk-400-g2-desktop-mini-pc/7638316/model/7638317" title="BIOS更新">这里</a>下载，然后运行会解压在C盘，进解压后那个目录运行HPBIOSUPDREC.exe就行了</p>
+</li>
+</ol>
+<p>&emsp;&emsp;装黑苹果教程网上很多，我就不讲了，可自行找视频或者看<a target="_blank" rel="noopener" href="https://apple.sqlsec.com/5-%E5%AE%9E%E6%88%98%E6%BC%94%E7%A4%BA/5-5.html" title="国光大佬的macOS安装教程">国光大佬的macOS安装教程</a>，镜像我用的是黑果小兵的，需要在他的公众号文章赞助，也就一两块钱的事，但是镜像是真的稳，如果有别的镜像的话也可以自行尝试。</p>
+<p>&emsp;&emsp;<strong>另外别忘了注入三码！别忘记更新BIOS并设置BIOS！</strong></p>
+<p>&emsp;&emsp;BIOS里要设置的（画线的根据装的系统看情况设置）：</p>
+<ul>
+<li>关闭Secure Boot</li>
+<li>关闭Fast Boot</li>
+<li><del>关闭VT-d，或在config.plist中将Root/Kernel/Quirks/DisableIoMapper项设为True（在系统升级、系统安装等过程中必须关闭VT-d，否则有几率卡苹果）</del><strong>OpenCore 0.8.8及之后的EFI不需要关闭VT-d</strong></li>
+<li><del>关闭所有Power Management选项</del><strong>（似乎不再需要）</strong></li>
+<li>显存分配至少为64MB</li>
+</ul>
+<p>&emsp;&emsp;我装过macOS Big Sur 11.7，macOS Monterey 12.6.4，macOS Ventura 13.3.1都使用正常。<strong>但是由于驱动兼容问题，Ventura下屏幕会闪，尤其是在2K和4K大于60Hz的刷新率下观看4K视频，会闪的没法用，1080P 144Hz的显示器亲测还可以，只是偶尔会闪，不需要台前调度的朋友其实可以选择Monterey，一样支持iPad当屏幕扩展。</strong></p>
+<p>&emsp;&emsp;教程完毕。<br>&emsp;&emsp;未实现：麦克风及3.5mm音频输入接口无法工作，在11.3及更早系统中换成VoodooHDA.kext驱动就能正常使用麦克风和扬声器，但在后续版本中失效，其他功能应该均正常。具体请看大佬的GitHub相关页面。</p>
+<p>&emsp;&emsp;有老哥又要问了，这玩意性能这么垃圾，玩腻了怎么办呢？<strong>首先直接卖二手呗，还能不一定比分开卖卖的低，其次这玩意可以当机顶盒啊，我就打算在我玩腻了之后送给爸妈当机顶盒，现在他们用的智能电视看个啥都要开会员，开会员就罢了一家家吃相还那么难看，弄个小主机当机顶盒想看什么就下载什么，连个鼠标直接访问网站要自由得多，要看央视的话直接在百度搜直播源就行，岂不美哉？所以这下知道为什么我刚要提及2T的硬盘了吧hhh，其实理论上挂U盘也是可以的。</strong></p>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          Donate
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        共享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://minatoxeon.github.io/2023/04/18/%E5%85%AD%E4%B8%83%E7%99%BE%E5%85%83%E4%BD%8E%E9%85%8D%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%B0%8F%E4%B8%BB%E6%9C%BA%E6%96%B9%E6%A1%88/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%90%9E%E6%9C%BA/" rel="tag">搞机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A1%AC%E4%BB%B6/" rel="tag">硬件</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/2022/05/10/%E6%95%B0%E7%A0%81%E4%BA%A7%E5%93%81%E4%B9%9F%E8%A6%81%E6%9C%89%E8%BF%BD%E6%98%9F%E5%BC%8F%E6%80%9D%E7%BB%B4%E5%90%97/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">数码产品也要有追星式思维吗——浅谈我为什么不站队</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "xCerGDrVQOv5NwuxeGEHsgC9-gzGzoHsz",
+    app_key: "SBmXMbgyYDyfEQakbz0hyqaK",
+    path: window.location.pathname,
+    avatar: "mp",
+    placeholder: "告诉我们您的想法。",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2020-2023
+        <i class="ri-heart-fill heart_icon"></i> Minato Xeon Microsoft
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Supercharged by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+    <!-- 运行天数 -->
+    <ul>
+      <li><span id="runtime_span"></span></li>
+    </ul>
+  </div>
+    <script type="text/javascript">			
+      function show_runtime() {
+          window.setTimeout("show_runtime()", 1000);
+          X = new Date("02/27/2020 09:43:24");
+          Y = new Date();
+          T = (Y.getTime() - X.getTime());
+          M = 24 * 60 * 60 * 1000;
+          a = T / M;
+          A = Math.floor(a);
+          b = (a - A) * 24;
+          B = Math.floor(b);
+          c = (b - B) * 60;
+          C = Math.floor((b - B) * 60);
+          D = Math.floor((c - C) * 60);
+          runtime_span.innerHTML = "小站在各种崩坏中坚持了: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+      }
+    show_runtime();
+  </script>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/head.jpg" alt="Minato Xeon"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">🏡首页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">📁归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">📜分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">🏷️标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E8%AF%84%E6%B5%8B/">🪟评测</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://minatoxeon.lofter.com/">📷摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">🤺友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/player">📻音乐</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/games">🎮游戏</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2021/11/21/about/">🧔关于</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>别和金钱过不去。</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+ <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true,
+  };
+</script>
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+ 
+<script src="/js/clickBoom2.js"></script>
+ 
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+ 
+<script src="/js/dz.js"></script>
+ 
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=27961148&auto=1&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
+
+  </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":80,"vOffset":0},"mobile":{"show":true,"scale":0.5},"react":{"opacity":0.7},"log":false});</script></body>
+
+</html>

@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-Hans">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta name="description" content="科技、文明、信念，样样Xeon如其名。" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>语法技巧与注意事项 |  Minato Xeon</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/images/Minato.png" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
+      />
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+       
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-159231519-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <link rel="stylesheet" href="/css/zhyBlogTitle.css">
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <link rel="alternate" href="/atom.xml" title="Minato Xeon" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-语法技巧与注意事项"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  语法技巧与注意事项
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/03/03/%E8%AF%AD%E6%B3%95%E6%8A%80%E5%B7%A7%E4%B8%8E%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" class="article-date">
+  <time datetime="2020-03-03T12:02:03.000Z" itemprop="datePublished">2020-03-03</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">3.8k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">14 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <ol>
+<li><p>二维数组行列均从0开始，先行后列 </p>
+</li>
+<li><p>转置二维数组时只遍历上三角阵，如<code>if(i&lt;=j)和for(j=i;j&lt;n;j++)</code></p>
+</li>
+<li><p>按矩阵输出，外循环内要包含换行 </p>
+</li>
+<li><p>输入字符串以回车结尾时，</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">while((name[n]=getchar())!=&#x27;\n&#x27;)n++; </span><br><span class="line">name[n]=&#x27;\0&#x27;;</span><br></pre></td></tr></table></figure>
+<span id="more"></span></li>
+<li><p><code>str[i]-&#39;0&#39;</code>将数字字符转换成数字 </p>
+</li>
+<li><p>gets()能读空格，<code>gets(str); </code><br><code>scanf(&quot;%s&quot;,str);</code>不能读空格<br><code>puts()</code>输出字符串后会自动换行，而<code>printf(&quot;%s&quot;,str);</code>不会自动换行 </p>
+</li>
+<li><p>用C++有关东西的时候头文件得包括这些</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;iostream&gt; </span><br><span class="line">using namespace std;</span><br></pre></td></tr></table></figure></li>
+<li><p><code>#define For(x,a,b) for(x=a;x&lt;=b;x++)</code><br>方便的宏定义函数 </p>
+</li>
+<li><p><code>int *p=&amp;i;</code>等价于<code>int i,*p;  p=&amp;i; </code></p>
+</li>
+<li><p>自定义函数在传递参数时，数组的实参是a，形参是a[] </p>
+</li>
+<li><p><code>int a[100],*p;</code>则<code>p=a;</code>和<code>p=&amp;a[0];</code>等价；同理，<code>p=a+1;</code>和<code>p=&amp;a[1];</code>等价 </p>
+</li>
+<li><p>以下语句对数组求和 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sum=0; </span><br><span class="line">for(p=a;p&lt;=&amp;a[99];p++) </span><br><span class="line">(也可写作p&lt;=a+99) </span><br><span class="line">  sum+=*p;</span><br></pre></td></tr></table></figure>
+<p>或：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">for(i=0;i&lt;100;i++) </span><br><span class="line">  sum+=*(a+i); </span><br></pre></td></tr></table></figure>
+<p>或： </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p=a; </span><br><span class="line">sum=0; </span><br><span class="line">for(i=0;i&lt;100;++i) </span><br><span class="line">  sum+=p[i];</span><br></pre></td></tr></table></figure></li>
+<li><p>两个相同类型的指针相减，表示他们之间相隔的数组元素数目；两个指针不能相加、相乘或相除 </p>
+</li>
+<li><p>自定义函数的函数声明里面int a[]等价于int*a </p>
+</li>
+<li><p><code>pow(double,int)</code>，是求一个double的数的int次方 </p>
+</li>
+<li><p>最后用指针回传某种特定的字符串的时候，要逐位复制 </p>
+</li>
+<li><p><code>int a[10(可省略)]=&#123;1,2,3&#125;;</code><br><code>char b[10(可省略)]=&#123;&quot;Happy&quot;&#125;;</code><br><code>char b[10]=&quot;Happy&quot;;</code> </p>
+</li>
+<li><p>指针传回东西的时候要用*m(指针)=p(要传的东西) </p>
+</li>
+<li><p><code>system(&quot;CLS&quot;);</code>用于清屏；对于Windows来说使用DOS命令，DOS不区分大小写即可以写成cls；对于Linux来说区分大小写。</p>
+</li>
+<li><p>size_t和unsigned int<br>    size_t是一些C/C++标准在stddef.h中定义的。这个类型足以用来表示对象的大小。size_t的真实类型与操作系统有关。<br>在32位架构中被普遍定义为：<br><code>typedef   unsigned int size_t;</code><br>而在64位架构中被定义为：<br><code>typedef  unsigned long size_t;</code><br>    size_t在32位架构上是4字节，在64位架构上是8字节，在不同架构上进行编译时需要注意这个问题。而int在不同架构下都是4字节，与size_t不同；且int为带符号数，size_t为无符号数。<br>为什么有时候不用int，而是用size_type或者size_t:<br>   与int固定四个字节不同有所不同,size_t的取值range是目标平台下最大可能的数组尺寸,一些平台下size_t的范围小于int的正数范围,又或者大于unsigned int. 使用Int既有可能浪费，又有可能范围不够大。</p>
+</li>
+<li><p>布尔类型（bool）<br>布尔类型只有两个值，false和true，通常用来判断条件是否成立。如果变量值为 0 就是 false，否则为 true,布尔变量只有这两个值。如：<br>　　例1：<code>bool pb= -1.5;</code> // pb=true;<br>　　例2：<code>bool pt=0;</code> // pt=false;</p>
+</li>
+<li><p>vector是向量类型，可以容纳许多类型的数据，因此也被称为容器(可以理解为动态数组，是封装好了的类）。进行vector操作前应添加头文件<code>#include &lt;vector&gt;</code> 。<br>vector初始化：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1. //定义具有10个整型元素的向量（尖括号为元素类型名，它可以是任何合法的数据类型），不具有初值，其值不确定</span><br><span class="line">vector&lt;int&gt;a(10);</span><br><span class="line">2. //定义具有10个整型元素的向量，且给出的每个元素初值为1</span><br><span class="line">vector&lt;int&gt;a(10,1);</span><br><span class="line">3. //用向量b给向量a赋值，a的值完全等价于b的值</span><br><span class="line">vector&lt;int&gt;a(b);</span><br><span class="line">4. //将向量b中从0-2（共三个）的元素赋值给a，a的类型为int型</span><br><span class="line">vector&lt;int&gt;a(b.begin(),b.begin+3);</span><br><span class="line">5.  //从数组中获得初值</span><br><span class="line">int b[7]=&#123;1,2,3,4,5,6,7&#125;;</span><br><span class="line">vector&lt;int&gt; a(b,b+7）;</span><br></pre></td></tr></table></figure></li>
+<li><p>C语言计算算法运行时间：C/C++中的计时函数是<code>clock()</code>，而与其相关的数据类型是<code>clock_t</code>（一个长整型数）。<br>CLOCKS_PER_SEC：标准C的time.h头函数中宏定义的一个常数，表示一秒钟内CPU运行的时钟周期数，用于将clock()函数的结果转化为以秒为单位的量，但是这个量的具体值是与操作系统相关的。<br>应用举例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">  int main( void )  </span><br><span class="line">&#123;  </span><br><span class="line">   long    i = 10000000L;  </span><br><span class="line">   clock_t start, finish;  </span><br><span class="line">   double  duration;  </span><br><span class="line">   /* 测量一个事件持续的时间*/  </span><br><span class="line">   printf( &quot;Time to do %ld empty loops is &quot;, i );  </span><br><span class="line">   start = clock();  </span><br><span class="line">   while( i-- )      ;  </span><br><span class="line">   finish = clock();  </span><br><span class="line">   duration = (double)(finish - start) / CLOCKS_PER_SEC;  </span><br><span class="line">   printf( &quot;%f seconds\n&quot;, duration );  </span><br><span class="line">   system(&quot;pause&quot;);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>按位与（&amp;）和，或（丨），异或（^）运算都是属于位运算符<br>是在二进制形式上进行的运算符<br>①按位与运算：同1则1。<br>只有当两个二进制数同位上的都是1时才可以为1，否则为0。例子↓<br>与（&amp;）运算:<br>1010      <br>0110      <br>结果:0010<br>②按位或运算：同0则0。<br>只有当两个二进制数同位上的都是0时才是0，否则为1。例子↓<br>或（丨）运算:<br>1010<br>0110<br>结果:1110<br>③按位异或运算：相同则0,不同则1。<br>只有当同位上的两个数都同时为1或者为0时结果是0，否则为1例子↓<br>异或运算（^）:  <br>1010       0110<br>1110       1100<br>结果:0100       1010</p>
+</li>
+<li><p>动态分配内存相关<br>malloc: <code>void *malloc (unsigned size)</code>    动态分配一长度为size的连续空间，成功则返回起始地址的指针，失败则返回NULL。<br>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int *p;</span><br><span class="line">if((p=(int *)malloc(n*sizeof(int)))==NULL) exit(1);</span><br></pre></td></tr></table></figure>
+<p>calloc: <code>void *calloc (unsigned n, unsigned size)</code>     分配n个连续空间，长度为size，并且之后还把存储块里全部初始化位0。申请成功失败与malloc相同。<br>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">char *q;</span><br><span class="line">if((q=(char *)calloc(n,sizeof(char)))==NULL) exit(1);</span><br></pre></td></tr></table></figure>
+<p>分配的时候有些情况下一定要记得+1,比如给字符串最后放’\0’的空间，如果没有+1就会导致’\0’没地方放，从而导致字符串处理出错，如输出时无法正常结束，调试时提示<code>Program received signal SIGTRAP, Trace/breakpoint trap.</code>等等。<br>同时，<code>len*sizeof(char)+1</code>和<code>len*(sizeof(char)+1)</code>是一样的，因为<code>sizeof(char)=1</code>，即char只占一个字节（8个二进制位），int啥的就不一样了。</p>
+</li>
+<li><p><code>strstr(str1,str2)</code>函数用于判断字符串str2是否是str1的子串。如果是，则该函数返回str1字符串从str2第一次出现的位置开始到str1结尾的字符串；否则，返回NULL。</p>
+</li>
+<li><p>一种连接两个数字的小技巧<br><code>a&gt;&gt;2</code>是指将a所对应的二进制数向右移位2位（a可以是字符，数字等）（其实字符也算一种数字？只不过是字符的呈现形式），前面空余出来的地方补0，即原本10100111向右移位两位后变为00101001；同理，<code>a&lt;&lt;3</code>是将a所对应的二进制数向左移3位，后面多出来的部分补零，即10100111变为1010011100（当特殊情况时丢弃前几位，如本来它只能存储八位，这下前几位越界了，就只能把前几位丢掉了）<br>之前在24条处学习了与运算、或运算，在这里也有很大的用处。&amp;，按位与，可以把两个数或者字符等的二进制数字按位取与。于是，可以使用这种方法取出两者中的一者的二进制数的后几位。比如a=77，其对应二进制数为01001101；0x3是16进制数字，对应二进制数为00000011。那么，运行<code>a &amp; 0x3</code>，也就是01001101&amp;00000011,由于0与1或0取与均为0，所以就可以得到a的二进制字符的后两位，即00000001。同理，<code>a &amp; 0xf</code>就是01001101&amp;00001111，也就是将a的后四位取出来，即00001101。然后，我们再使用移位符……比如<code>(a &amp; 0xf)&lt;&lt;4</code>呢？当然是能得到000011010000了，暂时不看前面的无用的0（起码在这里无用），就成了11010000了。这看似并没有什么用处。但是，再加上或运算呢？就可以把两个二进制数首尾拼接起来了啊。比如a=01001101,b=11101001,现在要取a的后两位和b的前六位重新组合形成一个二进制数，就要先使用<code>a &amp; 0x3</code>取出最后两位，然后<code>(a &amp; 0x3)&lt;&lt;6</code>为后面留出一个六位的空间，随后再取出b的前六位，即<code>b&gt;&gt;2</code>，最后两位就没了，b被它的前六位覆盖。随后使用<code>(a &amp; 0x3)&lt;&lt;6 | b&gt;&gt;2</code>，即可把二者和为一体。<br>总的来说，&amp;负责取出数字的后几位，&lt;&lt;负责移动数字为待拼接的数字腾出空间，|则负责拼接数字。</p>
+</li>
+<li><p><code>getchar()</code>和<code>getch()</code>的区别：<br>①<code>getchar();</code>从键盘读取一个字符并输出，该函数的返回值是输入第一个字符的ASCII码；若用户输入的是一连串字符，函数直到用户输入回车时结束，输入的字符连同回车一起存入键盘缓冲区。若程序中有后继的getchar();函数，则直接从缓冲区逐个读取已输入的字符并输出，直到缓冲区为空时才重新读取用户的键盘输入。<br>②<code>getch();</code>接受一个任意键的输入，不用按回车就返回。该函数的返回值是所输入字符的ASCII码，且该函数的输入不会自动显示在屏幕上，需要putchar();函数输出显示。<code>getch();</code>函数常用于中途暂停程序方便调试和查看。<br>③<code>getchar();</code>和<code>getch();</code>的另一个区别就是所需要包含的头文件不同。<br><code>getchar();</code>用<code>#include&lt;stdio.h&gt;</code><br><code>getch();</code>用<code>#include&lt;conio.h&gt;</code></p>
+</li>
+<li><p>在Windows下，方向键由两个字节组成，分别为:’\244’和<br>‘\72’ up<br>‘\80’ down<br>‘\75’ left<br>‘\77’ right</p>
+</li>
+<li><p>波兰数学家Jan Lukasiewicz提出了另一种数学表示法——波兰表达式，它有两种表示形式：<br>把运算符写在操作数之前，称为波兰表达式(Polish Expression)或前缀表达式(Prefix Expression)，如+AB；把运算符写在操作数之后，称为逆波兰表达式(Reverse Polish Expression)或后缀表达式(Suffix Expression)，如AB+；前后缀表达式的出现是为了方便计算机处理，它的运算符是按照一定的顺序出现，所以求值过程中并不需要使用括号来指定运算顺序，也不需要考虑运算符号（比如加减乘除）的优先级。<br>先介绍中简单的人工转化方法：<br>假设有一个中缀表达式<code>a+b*c-(d+e)</code>，<br>①首先将这个中缀表达式的所有运算加括号<code>((a+(b*c))-(d+e))</code>；<br>②然后将所有运算符放到括号后面，这样就变成了<code>((a(bc)*)+(de)+)-</code>；<br>③把所有括号去掉<code>abc*+de+-</code>，最后得出的结果就是后缀表达式。</p>
+</li>
+<li><p>为一个n×m的二维数组分配动态内存<br>首先需要注意的是，不要这样一次性分配为数组内存空间：<br><code>int **arr = (int**)malloc(n *m * sizeof(int));</code><br>正确的做法是先分配行，再分配列。释放内存的时候，也要先释放列，再释放行。<br>注意，顺序反了的话，会把列的地址擦除，导致释放列时内存时找不到地址，程序崩溃。<br>正确的分配空间代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int **arr = (int **)malloc(n*sizeof(int *));</span><br><span class="line">for(i=0;i&lt;n;i++)</span><br><span class="line">arr[i] = (int *)malloc(m*sizeof(int));</span><br></pre></td></tr></table></figure>
+<p>正确的释放空间代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for(i=0;i&lt;n;i++)</span><br><span class="line">free(arr[i]);/*释放列*/</span><br><span class="line">free(arr);/*释放行*/</span><br></pre></td></tr></table></figure>
+<p>注：这种分配方式得到的其实并不是真正意义上的二维数组，因为其行与行之间的内存并不连续，虽然可以用下标arr[i][j]的方式访问，但当用指向该二维数组的指针来访问时候，不能通过指针值的增加来跨行获取元素，不过这种情况一般用的也不多，因此上述分配方式在大多数情况下的操作都能得到正确的结果。</p>
+</li>
+<li><p>记录一些没见过的ASCII码（以下记录的均为十进制）。<br>ESC:27<br>Backspace:8<br>方向键:由两个ASCII码组成，具体见29<br>Shift:19<br>CapsLock:20<br>Tab:9<br>Enter:13</p>
+</li>
+<li><p>转义字符<br><code>\a</code> 响铃(BEL) 007<br><code>\b</code> 退格(BS) 008<br><code>\f</code> 换页(FF) 012<br><code>\n</code> 换行(LF) 010<br><code>\r</code> 回车(CR) 013<br><code>\t</code> 水平制表（表示空四个字符，也称缩进，相当于按一下Tab键）(HT) 009<br><code>\v</code> 垂直制表(VT) 011<br><code>\\</code> 反斜杠 092<br><code>\&#39;</code> 单引号字符 039<br><code>\&quot;</code> 双引号字符 034<br><code>\0</code> 空字符(NULL) 000<br><code>\ddd</code> 任意字符 三位八进制<br><code>\xhh</code> 任意字符 二位十六进制</p>
+</li>
+<li><p>文件打开方式r+与a+的区别<br>如果仅仅是读：r+就可以读取到原文件内容（使用read）；a+是追加模式，读的时候是将指针已经放在文件末尾了，所以读取到的文件是空的。<br>如果仅仅是写：r+是从头开始写的，你写了多少就会覆盖原文件多少；a+因为指针已经放在文件末尾了，所以你写的时候就是追加在后面的。<br>如果是先读在写：这样就有点麻烦了。r+当你使用read读完之后再使用write写的时候，指针已经在文件末尾了，所以你再写的时候就感觉是追加在末尾似的。a+因为你先读的时候指针已经在末尾了，读不到任何内容。</p>
+</li>
+<li><p>以w方式打开已存在的文件然后不做改动再直接关闭，会清除文件的全部内容。</p>
+</li>
+<li><p>scanf和fscanf使用%s读取字符串时，能读取中文，但是不能读取空格。</p>
+</li>
+<li><p><code>#ifndef</code>是”if not defined”的简写，是宏定义的一种，它是可以根据是否已经定义了一个变量来进行分支选择，一般用于调试等。<br><code>#ifndef</code> 标识1 //判断”标识1”是否定义，如果被定义则返回假，如果没有被定义则返回真。<br>例如：<br>语句1 <code>#ifndef</code> 标识1<br>语句2 <code>#define</code> 标识1<br>语句3 <code>#endif</code><br>语句4 <code>……</code><br>语句5 <code>……</code><br>该段代码意思是：如果标识1没有被定义，则重定义标识1，即执行语句2、语句3;如果标识1已经被定义，则直接跳过语句2、语句3，直接执行语句4、语句5、……<br>备注：<code>#ifndef</code> 和 <code>#endif</code> 要一起使用，如果丢失<code>#endif</code>，可能会报错。</p>
+</li>
+<li><p>typedef为C语言的关键字，作用是为一种数据类型定义一个新名字。这里的数据类型包括内部数据类型（int,char等）和自定义的数据类型（struct等）。<br>在编程中使用typedef目的一般有两个，一个是给变量一个易记且意义明确的新名字，另一个是简化一些比较复杂的类型声明。<br>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">typedef char Line[81];</span><br><span class="line">Line　text,line;</span><br><span class="line">getline(text);</span><br></pre></td></tr></table></figure>
+<p>相当于</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">char　line[81];</span><br><span class="line">char　text[81];</span><br></pre></td></tr></table></figure></li>
+<li><p>i++是先赋值，然后再自增；++i是先自增，后赋值。<br>用代码表示就是：<br>若<code>a = i++;</code>则等价于<code> a=i;i=i+1;</code><br>而<code>a = ++i;</code>则等价于<code> i=i+1;a=i;</code></p>
+</li>
+</ol>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          Donate
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        共享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://minatoxeon.github.io/2020/03/03/%E8%AF%AD%E6%B3%95%E6%8A%80%E5%B7%A7%E4%B8%8E%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C%E8%AF%AD%E8%A8%80/" rel="tag">C语言</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2020/03/06/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            常用网站
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/02/29/%E6%9C%BA%E5%9E%8B%E4%BB%A3%E7%A0%81/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">机型代码</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "xCerGDrVQOv5NwuxeGEHsgC9-gzGzoHsz",
+    app_key: "SBmXMbgyYDyfEQakbz0hyqaK",
+    path: window.location.pathname,
+    avatar: "mp",
+    placeholder: "告诉我们您的想法。",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2020-2023
+        <i class="ri-heart-fill heart_icon"></i> Minato Xeon Microsoft
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Supercharged by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+    <!-- 运行天数 -->
+    <ul>
+      <li><span id="runtime_span"></span></li>
+    </ul>
+  </div>
+    <script type="text/javascript">			
+      function show_runtime() {
+          window.setTimeout("show_runtime()", 1000);
+          X = new Date("02/27/2020 09:43:24");
+          Y = new Date();
+          T = (Y.getTime() - X.getTime());
+          M = 24 * 60 * 60 * 1000;
+          a = T / M;
+          A = Math.floor(a);
+          b = (a - A) * 24;
+          B = Math.floor(b);
+          c = (b - B) * 60;
+          C = Math.floor((b - B) * 60);
+          D = Math.floor((c - C) * 60);
+          runtime_span.innerHTML = "小站在各种崩坏中坚持了: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+      }
+    show_runtime();
+  </script>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/head.jpg" alt="Minato Xeon"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">🏡首页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">📁归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">📜分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">🏷️标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E8%AF%84%E6%B5%8B/">🪟评测</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://minatoxeon.lofter.com/">📷摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">🤺友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/player">📻音乐</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/games">🎮游戏</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2021/11/21/about/">🧔关于</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>别和金钱过不去。</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+ <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true,
+  };
+</script>
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+ 
+<script src="/js/clickBoom2.js"></script>
+ 
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+ 
+<script src="/js/dz.js"></script>
+ 
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=27961148&auto=1&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
+
+  </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":80,"vOffset":0},"mobile":{"show":true,"scale":0.5},"react":{"opacity":0.7},"log":false});</script></body>
+
+</html>

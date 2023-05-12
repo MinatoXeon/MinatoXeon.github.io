@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-Hans">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta name="description" content="科技、文明、信念，样样Xeon如其名。" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>Win 10 Pro远程桌面使用技巧 |  Minato Xeon</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/images/Minato.png" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
+      />
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+       
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-159231519-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <link rel="stylesheet" href="/css/zhyBlogTitle.css">
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <link rel="alternate" href="/atom.xml" title="Minato Xeon" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-Win-10-Pro远程桌面使用技巧"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Win 10 Pro远程桌面使用技巧
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/01/19/Win-10-Pro%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" class="article-date">
+  <time datetime="2021-01-19T12:12:00.000Z" itemprop="datePublished">2021-01-19</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">4k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">13 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>之前购买了心水一年之久的iPad Pro 2018 11 inch，为了使iPad避免沦为“买前生产力，买后爱奇艺”的尴尬局面，于是总想让iPad Pro变得有那么一点生产力。后来在酷安上看到有大佬@biugi 发了一个不使用其他第三方软件而使用路由器端口映射实现远程桌面的教程，并且当时使用的电脑暗影精灵5 Air 过于厚重，于是萌生了使用iPad Pro来使电脑更加便携的想法。但是由于学校里面的宿舍网络的IP地址都是内网IP而不是公网IP，所以当时无法使用路由器端口转接，也就是无法在非同一个Wifi网络下实现远程桌面。经过自己摸索，实现了一种较为简单的可以说是免费的基于Windows 10的远程桌面方案。之前酷安大佬的方法我也会在下面给出，如果可以获得自己电脑的公网IP可以自己试一下那个方案。事实上我认为那个方法更加好用，但是在学校这种没有公网IP的环境下只能退而求其次。提前说明，这个远程桌面的延迟并不能达到可以玩游戏的水平，并且由于微软自身软件原因存在一些Bug（如偶现客户端闪退，及一些硬件适配问题等），经本人测试仅能达到可以写代码、写文档的水准。</p>
+<span id="more"></span>
+<h2 id="第一步：升级Windows-10"><a href="#第一步：升级Windows-10" class="headerlink" title="第一步：升级Windows 10"></a>第一步：升级Windows 10</h2><p>这个教程实现的大前提就是确保你的电脑Windows版本是以下几个之一：Windows 10 Professional, Windows 10 ProfessionalWorkstation, Windows 10 Education, Windows 10 Enterprise, Windows 10 LTSC，即Windows 10的专业版、专业工作站版、教育版、企业版和企业长期支持版。一般平价笔记本电脑和直接购买的平价台式整机的出厂系统版本应该是Windows 10 Home，也就是家庭中文版，贵一些的电脑应该是专业版。如果还不清楚的话，可以前往Windows的设置-&gt;系统-&gt;关于中查看。如图所示，笔者使用的系统是Windows 10 ProfessionalWorkstation。<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-19%20212816.png" alt="系统显示为专业工作站版" title="专业工作站版"><br>如果系统仍在家庭中文版，需要自行升级到上述的几个系统版本，其中前4个版本可以通过系统的设置-&gt;更新和安全-&gt;激活一栏中选择更改密钥并输入四者相对应的产品密钥即可。最后一个版本无法通过直接输入密钥获取，需要重新安装系统。请自行查阅教程以升级系统，或者联系本文作者协助处理。</p>
+<h2 id="第二步：在手机端或者电脑端安装客户端"><a href="#第二步：在手机端或者电脑端安装客户端" class="headerlink" title="第二步：在手机端或者电脑端安装客户端"></a>第二步：在手机端或者电脑端安装客户端</h2><p>我们需要一个支持Remote Desktop Protocol (RDP，远程桌面协议)的控制端软件，我用的是微软自家的微软远程桌面，直接在App Store， Googly Play以及各大手机自带应用商店搜索微软远程桌面或Remote Desktop应该就可以看到，图标和界面如下图所示。<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/IMG_0967.PNG" alt="微软远程桌面的图标及详情" title="图标及详情"><br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/IMG_0964.jpg" alt="软件主界面" title="主界面"></p>
+<h2 id="第三步：开启远程桌面"><a href="#第三步：开启远程桌面" class="headerlink" title="第三步：开启远程桌面"></a>第三步：开启远程桌面</h2><p> 进入系统的设置-&gt;系统-&gt;远程桌面，打开“启用远程桌面”下面的开关，并且保持下方的两个选项全部被勾选。<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/IMG_0970.PNG" alt="远程桌面设置界面" title="设置界面"></p>
+<h2 id="第四步：查看Windows的IPV4地址"><a href="#第四步：查看Windows的IPV4地址" class="headerlink" title="第四步：查看Windows的IPV4地址"></a>第四步：查看Windows的IPV4地址</h2><p>在Windows端，同时按下Win+R，弹出如下窗口，输入cmd，点确定：<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-23%20111414.png" alt="运行界面" title="运行界面"><br>得到如图所示窗口，输入”ipconfig”：<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-23%20111555.jpg" alt="打开的窗口" title="打开的窗口"><br>按下回车键后得到如图所示的界面：<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-23%20122233.png" alt="显示一堆奇怪的东西" title="显示一堆奇怪的东西"><br>如果电脑连接的是WiFi，则查看如图所示项的IPV4地址，如果电脑连接的是以太网（网线连接），则查看“以太网适配器 以太网”项下的IPV4地址。</p>
+<h2 id="第五步：客户端下配置远程电脑"><a href="#第五步：客户端下配置远程电脑" class="headerlink" title="第五步：客户端下配置远程电脑"></a>第五步：客户端下配置远程电脑</h2><p>打开安装在手机或者平板电脑上的微软远程桌面，点击右上角的“+”符号，选择添加电脑：<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/IMG_0971.jpg" alt="选择添加电脑" title="选择添加电脑"><br>弹出如图所示的一个窗口：<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/IMG_0972.jpg" alt="一个有很多选项的窗口" title="一个有很多选项的窗口"><br>然后，在电脑名称里填写刚才复制的IPV4地址；在用户账户中添加电脑登陆的Microsoft账号和密码，并选中添加的用户账户；友好名称的缺省值为可选，保持该缺省值；管理员模式的开关打开；麦克风、相机、剪贴板、存储等设备和音频重定向的选项可以根据自己的需求选上，功能可以自己设置后体验。其他没有提到的选项建议不做更改，使用软件的缺省值。设置完毕以后，点击存储保存此设置好的电脑。<br>设置完成后，点击刚才配置好的电脑，会显示一个页面，如图所示。当显示正在配置远程电脑时，代表刚才的设置生效了，你现在可以在同一局域网下使用远程桌面。<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/IMG_0973.jpg" alt="当显示此选项时代表配置成功" title="当显示此选项时代表配置成功"><br>如果提示错误，请反复检查前几步的设置，将提示的错误在搜索引擎上进行查找，如果无法找到错误可以联系笔者。</p>
+<h1 id="按照需求分流"><a href="#按照需求分流" class="headerlink" title="按照需求分流"></a>按照需求分流</h1><h1 id="方案1：直接在同一局域网下使用或者使用路由器端口映射（不建议使用）"><a href="#方案1：直接在同一局域网下使用或者使用路由器端口映射（不建议使用）" class="headerlink" title="方案1：直接在同一局域网下使用或者使用路由器端口映射（不建议使用）"></a>方案1：直接在同一局域网下使用或者使用路由器端口映射（不建议使用）</h1><p>首先说明，并不是所有人都能够使用路由器端口映射，如果你无法取得公网IP则此方法行不通（如果不确定就可以试试看，端口映射后发生错误则说明采用的IP不是公网IP）。如果想要一个公网IP，可以尝试向运营商或者营业厅或者单位组织的上级寻求帮助，但是不一定会成功，视地区和应用场景而定——例如，在有的学校中被分配公网IP的几率极小，那么此时你只能选择在同一局域网下使用或者查看内网穿透使用方案。如果上网没有经过路由器，也有极大概率无法使用这个端口映射方案。<br>那么，端口映射方案，现在开始。如果你想使用内网穿透，可以直接跳过这个方案看下一个方案。</p>
+<h2 id="第六步：端口映射"><a href="#第六步：端口映射" class="headerlink" title="第六步：端口映射"></a>第六步：端口映射</h2><p>登录路由器的管理页面，不同的路由器的该页面不同，例如我家的TP-LINK路由器TL-WDR7660千兆版的管理网址是192.168.0.1，之前使用的一个TP-LINK的150M路由器的管理网址是192.168.1.1。现在我进入了这个页面，如图所示，提示需要输入管理员密码。注意管理员密码与设置的WiFi密码不一定相同，两个密码没有直接关联。如果没有更改过这个管理员密码，该密码通常可以在路由器的背面贴标，路由器说明书或者包装盒上寻找到，或者可以针对特定品牌到搜索引擎上寻求相关帮助。如果忘记了之前自己更改的这个管理员密码，可以按照页面提示重置路由器，也就可以重新设置管理员密码。注意，不同品牌的路由器或是早期的路由器在密码的上方有可能还会有一个用户名的填写项，这样的路由器的默认用户名和密码一般是admin，如果更改过则需要输入更改后的用户名和密码。<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-23%20144515.png" alt="此页面提示输入管理员密码" title="此页面提示输入管理员密码"><br>输入之后就来到了路由器管理页面的首页，我的路由器的页面如下图所示。<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-23%20144802.png" alt="我的路由器管理页面首页" title="我的路由器管理页面首页"><br>在这个页面内四处点点，端口映射所在的界面对不同路由器来说，有的是功能列表，有的是更多功能，有的是应用管理。在类似于这样的页面中我们可以找到类似于“端口映射”的选项，有的路由器把这个功能称为端口转发、虚拟服务器等。如果找不到，可以将对应品牌或者型号的路由器拿到搜索引擎上去查找。我的路由器是在应用管理界面的虚拟服务器选项，如下图所示。<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-23%20145736.png" alt="虚拟服务器" title="虚拟服务器"><br>点进去之后是一个类似于这样的页面。图中我打开了帮助界面，如有疑问可以参考。<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-23%20150614.png" alt="端口映射相关界面的大致样式" title="端口映射相关界面的大致样式"><br>找到自己的公网IP，这个IP一般可以通过百度搜索“IP”直接获得，如果是通过路由器WAN口有线连接则可以在路由器的某个页面找到“WAN IP”，旁边的数值是自己的公网IP。如果路由器中看到的这个WAN IP和百度搜索“IP”获得的值不相同，那么大概率你无法通过端口映射来实现远程桌面。你也可以将两个IP分别运用到下面的教程中进行尝试。<br>如图，我的IP地址是这样的。IP地址信息和旁边的地址信息已被处理。<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-23%20152659.png" alt="百度搜索IP后得到的页面的一部分" title="百度搜索IP后得到的页面的一部分"><br>在刚才打开的路由器端口映射界面中，点击添加，然后开始添加新的映射，如图所示。<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-23%20153638.png" alt="端口映射的几个设置项" title="端口映射的几个设置项"><br>第一个常用服务器选项我们不必理会（如果没有这个选项可以直接无视我刚才左边的话），在外部端口随便填写一个不是很大的数值，例如3289；在内部端口中，对于Windows来说默认的内部端口是3389，所以我们将3389填入。如果你想要在这个路由器下控制对应的多个电脑，你需要通过修改注册表来更改这个端口，然后在填写内部端口的时候填写你修改注册表的那个数值。注意，内部端口和外部端口在数值上没有直接关联。具体更改远程桌面内部端口的操作步骤请善用搜索引擎。然后在旁边的IP地址处填写从cmd中得到的IPV4地址（注意不是这一步中百度得到的IP），协议使用缺省值“ALL（全部）”。设置好后，点击确定或者保存等选项来完成添加。例如，我的IPV4地址假如是192.168.0.2，并且我没有修改过注册表那么我可以这样填：<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-23%20155120.png" alt="端口映射设置完成（尚未保存）" title="端口映射设置完成"></p>
+<h2 id="第七步：修改远程桌面客户端的电脑名称"><a href="#第七步：修改远程桌面客户端的电脑名称" class="headerlink" title="第七步：修改远程桌面客户端的电脑名称"></a>第七步：修改远程桌面客户端的电脑名称</h2><p>复制刚才得到的公网IP，回到手机或平板电脑上，点击最开始添加的电脑的右下角的三个小点点，然后选择“编辑”，如图所示：<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/IMG_0974.jpg" alt="点击编辑" title="点击编辑"><br>然后点击电脑名称，输入内容为“百度得到的IP/WAN IP:外部端口编号”。例如，假如我百度得到的IP是123.456.78.888，按照刚才我设置的865的外部端口，我应该输入“123.456.78.888:865”。填写完成后，点击返回即可。</p>
+<p>通过端口映射来进行真正的远程控制的方案的教程已经结束，请启动刚才设置好的电脑来尝试是否可以使用。如不能使用，可以考虑修改内部端口和外部端口。不过，不能使用的大概率原因是你百度得到的IP不是公网IP。如果不论怎么尝试都无法成功，那么请看下一个方案。</p>
+<h1 id="方案2：内网穿透"><a href="#方案2：内网穿透" class="headerlink" title="方案2：内网穿透"></a>方案2：内网穿透</h1><p>灵感源自之前和朋友远程联机游玩Minecraft，使用内网穿透可以使多个玩家宛如在同一个局域网下联机。后来受到端口映射启发，想到了之前用的这个内网穿透，遂进行移植。<br>那么，内网穿透方案，现在开始。</p>
+<h2 id="第六步：部署内网穿透客户端"><a href="#第六步：部署内网穿透客户端" class="headerlink" title="第六步：部署内网穿透客户端"></a>第六步：部署内网穿透客户端</h2><p>内网穿透工具我这里推荐Sakura Frp，之前基本功能完全免费且够用，根据工信部及法律的规定，2021年1月20日开始需要支付1元来进行实名认证方可使用大陆节点，此外每天签到都送1-4G的穿透流量，且此流量近期尚未清零过。据本人测试，使用iPad的Retina分辨率（即2384*1665），半小时消耗的流量在300-500M不等，所以即使签到每次都只能获得1G流量（事实上，根据本人实测，这几个数字被抽到的概率比较平均），也足够我们一天使用1小时，累积后就能连续使用很长时间，个人感觉还可以。如果对实名认证比较排斥，可以使用其他内网穿透工具，例如natapp、cpolar、量子互联、ngrok、路由侠、神卓互联、浮居内网穿透等。不过据初步调查，这些竞品要么免费隧道数量过少，要么每天重置/随机更改穿透隧道，但是也有的不限速不限量（如量子互联），可以根据个人喜好采用这些竞品来进行配置。下面我以Sakura Frp为例来进行讲解。<br>首先进入你所选的内网穿透工具的网页，注册账号并登录进入首页或管理面板，例如Sakura Frp的管理面板如下图所示。<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-23%20170255.png" alt="樱花穿透的管理页面" title="管理面板"><br>然后下载对应的客户端，下载后视不同客户端使用刚才注册的账号或者相应的访问密钥登录相应的客户端。下载安装等详细步骤不再赘述。</p>
+<h2 id="第七步：设置穿透"><a href="#第七步：设置穿透" class="headerlink" title="第七步：设置穿透"></a>第七步：设置穿透</h2><p>进入刚安装并登录好的内网穿透客户端，点击添加新隧道之类的图标，例如下图所示。其他的内网穿透可能要在其官网添加隧道而不是在其客户端上，请善用该网站的帮助文档。<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-23%20171104.png" alt="点击“+”添加新隧道" title="添加隧道"><br>打开之后是一个有着和下图差不多填入项的类似页面。<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-23%20172124.png" alt="添加新隧道的页面" title="添加新隧道的页面"><br>在本地IP处填写127.0.0.1；在端口中，对于Windows来说默认的内部端口是3389，所以我们将3389填入。如果你想要在这个路由器下控制对应的多个电脑，你需要通过修改注册表来更改这个端口，然后在填写内部端口的时候填写你修改注册表的那个数值。具体更改远程桌面内部端口的操作步骤请善用搜索引擎。隧道名称可以任意写一个，例如“remoteDesktop”；隧道类型选择TCP，远程端口可以使其随机产生或自定义一个不是很大的数值。如果有选择服务器的选项，我们可以根据自己使用网络的位置和网络服务商选择一个适合自己的服务器。然后点击创建即可。随后在“隧道列表”之类的标签页上打开开关启用隧道即可。</p>
+<h2 id="第八步：修改远程桌面客户端的电脑名称"><a href="#第八步：修改远程桌面客户端的电脑名称" class="headerlink" title="第八步：修改远程桌面客户端的电脑名称"></a>第八步：修改远程桌面客户端的电脑名称</h2><p>开启内网穿透隧道后，在日志栏会有类似下图的提示，或者弹出对话框提示，会给出一个网址。<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-01-23%20173424.png" alt="给出的网址" title="给出的网址"><br>复制刚才得到的网址，回到手机或平板电脑上，点击最开始添加的电脑的右下角的三个小点点，然后选择“编辑”，如图所示：<br><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/IMG_0974.jpg" alt="点击编辑" title="点击编辑"><br>然后点击电脑名称，输入刚才复制得到的网址。填写完成后，点击返回即可。</p>
+<p>此时，如果配置正确，那么内网穿透的方案已经可以使用，教程结束。如果发生错误，请重新按照教程检查自己的每一步是否正确。如果想要像端口转发那样实现全自动，可以在内网穿透客户端中设置开机自启动（如果有的话），实测不会占用过多开机时间。</p>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          Donate
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        共享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://minatoxeon.github.io/2021/01/19/Win-10-Pro%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%90%9E%E6%9C%BA/" rel="tag">搞机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2021/01/30/%E8%AF%84%E6%B5%8B-HUAWEI-Mate-30-Pro%EF%BC%8C%E4%B8%80%E5%8F%B0%E9%AB%98%E7%AB%AF%E7%9A%84%E8%89%BA%E6%9C%AF%E5%93%81%20-%20%E5%89%AF%E6%9C%AC/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            评测-HUAWEI Mate 30 Pro，一台高端的艺术品
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/11/06/2020%E6%80%BB%E7%BB%93%E4%B8%8E%E5%B1%95%E6%9C%9B/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">2020总结与展望：悟以往之不谏，知来者之可追</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "xCerGDrVQOv5NwuxeGEHsgC9-gzGzoHsz",
+    app_key: "SBmXMbgyYDyfEQakbz0hyqaK",
+    path: window.location.pathname,
+    avatar: "mp",
+    placeholder: "告诉我们您的想法。",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2020-2023
+        <i class="ri-heart-fill heart_icon"></i> Minato Xeon Microsoft
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Supercharged by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+    <!-- 运行天数 -->
+    <ul>
+      <li><span id="runtime_span"></span></li>
+    </ul>
+  </div>
+    <script type="text/javascript">			
+      function show_runtime() {
+          window.setTimeout("show_runtime()", 1000);
+          X = new Date("02/27/2020 09:43:24");
+          Y = new Date();
+          T = (Y.getTime() - X.getTime());
+          M = 24 * 60 * 60 * 1000;
+          a = T / M;
+          A = Math.floor(a);
+          b = (a - A) * 24;
+          B = Math.floor(b);
+          c = (b - B) * 60;
+          C = Math.floor((b - B) * 60);
+          D = Math.floor((c - C) * 60);
+          runtime_span.innerHTML = "小站在各种崩坏中坚持了: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+      }
+    show_runtime();
+  </script>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/head.jpg" alt="Minato Xeon"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">🏡首页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">📁归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">📜分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">🏷️标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E8%AF%84%E6%B5%8B/">🪟评测</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://minatoxeon.lofter.com/">📷摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">🤺友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/player">📻音乐</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/games">🎮游戏</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2021/11/21/about/">🧔关于</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>别和金钱过不去。</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+ <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true,
+  };
+</script>
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+ 
+<script src="/js/clickBoom2.js"></script>
+ 
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+ 
+<script src="/js/dz.js"></script>
+ 
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=27961148&auto=1&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
+
+  </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":80,"vOffset":0},"mobile":{"show":true,"scale":0.5},"react":{"opacity":0.7},"log":false});</script></body>
+
+</html>
