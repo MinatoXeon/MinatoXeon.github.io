@@ -13,7 +13,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>人生与未来 |  Minato Xeon</title>
+      <title>智慧能源2——JuMP、MIDACO和plasmo |  Minato Xeon</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/images/Minato.png" />
@@ -59,9 +59,6 @@ ga('send', 'pageview');
         }
       </style>
     <link rel="alternate" href="/atom.xml" title="Minato Xeon" type="application/atom+xml">
-<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
-<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
-<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
 </head>
   </html>
 </html>
@@ -77,8 +74,8 @@ ga('send', 'pageview');
     <main class="content on">
       <section class="outer">
   <article
-  id="player-"
-  class="article article-type-player"
+  id="post-智慧能源2"
+  class="article article-type-post"
   itemscope
   itemprop="blogPost"
   data-scroll-reveal
@@ -88,28 +85,100 @@ ga('send', 'pageview');
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  人生与未来
+  智慧能源2——JuMP、MIDACO和plasmo
 </h1>
  
 
       
     </header>
-       
+     
+    <div class="article-meta">
+      <a href="/2024/03/12/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%902/" class="article-date">
+  <time datetime="2024-03-11T16:29:09.000Z" itemprop="datePublished">2024-03-12</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">1.8k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">6 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
     <div class="article-entry" itemprop="articleBody">
        
-  <h2 id="我所拣选的歌曲："><a href="#我所拣选的歌曲：" class="headerlink" title="我所拣选的歌曲："></a>我所拣选的歌曲：</h2><h4 id="精简版（按优先级排序）："><a href="#精简版（按优先级排序）：" class="headerlink" title="精简版（按优先级排序）："></a>精简版（按优先级排序）：</h4>
-    <div id="aplayer-UrDmsEYY" class="aplayer aplayer-tag-marker meting-tag-marker"
-         data-id="7241458793" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#fa243c"
-    ></div>
+  <h1 id="作业1"><a href="#作业1" class="headerlink" title="作业1"></a>作业1</h1><blockquote>
+<p>Julia运行一些JuMP的例子。</p>
+</blockquote>
+<span id="more"></span>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-11 144437.png" alt="JuMP示例运行结果"/>
 
-<h4 id="完整版（按最近时间排序）："><a href="#完整版（按最近时间排序）：" class="headerlink" title="完整版（按最近时间排序）："></a>完整版（按最近时间排序）：</h4>
-    <div id="aplayer-NnYpHqNG" class="aplayer aplayer-tag-marker meting-tag-marker"
-         data-id="1924775645" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#fa243c"
-    ></div>
+<h1 id="作业2"><a href="#作业2" class="headerlink" title="作业2"></a>作业2</h1><blockquote>
+<p>MIDACO学习一下：<br>a. Python或Julia调用；<br>b. 黑箱优化的逻辑</p>
+</blockquote>
+<h2 id="a"><a href="#a" class="headerlink" title="a."></a>a.</h2><p>从网站下载midaco.jl/.py，并在同一文件夹内放入midacoJL.dll/midacopy.dll，然后运行网页内的example（此处使用的是NLP的示例）</p>
+<p>分析示例的代码逻辑：</p>
+<p>以Julia语言的代码为例，Python代码的逻辑与之完全相同，只是语法略有差异（如Python代码中列表的索引从0开始，而Julia代码中数组的索引从1开始）。</p>
+<ol>
+<li>定义目标函数，如示例中的目标函数为$f(x)=(x_1-1)^2+(x_2-2)^2+(x_3-3)^2+(x_4-4)^2+1.23456789$</li>
+<li>使用字符串key存放MIDACO的许可证密钥，用于激活MIDACO。</li>
+<li>定义了两个字典<code>problem</code>和<code>option</code>，它们分别存储了问题的参数和算法的选项。在<code>problem</code>字典中，需要设置目标函数个数、变量个数、约束个数、变量上下界等参数；在<code>option</code>字典中，需要设置函数评价最大次数、算法运行的最长时间、输出最优解的频率、是否保存至文本文件等参数。</li>
+<li>调用<code>solution = midaco (problem, option, key)</code>，执行MIDACO算法，将问题参数、算法选项和许可证密钥作为输入，返回字典<code>solution</code>作为输出。<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-12 012054.png" alt="Julia运行示例代码"/>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-12 002306.png" alt="Python运行示例代码"/>
+由于代码逻辑完全相同，从结果来看，果然没什么区别。</li>
+</ol>
+<h2 id="b"><a href="#b" class="headerlink" title="b."></a>b.</h2><p>MIDACO的黑箱算法逻辑：</p>
+<ol>
+<li>首先MIDACO使用一种称为蚁群优化（ACO）的进化算法，通过模拟蚂蚁在寻找食物时留下的信息素来搜索最优解。MIDACO可以处理连续、离散或混合整数变量，以及单目标或多目标优化问题。</li>
+<li>MIDACO使用Oracle惩罚方法约束条件转化为惩罚项，加到目标函数上，从而实现约束优化。Oracle惩罚方法是一种自适应的方法，可以根据问题的特点动态调整惩罚系数。</li>
+<li>然后MIDACO使用一种基于伪梯度的回溯线搜索方法，对每个候选解进行局部改进，以提高收敛速度和精度。伪梯度是一种无导数的梯度估计方法，可以用于黑盒优化问题，即目标函数和约束函数的具体形式未知，只能通过输入变量得到输出值的问题。</li>
+<li>MIDACO使用一种高效的并行化策略，可以同时评估多个候选解，从而加速CPU时间昂贵的应用程序。MIDACO的并行化方法不依赖于特定的语言或平台，可以用任何语言和方法来实现，例如OpenMP、MPI、GPGPU、Apache Spark等。</li>
+</ol>
+<h1 id="作业3"><a href="#作业3" class="headerlink" title="作业3"></a>作业3</h1><blockquote>
+<p>plasmo运行例子，及了解相应的思想</p>
+</blockquote>
+<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-12 012148.png" alt="plasmo示例运行结果"/>
 
-<br />
-
-<h2 id="宏伟与光的交织："><a href="#宏伟与光的交织：" class="headerlink" title="宏伟与光的交织："></a>宏伟与光的交织：</h2><iframe src="//player.bilibili.com/player.html?aid=799378398&bvid=BV1gy4y1a7jH&cid=304863536&page=1" style="width:100%;height:500px;min-width:375px;min-height:200px" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<h2 id="思想"><a href="#思想" class="headerlink" title="思想"></a>思想</h2><p>plasmo是一种建立在<code>JuMP.jl</code>建模语言的基础上的基于图的优化框架，提供了一种模块化的方式来构建和求解优化问题。它的运行思想和逻辑可分为以下几个步骤：</p>
+<ol>
+<li>创建一个<code>OptiGraph</code>对象，用于表示优化问题的图结构。<code>OptiGraph</code>对象由多个<code>OptiNode</code>对象和<code>OptiEdge</code>对象组成，分别表示图中的节点和边。每个<code>OptiNode</code>对象包含一个<code>JuMP.jl</code>模型，用于定义目标函数和约束条件。每个<code>OptiEdge</code>对象包含一个连接两个<code>OptiNode</code>对象的函数，用于定义节点之间的耦合关系。</li>
+<li>使用<code>Plasmo.jl</code>提供的函数或自定义的函数，对<code>OptiGraph</code>对象进行处理。例如可以使用<code>visualize</code>函数来可视化<code>OptiGraph</code>对象的图结构，使用<code>partition</code>函数来对<code>OptiGraph</code>对象进行图划分，或者使用<code>decompose</code>函数来对<code>OptiGraph</code>对象进行分解式求解。</li>
+<li>使用<code>JuMP.jl</code>提供的函数或自定义的函数，对<code>OptiGraph</code>对象中的<code>OptiNode</code>对象进行求解。例如，可以使用<code>optimize!</code>函数来调用不同的求解器，如<code>Ipopt</code>、<code>Gurobi</code>、<code>Cbc</code>等，来求解<code>OptiNode</code>对象中的<code>JuMP.jl</code>模型，或者使用<code>value</code>函数来获取<code>OptiNode</code>对象中的变量或表达式的值。</li>
+</ol>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>同时，由于我对优化了解很少，所以我又去阅读Ai4Energy的优化小节（链接<a href="https://ai4energy.cn/Ai4EDocs/dev/Optimization/1-%E4%BC%98%E5%8C%96%E7%9A%84%E6%A6%82%E5%BF%B5/" target="_blank">Optimization · Ai4EDocs</a>），目前只阅读了一点点。说实在的，在上一学期刚结束的时候，我甚至以为只能用机器学习等人工智能的方法进行优化。</p>
+<h2 id="一点小笔记："><a href="#一点小笔记：" class="headerlink" title="一点小笔记："></a>一点小笔记：</h2><h3 id="GAMS"><a href="#GAMS" class="headerlink" title="GAMS"></a>GAMS</h3><p>在GAMS中，我们使用”E=”表示等式约束，”L=”表示小于等于约束，”G=”表示大于等于约束。</p>
+<p><code>SET i /1*3/; //定义一个集合i，包含三个元素，分别是1, 2, 3</code></p>
+<p>帕累托最优：<a href="https://zhuanlan.zhihu.com/p/54691447" target="_blank">多目标优化之帕累托最优 - 知乎</a></p>
+<h3 id="优化算法入门"><a href="#优化算法入门" class="headerlink" title="优化算法入门"></a>优化算法入门</h3><ul>
+<li><strong>蚁群算法</strong>：<a href="https://zhuanlan.zhihu.com/p/404181189" target="_blank">一文搞懂什么是蚁群优化算法(Ant Colony Optimization, ACO)【附应用举例】 - 知乎</a></li>
+<li><strong>灰狼算法</strong>：<a href="https://blog.csdn.net/m0_58857684/article/details/132918529" target="_blank">灰狼算法Grey Wolf Optimizer跑23个经典测试函数|含源码-CSDN博客</a></li>
+<li><strong>飞蛾火焰算法</strong>：<a href="https://blog.csdn.net/qq_41255540/article/details/106858618" target="_blank">飞蛾火焰优化（MFO）算法——原理分析_基于死亡机制的蛾火优化算法及改进的火焰生成机制-CSDN博客</a></li>
+<li><strong>鲸群算法</strong>：<a href="https://zhuanlan.zhihu.com/p/580765291" target="_blank">优化算法 | 手把手教你改进鲸鱼优化算法（附8个算法创新点） - 知乎</a></li>
+</ul>
+<h3 id="群体智能优化算法与人工智能算法"><a href="#群体智能优化算法与人工智能算法" class="headerlink" title="群体智能优化算法与人工智能算法"></a>群体智能优化算法与人工智能算法</h3><p>&emsp;&emsp;蚁群算法、灰狼算法、飞蛾火焰算法都是一类<strong>群体智能优化算法</strong>，它们通过模拟自然界中不同生物的群体行为，来求解复杂的优化问题。它们的共同点是都是不确定的、概率型的、全局优化的、不依赖于问题本身的数学性质的、基于多个智能体的、具有本质并行性、突出性、自组织和进化性、稳健性的算法。它们的不同点是各自模拟的生物行为不同，因此具有不同的搜索策略、信息交流机制、参数设置、收敛性能等。</p>
+<p>&emsp;&emsp;机器学习、深度学习、强化学习都是一类<strong>人工智能</strong>的方法，它们通过从数据中学习规律和知识，来实现智能的任务。它们的共同点是都是基于数据的、具有学习能力的、可以处理复杂的非线性问题的方法。它们的不同点是各自的学习目标、数据类型、模型结构、评价指标等不同 。机器学习是一种广泛的概念，包括监督学习、无监督学习、半监督学习等多种类型，主要是利用已有的数据来训练模型，从而进行预测或分类等任务。深度学习是一种特殊的机器学习方法，主要是利用多层的神经网络来构建复杂的模型，从而挖掘数据中的深层特征和结构。强化学习是一种特殊的机器学习方法，主要是利用智能体与环境的交互来学习最优的行为策略，从而达到最大化的奖励或目标。</p>
  
       <!-- reward -->
       
@@ -180,15 +249,27 @@ ga('send', 'pageview');
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://minatoxeon.github.io/player/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://minatoxeon.github.io/2024/03/12/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%902/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li></ul>
+
     </footer>
   </div>
 
    
+  <nav class="article-nav">
+    
+    
+      <a href="/2024/03/05/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%90%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">智慧能源课程报告——计算机基础</div>
+      </a>
+    
+  </nav>
+
    
 <!-- valine评论 -->
 <div id="vcomments-box">
@@ -238,7 +319,8 @@ ga('send', 'pageview');
 </style>
 
  
-    
+   
+     
 </article>
 
 </section>
@@ -425,6 +507,22 @@ ga('send', 'pageview');
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link
