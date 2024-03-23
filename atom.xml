@@ -6,7 +6,7 @@
   <link href="https://minatoxeon.github.io/atom.xml" rel="self"/>
   
   <link href="https://minatoxeon.github.io/"/>
-  <updated>2024-03-11T17:38:52.505Z</updated>
+  <updated>2024-03-23T17:37:34.226Z</updated>
   <id>https://minatoxeon.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows on ARM大战深信服EDR认证系统</title>
+    <link href="https://minatoxeon.github.io/2024/03/23/WoA%E5%A4%A7%E6%88%98%E6%B7%B1%E4%BF%A1%E6%9C%8DaES/"/>
+    <id>https://minatoxeon.github.io/2024/03/23/WoA%E5%A4%A7%E6%88%98%E6%B7%B1%E4%BF%A1%E6%9C%8DaES/</id>
+    <published>2024-03-23T12:34:22.000Z</published>
+    <updated>2024-03-23T17:37:34.226Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;本方案的实现方法并不稳定，同时笔者并不完全清楚其中的底层理论（感觉和计算机网络关系较大），但是Windows on ARM（下文统称WoA）的笔记本毕竟也是笔记本，在办公室还是应该让它发挥出笔记本的工作——像其他电脑一样正常查资料等。但是由于绝大部分厂商发布Windows软件时不会特意编译原生ARM版（尤其是驱动等软件），在WoA使用深信服EDR不可行（亲测会经常闪退或无法安装）。本方法可能不稳定，但实属是无奈之举。&lt;br&gt;如果你的设备运行Linux系统，你应该已经发现不需要装任何软件即可正常使用网络。很遗憾本人没有macOS相关便携设备，也没有做相关研究。因此本文所阐述的方案仅仅基于Windows系统（但是我好奇一点，Chrome OS的电脑究竟会被发送端识别为Linux电脑，还是Android电脑，还是Android手机呢）。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/categories/%E6%90%9E%E6%9C%BA/"/>
+    
+    
+    <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+    <category term="教程" scheme="https://minatoxeon.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>智慧能源2——JuMP、MIDACO和plasmo</title>
@@ -38,11 +59,11 @@
   </entry>
   
   <entry>
-    <title>智慧能源课程报告——计算机基础</title>
+    <title>智慧能源1——计算机基础</title>
     <link href="https://minatoxeon.github.io/2024/03/05/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%90%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/"/>
     <id>https://minatoxeon.github.io/2024/03/05/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%90%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/</id>
     <published>2024-03-05T03:49:29.000Z</published>
-    <updated>2024-03-05T14:39:16.897Z</updated>
+    <updated>2024-03-23T12:38:57.852Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;本文配套视频为&lt;a href=&quot;https://www.bilibili.com/video/BV1EW411u7th/&quot; target=&quot;_blank&quot;&gt;【计算机科学速成课】[40集全/精校] - Crash Course Computer Science&lt;/a&gt;，这是一套计算机入门速成课视频。&lt;/p&gt;</summary>
@@ -444,27 +465,6 @@
     <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
     
     <category term="评测" scheme="https://minatoxeon.github.io/tags/%E8%AF%84%E6%B5%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>刷机小记-小米3W刷入MIUI11</title>
-    <link href="https://minatoxeon.github.io/2020/04/11/%E5%88%B7%E6%9C%BA%E5%B0%8F%E8%AE%B0-%E5%B0%8F%E7%B1%B33W%E5%88%B7%E5%85%A5MIUI11/"/>
-    <id>https://minatoxeon.github.io/2020/04/11/%E5%88%B7%E6%9C%BA%E5%B0%8F%E8%AE%B0-%E5%B0%8F%E7%B1%B33W%E5%88%B7%E5%85%A5MIUI11/</id>
-    <published>2020-04-11T12:56:07.000Z</published>
-    <updated>2024-01-14T02:55:06.159Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;4月3日，从铜川回到西安。在路上习惯性地翻了翻酷安头条，于是就发现头条推荐的有人评测他刷的小米4的自制官改MIUI11刷机包（小米4的刷机包与小米3W/C的刷机包基本通用  PS:小米3W/C分别为小米3联通版/电信版，使用高通骁龙800处理器，官方包止于MIUI10；小米3TD为小米3移动版，使用NVIDIA Tegra 4处理器，官方包止于MIUI9；小米4使用高通骁龙801处理器，与小米W/C相同官方包止于MIUI10），然后我就去搜了一下小米3W的话题然后找到了那个MIUI11的刷机包。于是我想起了我的抽屉里搁置已久的换过不知道从哪里拆下来的屏幕的触摸起来质感极差的小米3W。毕竟MIUI11比MIUI10还是有一些提升的，这手机屏幕极其难用续航极其尿崩，也没法日用了，于是我就想试试刷一下我那个小米3W玩玩。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="搞机" scheme="https://minatoxeon.github.io/categories/%E6%90%9E%E6%9C%BA/"/>
-    
-    
-    <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
-    
-    <category term="刷机" scheme="https://minatoxeon.github.io/tags/%E5%88%B7%E6%9C%BA/"/>
     
   </entry>
   

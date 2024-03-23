@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-Hans">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta name="description" content="科技、文明、信念，样样Xeon如其名。" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>Windows on ARM大战深信服EDR认证系统 |  Minato Xeon</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/images/Minato.png" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
+      />
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+       
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-159231519-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <link rel="stylesheet" href="/css/zhyBlogTitle.css">
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <link rel="alternate" href="/atom.xml" title="Minato Xeon" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-WoA大战深信服aES"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Windows on ARM大战深信服EDR认证系统
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2024/03/23/WoA%E5%A4%A7%E6%88%98%E6%B7%B1%E4%BF%A1%E6%9C%8DaES/" class="article-date">
+  <time datetime="2024-03-23T12:34:22.000Z" itemprop="datePublished">2024-03-23</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%90%9E%E6%9C%BA/">搞机</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">4.8k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">17 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>&emsp;&emsp;本方案的实现方法并不稳定，同时笔者并不完全清楚其中的底层理论（感觉和计算机网络关系较大），但是Windows on ARM（下文统称WoA）的笔记本毕竟也是笔记本，在办公室还是应该让它发挥出笔记本的工作——像其他电脑一样正常查资料等。但是由于绝大部分厂商发布Windows软件时不会特意编译原生ARM版（尤其是驱动等软件），在WoA使用深信服EDR不可行（亲测会经常闪退或无法安装）。本方法可能不稳定，但实属是无奈之举。<br>如果你的设备运行Linux系统，你应该已经发现不需要装任何软件即可正常使用网络。很遗憾本人没有macOS相关便携设备，也没有做相关研究。因此本文所阐述的方案仅仅基于Windows系统（但是我好奇一点，Chrome OS的电脑究竟会被发送端识别为Linux电脑，还是Android电脑，还是Android手机呢）。</p>
+<span id="more"></span>
+
+<h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>&emsp;&emsp;办公室的电脑要求安装统一端点安全管理系统aES（终端检测响应平台EDR）（下文统称aES，请与<a href="https://zh.wikipedia.org/wiki/%E9%AB%98%E7%BA%A7%E5%8A%A0%E5%AF%86%E6%A0%87%E5%87%86" target="_blank">AES加密算法</a>等进行区分），但是这个终端拥有极为严格的安全措施，经常会莫名其妙干掉一些很正常的东西，例如我的Python开发环境、玩游戏时需要UU加速器时安装的驱动、将电脑从Win11家庭版切到专业工作站版时使用的HEU KMS Activator、甚至小猫咪使用魔法的时候都要弹窗提示。同时，aES在后台持续占用也比较吃性能，它的安全设置也完全无法更改，想要临时使用破解软件都无从下手。不谈这么多，仅从开发环境被干掉的角度来讲，这对一个计算机开发人员来说是无法忍受的，所以想办法寻找替代的解决方案。</p>
+<h1 id="在x86平台的解决方案"><a href="#在x86平台的解决方案" class="headerlink" title="在x86平台的解决方案"></a>在x86平台的解决方案</h1><p>&emsp;&emsp;开始之前再强调一遍，我不太清楚其中的底层实现逻辑，并且本方案并不稳定（例如如果经常需要远程连接某台电脑，不推荐在该电脑上部署本方法）（但是其实说实话，aES本身就不太稳定，我的一台电脑是有一直正确安装aES的，但是经常遇到aES自动重启/自己关掉的情况，导致网络断连）。同时，如果没有强烈需求，建议遵守上级相关规定，不在万不得已时不要使用本方案。</p>
+<p>&emsp;&emsp;通俗来讲，本方案的逻辑其实是让网络发送端以为我们的设备是一台Linux设备/是一台安装了aES的Windows设备。所以我们要安装虚拟机，然后在虚拟机内通过网络认证，借此达到伪装的目的。经过本人测试，更推荐使用Linux作为虚拟机——首先相比Windows，Linux系统的资源（内存、性能和存储）占用更小，亲测可以将虚拟机内存（RAM）设为1GB；其次，Linux系统进行网络认证时不需要安装aES，只需打开认证界面，认证界面发现本设备是一台Linux设备后会直接放行。但如果本身要依赖Windows虚拟机进行工作，也可以使用Windows虚拟机。</p>
+<p>&emsp;&emsp;此外，下一章写的WoA解决方案在x86平台理论同样适用，但是个人更喜欢VMware，如果你更喜欢WSL，同样可以采用下一章的方案。</p>
+<ol>
+<li>安装VMware Workstation Pro（<a href="https://download3.vmware.com/software/WKST-1751-WIN/VMware-workstation-full-17.5.1-23298084.exe" target="_blank">下载链接</a>），并修改BIOS/开启Windows相关功能等，使之能够正常创建虚拟机，如何修改建议根据报错内容自行百度。<br>密钥请自行百度或者Google，网上非常多。有能力请支持正版。</li>
+<li>下载系统镜像。可以选择Linux镜像（此处我们选择Ubuntu桌面版，其他版本请自行尝试，Ubuntu Server理论上也可行，但是仍需通过命令行安装浏览器，但亲测不使用浏览器不可行），也可选择Windows镜像。由于我们只需要进行认证而不需要跑其他程序，我们完全可以使用非常古早的Windows版本（例如，Windows 10 Enterprise 2016 LTSB资源占用少，是不错的选择，没有尝试过Windows 8及更早，其实感觉没有必要用那么早的，反而容易出现兼容性问题）（不推荐2015 LTSB是传闻其对固态硬盘支持不好）。<br>Windows镜像建议从MSDN下载：<a href="https://next.itellyou.cn/Original/Index" target="_blank">MSDN, 我告诉你 - 做一个安静的工具站</a><br>Ubuntu镜像建议从<a href="https://ubuntu.com/download/desktop" target="_blank">Ubuntu官网</a>下载，也可以从镜像站下载：<a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/" target="_blank">Index of /ubuntu-releases/ | 清华大学开源软件镜像站</a>。选择最新LTS版本下载即可，理论上老版本也可行，但是别太早，毕竟我们还是要使用浏览器的。</li>
+<li>安装虚拟机。这里我就不详细讲了，下载的是哪个系统的镜像，直接百度“VMware安装Windows”/“VMware安装Ubuntu”，根据教程一步一步来即可。占用的资源按照自身电脑配置进行选择，不需要限制内存/处理器核心数来减少占用资源，因为镜像安装还是需要吃性能的，安装好之后系统还需要初始化。例如，32G内存可以直接选择分配8G，12核心处理器也可以直接分配10核心数（怎么分配教程里面会教的）。等到完成下面几步之后，再更改分配的配置到比较小的值即可。但是注意，<strong>网络适配器的网络连接一栏一定要选择NAT模式</strong>。<br>下面是随便找的教程，可以参考：<br><a href="https://blog.csdn.net/q2524607033/article/details/131394143" target="_blank">VMware虚拟机安装win10系统教程（超详细）_vmware安装windows10-CSDN博客</a><br><a href="https://blog.csdn.net/m0_51913750/article/details/131604868" target="_blank">VMware 安装 Ubuntu（2023 当然要看热乎的教程了）_vmware安装ubuntu-CSDN博客</a></li>
+<li>安装浏览器。这一步很简单，Ubuntu Desktop已经自带了Mozilla Firefox浏览器，而Windows推荐使用Microsoft Edge（亲测使用Google Chrome会无法认证，Firefox没有试过，但Edge亲测可行）。要在Windows上安装Edge，可以在实体机上事先下载Edge离线安装包（我们使用<a href="https://www.microsoft.com/zh-cn/edge/business/download" target="_blank">Microsoft Edge for Business</a>，实质上与普通Edge没有任何差异），然后将其导入虚拟机内（最简单无脑的方案是可以先在实体机插U盘，选择将U盘连接到实体机，然后将安装包装入U盘，拔掉U盘再插入一次，选择将U盘连接到虚拟机，即可在虚拟机内打开安装包）。<br>没错的话，选择Ubuntu系统的此时已经可以上网了，选择Windows系统的只需要再执行一次之前在Windows上配置的过程即可。然后你就可以开心地干掉实体机上的aES了。<br>（如何干掉：经尝试，先卸载Ingress组件再直接卸载aES不需要密码。如果仍需要的话，或者可以<a href="https://support.microsoft.com/zh-cn/windows/%E5%9C%A8-windows-%E4%B8%AD%E4%BB%A5%E5%AE%89%E5%85%A8%E6%A8%A1%E5%BC%8F%E5%90%AF%E5%8A%A8%E7%94%B5%E8%84%91-92c27cff-db89-8644-1ce4-b3e5e56fe234" target="_blank">进入安全模式</a>后使用其他的卸载软件——如<a href="https://www.423down.com/7732.html" target="_blank">IObit Uninstaller Pro</a>进行辅助，卸载要输密码的时候直接点取消，然后软件就会自行将aES完全清理掉，然后重启正常启动即可。在网络上还有“在【引导】选项选择安全引导【最小】”等方案，但此方法实测容易引发PIN不可用等问题，略麻烦，如果是大佬也可以尝试）。</li>
+<li>修改虚拟机配置。重要的事情说三遍，<strong>网络适配器的网络连接一栏一定要选择NAT模式</strong>，<strong>网络适配器的网络连接一栏一定要选择NAT模式</strong>，<strong>网络适配器的网络连接一栏一定要选择NAT模式</strong>（其实我不确定其他几个模式行不行，但是经测试NAT模式绝对行。为什么我坚持要用NAT模式，因为这种网络一般有多设备检测，如果桥接模式或者仅主机模式导致发送端认为本机又将数据分发出去，将导致10分钟的短暂封禁——而NAT又不是不能用）。除此之外，就是将内存、处理器核数等调小，Ubuntu系统我只给了1G内存、1个内核（我的实体机处理器是<a href="https://www.amd.com/zh-hans/product/13956" target="_blank">AMD Ryzen 7 8845HS</a>），Windows LTSB系统我给了2G内存、2个内核。这就足够了，每次开机启动的确会较慢，但是后台常驻占用资源少才是根本，毕竟我们的主要任务还是在实体机上，不是吗？</li>
+<li>去系统里面修改自动休眠时间，将其变为永不休眠。</li>
+</ol>
+<p>&emsp;&emsp;然后就没有然后了，x86实现起来非常简单。然后每次开机你只需要将虚拟机挂在后台即可，不在需要aES认证的网络下就不需要开启虚拟机。享受摆脱aES带来的快感吧(❁´◡`❁)</p>
+<p>&emsp;&emsp;但是还有一个缺陷，虚拟机只能同时运行一个，比如你按照我说的办法同时安装了Windows和Ubuntu虚拟机，你<strong>能且只能同时开启其中之一</strong>，否则开启多个的话就会打架抢认证，最后大家全都无法认证，这一点我还没有想到好的解决方案。</p>
+<h1 id="在ARM平台的解决方案"><a href="#在ARM平台的解决方案" class="headerlink" title="在ARM平台的解决方案"></a>在ARM平台的解决方案</h1><p>&emsp;&emsp;还是再强调一遍，我不太清楚其中的底层实现逻辑，并且本方案并不稳定，甚至请你在使用本方案之前<strong>做好方案无法使用</strong>的觉悟（搞坏电脑那还是不会的）。<br>本方案实现所使用的ARM架构设备：HUAWEI MateBook E Go 2022 性能版，处理器为高通骁龙8cx Gen 3，系统为Windows 11专业工作站版23H2。</p>
+<h2 id="何为Windows-on-ARM？"><a href="#何为Windows-on-ARM？" class="headerlink" title="何为Windows on ARM？"></a>何为Windows on ARM？</h2><p>&emsp;&emsp;其实和x86的Windows没啥区别，只是这个Windows是运行在<a href="https://zh.wikipedia.org/wiki/ARM%E6%9E%B6%E6%A7%8B" target="_blank">ARM架构</a>的处理器上，而传统PC运行在<a href="https://zh.wikipedia.org/wiki/X86" target="_blank">x86架构</a>的处理器上。类比一下，M1处理器的MacBook可以说是运行的macOS on ARM，而2020年及之前的Intel/AMD处理器的MacBook和Mac可以说是运行macOS on x86。<br>&emsp;&emsp;ARM架构相比x86架构相比，优点是功耗普遍较低，缺点是同时期性能上限较差。目前绝大部分PC还在使用x86处理器，但由于ARM架构的优点，近几年用于电脑的ARM架构技术发展也快了许多。尽管如此，ARM生态还是比x86生态差距较大，macOS侧由于起步较早且推动力度大，目前适配相对更好。大部分x86软件都能够通过转译运行，但涉及GPU、图形加速、驱动等的软件在WoA都表现不佳，包括本文的对手aES。经测试，aES在WoA平台会提示安装失败，即使安装成功在使用过程中也经常闪退甚至无法打开，完全无法正常日用。</p>
+<h2 id="为什么WoA的解决方案比x86少？"><a href="#为什么WoA的解决方案比x86少？" class="headerlink" title="为什么WoA的解决方案比x86少？"></a>为什么WoA的解决方案比x86少？</h2><p>&emsp;&emsp;上文说了，WoA解决方案在x86平台理论同样适用，但是反之不然。因为VMware目前在Windows平台没有原生ARM版本，安装x86版本也只会报错而无法正常使用。其他模拟器、虚拟机皆如此。但是幸运的是Windows自带了子系统，可以替代上文的虚拟机，而子系统又同样支持NAT模式。因此我们选择Windows 11自带的<a href="https://learn.microsoft.com/zh-cn/windows/wsl/faq" target="_blank">适用于Linux的Windows子系统</a>（Windows Subsystem for Linux，下称WSL）作为替代。事实上，选择<a href="https://learn.microsoft.com/zh-cn/windows/android/wsa/" target="_blank">适用于Android™️的 Windows子系统</a>（Windows Subsystem for Android™️，下称WSA）或许可以起到同样的作用，但WSA已经被微软官方宣布停止支持，同时WSA发展时间较WSL来说更短，运行时占用资源也相对更多。因此，选择WSL相对更稳定。</p>
+<h2 id="如何安装WSL"><a href="#如何安装WSL" class="headerlink" title="如何安装WSL"></a>如何安装WSL</h2><p>&emsp;&emsp;直接放别人的教程吧。<br>&emsp;&emsp;看教程之前，注意以下几点：</p>
+<ol>
+<li><strong>请先将教程完整看一遍，清楚有哪些步骤，然后再进行实操。同时如果遇到问题可以查看本注意事项能否协助解决，或者自行百度，或者寻找我求助。</strong></li>
+<li>如果你使用的是Windows 11的话就不用像教程中那样麻烦地安装WSL。只需要2行命令：<br>wsl –update<br>wsl –shutdown<br>即可完成WSL2的安装，之后只需要按照安装Ubuntu的教程继续即可。</li>
+<li>Ubuntu选择最新的22.04 LTS也没有问题，选择不是特别旧的旧版本理论也没有问题。</li>
+<li>文中“选择一个桌面管理器”处，我本地执行相关命令后不会出现该选择界面，不用管直接继续即可，没有任何影响。</li>
+<li>启动xfce4的命令如果使用<code>startxfce4</code>报错，可以尝试使用<code>sudo startxfce4</code>（sudo是Linux系统的系统管理指令，是super user do的缩写）（<strong>其实xfce4所有相关的步骤不做我觉得也没问题，因为之后要打开firefox也完全可以通过在虚拟机终端输入<code>firefox</code>打开，而且还是全屏的，分辨率也很给力，通过xfce4反而使得分辨率很低，看起来没有那么顺眼</strong>）。</li>
+<li>如果你是x86架构的电脑看到这里，你也可以选择下载Microsoft Edge浏览器，最简单的是在教程结束后，通过Mozilla Firefox浏览器去<a href="https://www.microsoft.com/zh-cn/edge/download" target="_blank">Edge官方下载页面</a>下载deb包，然后进行安装（请自行搜索如何安装deb包，如果你使用的是Red Hat分支Linux而不是Debian分支，同样可以下载rpm包）。但是如果你是ARM架构的电脑，很遗憾截止撰写本文时，微软并没有发布适用于ARM架构的Linux系统的Edge浏览器，因此我们只能使用默认的Firefox。</li>
+<li>每次开机后启动Ubuntu的方法也很简单，右键开始图标后选择终端，在顶部有个倒三角选择Ubuntu，点击即可开启Ubuntu。<strong>此时请区分实体机终端和虚拟机终端，右键开始图标后选择终端出现的是实体机终端，而点击倒三角选择Ubuntu打开的终端是虚拟机终端，请不要混淆！！</strong>（通过这个方法打开的二者都同时跑在Windows Terminal这一UWP应用上，也不要将Windows Terminal的概念与上面二者混淆）不再使用Ubuntu之后建议在实体机终端通过<code>wsl --shutdown</code>命令将其关闭来节省资源和电费。</li>
+<li>开启Hyper-V似乎需要Windows 11专业版及以上，可以借助<a href="https://www.423down.com/1202.html" target="_blank">HEU KMS Activator</a>进行Windows版本的切换和数字权利激活。</li>
+</ol>
+<p>&emsp;&emsp;下面是教程：<a href="https://www.bilibili.com/read/cv11143517/" target="_blank">WSL2 + Ubuntu + 图形界面安装 - 哔哩哔哩</a><br>&emsp;&emsp;我知道到目前还有一个问题，那就是WSL和wFirefox都是英文，打开中文页面会直接乱码。没事，一会我还会说。<br>&emsp;&emsp;<strong>在面对需要aES进行认证的场合下，开机后直接启动Ubuntu并在虚拟机终端输入<code>firefox</code>打开浏览器，然后按照WSL中的Firefox（后文简称wFirefox）的提示打开网络认证页面，之后关闭wFirefox即可。</strong>很奇怪的一点是，如果持续保持wFirefox的运行，会导致过一段时间上不了网，所以需要将其关掉。如果不行的话，反复刷新或者尝试挂机，多尝试一下应该就基本正常了。</p>
+<h2 id="安装WSL后的后续工作"><a href="#安装WSL后的后续工作" class="headerlink" title="安装WSL后的后续工作"></a>安装WSL后的后续工作</h2><p>&emsp;&emsp;刚才提到，现在还存在的问题是WSL目前只有英文，wFirefox里面的大部分内容看起来很麻烦。所以我们要给WSL引入中文。<br>&emsp;&emsp;首先安装相关包（在Ubuntu虚拟机终端输入，不论是直接从Windows Terminal进去还是从xfce4的终端进去都是一样的，不是在实体机终端）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install language-pack-zh-hans</span><br><span class="line">sudo dpkg-reconfigure locales #这一步第一个页面要选择en_US.UTF-8和zh_CN.UTF-8（通过空格键选择）, 并在第二个页面（按回车后的页面）选择zh_CN.UTF-8为默认语言</span><br><span class="line">sudo apt install fontconfig</span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;然后由于WSL得天独厚的双系统文件共享的优势，我们直接使用Windows自带的字体：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s /mnt/c/Windows/Fonts /usr/share/fonts/font</span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;最后扫描字体目录，并生成字体信息的缓存：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fc-cache -fv</span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;到这一步应该已经完成了。不行的话可以再使用<code>wsl --shutdown</code>命令关闭WSL再启动，应该就没问题了。如果刚才不知道在哪里进入网络认证界面，此时估计也很清楚了。<br>&emsp;&emsp;如果你的电脑内存（RAM）不够，你可以选择<a href="https://zhuanlan.zhihu.com/p/639614916" target="_blank">限制WSL2的内存占用</a>。其中<code>memory</code>用于限制内存，<code>swap</code>用于限制虚拟内存交换分区，<code>processors</code>用于限制处理器核心数。这和VMware的虚拟机参数设置异曲同工，不是吗？理论上将内存限制为1G应该可行，不行就试试2G，到写这篇文章为止笔者还没有尝试(∠・ω&lt; )⌒☆<br>如果你想要试试不用NAT模式能不能起到更好的/同样的效果，你可以看这篇文章<a href="https://zhuanlan.zhihu.com/p/659074950" target="_blank">这篇文章</a>进行网络连接方式的修改。</p>
+<p>&emsp;&emsp;多说一嘴，<strong>无论在什么设备上，内存一定指的是RAM，将ROM称为内存而将RAM称为运行内存（运存）是手机厂商为了营销产品而玩的把戏，请不要上当！</strong>例如，你的手机是8+256的，那么8G称为内存，256G称为存储/硬盘/闪存/外存。请不要把256G称为内存。</p>
+<h2 id="疑惑（待解决-求解答）"><a href="#疑惑（待解决-求解答）" class="headerlink" title="疑惑（待解决/求解答）"></a>疑惑（待解决/求解答）</h2><p>&emsp;&emsp;奇怪的一点是，在VMware方案（也就是x86方案）里面，每次开机后需要将VMware挂在后台，如果认证成功后立即关闭虚拟机，网络就会在几分钟内变为不可用，需要重新开启VMware里面的虚拟机进行认证。而WSL这边恰恰相反，如果开启wFirefox打开一个网页之后开始正常使用实体机上网，那么会导致没一会就重新需要认证，然后wFirefox里面的认证界面会一直反复刷新，而不会正常认证，静置一段时间后才会恢复正常，而在认证成功后直接关闭wFirefox似乎就没有任何问题。更奇怪的是，进行过一次认证后，很长一段时间内似乎都不需要再打开WSL——就算是重启或者重新连接网络也是如此，更别说不需要开启wFirefox了。具体能有多长尚不明确，但是保持计算机一两个小时的正常使用是没问题的，更长的时间，我还没有测试。<br>&emsp;&emsp;两者的挂机认证模式完全相反，这让我摸不着头脑。如果有计算机网络/Linux/WSL的大神，还请不吝赐教，解答我的问题。</p>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          Donate
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        共享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://minatoxeon.github.io/2024/03/23/WoA%E5%A4%A7%E6%88%98%E6%B7%B1%E4%BF%A1%E6%9C%8DaES/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%90%9E%E6%9C%BA/" rel="tag">搞机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/2024/03/12/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%902/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">智慧能源2——JuMP、MIDACO和plasmo</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "xCerGDrVQOv5NwuxeGEHsgC9-gzGzoHsz",
+    app_key: "SBmXMbgyYDyfEQakbz0hyqaK",
+    path: window.location.pathname,
+    avatar: "mp",
+    placeholder: "告诉我们您的想法。",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2020-2024
+        <i class="ri-heart-fill heart_icon"></i> Minato Xeon Microsoft
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Supercharged by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+    <!-- 运行天数 -->
+    <ul>
+      <li><span id="runtime_span"></span></li>
+    </ul>
+  </div>
+    <script type="text/javascript">			
+      function show_runtime() {
+          window.setTimeout("show_runtime()", 1000);
+          X = new Date("02/27/2020 09:43:24");
+          Y = new Date();
+          T = (Y.getTime() - X.getTime());
+          M = 24 * 60 * 60 * 1000;
+          a = T / M;
+          A = Math.floor(a);
+          b = (a - A) * 24;
+          B = Math.floor(b);
+          c = (b - B) * 60;
+          C = Math.floor((b - B) * 60);
+          D = Math.floor((c - C) * 60);
+          runtime_span.innerHTML = "小站在各种崩坏中坚持了: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+      }
+    show_runtime();
+  </script>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/head.jpg" alt="Minato Xeon"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">🏡首页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">📁归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">📜分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">🏷️标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E8%AF%84%E6%B5%8B/">🪟评测</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://minatoxeon.lofter.com/">📷摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">🤺友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/player">📻音乐</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/games">🎮游戏</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2021/11/21/about/">🧔关于</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>别和金钱过不去。</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+ <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true,
+  };
+</script>
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+ 
+<script src="/js/clickBoom2.js"></script>
+ 
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+ 
+<script src="/js/dz.js"></script>
+ 
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=27961148&auto=1&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
+
+  </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":80,"vOffset":0},"mobile":{"show":true,"scale":0.5},"react":{"opacity":0.7},"log":false});</script></body>
+
+</html>
