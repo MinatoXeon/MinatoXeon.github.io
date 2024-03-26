@@ -6,7 +6,7 @@
   <link href="https://minatoxeon.github.io/atom.xml" rel="self"/>
   
   <link href="https://minatoxeon.github.io/"/>
-  <updated>2024-03-26T02:32:57.568Z</updated>
+  <updated>2024-03-26T02:37:25.116Z</updated>
   <id>https://minatoxeon.github.io/</id>
   
   <author>
@@ -21,16 +21,14 @@
     <link href="https://minatoxeon.github.io/2024/03/25/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%90%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/"/>
     <id>https://minatoxeon.github.io/2024/03/25/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%90%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/</id>
     <published>2024-03-25T02:43:18.000Z</published>
-    <updated>2024-03-26T02:32:57.568Z</updated>
+    <updated>2024-03-26T02:37:25.116Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
+    <summary type="html">&lt;h1 id=&quot;关于Modelica的一点笔记&quot;&gt;&lt;a href=&quot;#关于Modelica的一点笔记&quot; class=&quot;headerlink&quot; title=&quot;关于Modelica的一点笔记&quot;&gt;&lt;/a&gt;关于Modelica的一点笔记&lt;/h1&gt;&lt;h2 id=&quot;如何使用Modelica&quot;&gt;&lt;a href=&quot;#如何使用Modelica&quot; class=&quot;headerlink&quot; title=&quot;如何使用Modelica&quot;&gt;&lt;/a&gt;如何使用Modelica&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;在开始使用Modelica进行建模前要先在草稿纸上画出要构建的系统的样子，否则很容易在完成模型的过程中忘掉最开始设计的样子。同时写下认为必要的内容，例如物体的形状、元素之间的相互联系、想要纳入模型的物理现象、想实现的数学公式等。&lt;/li&gt;
+&lt;li&gt;如果已经存在具有类似配置的模型，可以直接复制它并进行添加和更改，因为这样可以节省时间。&lt;/li&gt;
+&lt;li&gt;在Modelica中，当放置组件时，会出现一个带有默认名称的实例命名窗口。可以保留默认名称，也可以为其指定一个其他的容易理解的名称。&lt;/li&gt;
+&lt;li&gt;有些参数无法单独使用GUI操作进行配置，因此必须直接编写源代码。</summary>
     
     
     
@@ -64,8 +62,8 @@
   
   <entry>
     <title>智慧能源2——JuMP、MIDACO和plasmo</title>
-    <link href="https://minatoxeon.github.io/2024/03/12/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%903/"/>
-    <id>https://minatoxeon.github.io/2024/03/12/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%903/</id>
+    <link href="https://minatoxeon.github.io/2024/03/12/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%902/"/>
+    <id>https://minatoxeon.github.io/2024/03/12/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%902/</id>
     <published>2024-03-11T16:29:09.000Z</published>
     <updated>2024-03-11T17:38:52.505Z</updated>
     
@@ -85,8 +83,8 @@
   
   <entry>
     <title>智慧能源2——JuMP、MIDACO和plasmo</title>
-    <link href="https://minatoxeon.github.io/2024/03/12/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%902/"/>
-    <id>https://minatoxeon.github.io/2024/03/12/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%902/</id>
+    <link href="https://minatoxeon.github.io/2024/03/12/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%903/"/>
+    <id>https://minatoxeon.github.io/2024/03/12/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%903/</id>
     <published>2024-03-11T16:29:09.000Z</published>
     <updated>2024-03-11T17:38:52.505Z</updated>
     
@@ -226,8 +224,8 @@
   
   <entry>
     <title>开箱-开箱一台华为智能眼镜方形全框</title>
-    <link href="https://minatoxeon.github.io/2022/03/10/%E5%BC%80%E7%AE%B1-%E5%BC%80%E7%AE%B1%E4%B8%80%E5%8F%B0%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E6%96%B9%E5%BD%A2%E5%85%A8%E6%A1%86/"/>
-    <id>https://minatoxeon.github.io/2022/03/10/%E5%BC%80%E7%AE%B1-%E5%BC%80%E7%AE%B1%E4%B8%80%E5%8F%B0%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E6%96%B9%E5%BD%A2%E5%85%A8%E6%A1%86/</id>
+    <link href="https://minatoxeon.github.io/2022/03/10/%E5%BC%80%E7%AE%B1-%E5%BC%80%E7%AE%B1%E5%8D%8E%E4%B8%BA%C3%97GM%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E4%BA%8C%E4%BB%A3%C2%B7%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E8%AF%84%E6%B5%8B%E7%95%AA%E5%A4%96%E7%AF%87EX/"/>
+    <id>https://minatoxeon.github.io/2022/03/10/%E5%BC%80%E7%AE%B1-%E5%BC%80%E7%AE%B1%E5%8D%8E%E4%B8%BA%C3%97GM%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E4%BA%8C%E4%BB%A3%C2%B7%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E8%AF%84%E6%B5%8B%E7%95%AA%E5%A4%96%E7%AF%87EX/</id>
     <published>2022-03-10T09:28:15.000Z</published>
     <updated>2022-03-28T13:40:12.837Z</updated>
     
@@ -249,8 +247,8 @@
   
   <entry>
     <title>开箱-开箱一台华为智能眼镜方形全框</title>
-    <link href="https://minatoxeon.github.io/2022/03/10/%E5%BC%80%E7%AE%B1-%E5%BC%80%E7%AE%B1%E5%8D%8E%E4%B8%BA%C3%97GM%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E4%BA%8C%E4%BB%A3%C2%B7%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E8%AF%84%E6%B5%8B%E7%95%AA%E5%A4%96%E7%AF%87EX/"/>
-    <id>https://minatoxeon.github.io/2022/03/10/%E5%BC%80%E7%AE%B1-%E5%BC%80%E7%AE%B1%E5%8D%8E%E4%B8%BA%C3%97GM%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E4%BA%8C%E4%BB%A3%C2%B7%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E8%AF%84%E6%B5%8B%E7%95%AA%E5%A4%96%E7%AF%87EX/</id>
+    <link href="https://minatoxeon.github.io/2022/03/10/%E5%BC%80%E7%AE%B1-%E5%BC%80%E7%AE%B1%E4%B8%80%E5%8F%B0%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E6%96%B9%E5%BD%A2%E5%85%A8%E6%A1%86/"/>
+    <id>https://minatoxeon.github.io/2022/03/10/%E5%BC%80%E7%AE%B1-%E5%BC%80%E7%AE%B1%E4%B8%80%E5%8F%B0%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E7%9C%BC%E9%95%9C%E6%96%B9%E5%BD%A2%E5%85%A8%E6%A1%86/</id>
     <published>2022-03-10T09:28:15.000Z</published>
     <updated>2022-03-28T13:40:12.837Z</updated>
     
