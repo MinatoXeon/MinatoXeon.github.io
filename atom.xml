@@ -6,7 +6,7 @@
   <link href="https://minatoxeon.github.io/atom.xml" rel="self"/>
   
   <link href="https://minatoxeon.github.io/"/>
-  <updated>2024-03-24T08:28:47.279Z</updated>
+  <updated>2024-03-26T02:32:57.568Z</updated>
   <id>https://minatoxeon.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>智慧能源3——Modelica入门</title>
+    <link href="https://minatoxeon.github.io/2024/03/25/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%90%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/"/>
+    <id>https://minatoxeon.github.io/2024/03/25/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%90%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/</id>
+    <published>2024-03-25T02:43:18.000Z</published>
+    <updated>2024-03-26T02:32:57.568Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="学习" scheme="https://minatoxeon.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="生活" scheme="https://minatoxeon.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>Windows on ARM大战深信服EDR认证系统</title>
@@ -34,6 +59,27 @@
     <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
     
     <category term="教程" scheme="https://minatoxeon.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>智慧能源2——JuMP、MIDACO和plasmo</title>
+    <link href="https://minatoxeon.github.io/2024/03/12/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%903/"/>
+    <id>https://minatoxeon.github.io/2024/03/12/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%903/</id>
+    <published>2024-03-11T16:29:09.000Z</published>
+    <updated>2024-03-11T17:38:52.505Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;作业1&quot;&gt;&lt;a href=&quot;#作业1&quot; class=&quot;headerlink&quot; title=&quot;作业1&quot;&gt;&lt;/a&gt;作业1&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Julia运行一些JuMP的例子。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://minatoxeon.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="生活" scheme="https://minatoxeon.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
@@ -59,30 +105,11 @@
   </entry>
   
   <entry>
-    <title>智慧能源1——计算机基础</title>
-    <link href="https://minatoxeon.github.io/2024/03/05/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%90%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/"/>
-    <id>https://minatoxeon.github.io/2024/03/05/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%90%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/</id>
-    <published>2024-03-05T03:49:29.000Z</published>
-    <updated>2024-03-23T12:38:57.852Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;本文配套视频为&lt;a href=&quot;https://www.bilibili.com/video/BV1EW411u7th/&quot; target=&quot;_blank&quot;&gt;【计算机科学速成课】[40集全/精校] - Crash Course Computer Science&lt;/a&gt;，这是一套计算机入门速成课视频。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="学习" scheme="https://minatoxeon.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="生活" scheme="https://minatoxeon.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
     <title>评测-一加7 Pro离心中完美的MIX 4的距离，只有一个系统</title>
     <link href="https://minatoxeon.github.io/2024/02/14/%E8%AF%84%E6%B5%8B-%E4%B8%80%E5%8A%A07Pro/"/>
     <id>https://minatoxeon.github.io/2024/02/14/%E8%AF%84%E6%B5%8B-%E4%B8%80%E5%8A%A07Pro/</id>
     <published>2024-02-14T04:11:17.000Z</published>
-    <updated>2024-03-24T08:56:38.124Z</updated>
+    <updated>2024-03-25T02:38:34.380Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;评分：6-1-10&quot;&gt;&lt;a href=&quot;#评分：6-1-10&quot; class=&quot;headerlink&quot; title=&quot;评分：6.1 / 10&quot;&gt;&lt;/a&gt;评分：6.1 / 10&lt;/h3&gt;&lt;hr&gt;
@@ -444,27 +471,6 @@
     <category term="搞机" scheme="https://minatoxeon.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
     
     <category term="教程" scheme="https://minatoxeon.github.io/tags/%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2020总结与展望：悟以往之不谏，知来者之可追</title>
-    <link href="https://minatoxeon.github.io/2020/11/06/2020%E6%80%BB%E7%BB%93%E4%B8%8E%E5%B1%95%E6%9C%9B/"/>
-    <id>https://minatoxeon.github.io/2020/11/06/2020%E6%80%BB%E7%BB%93%E4%B8%8E%E5%B1%95%E6%9C%9B/</id>
-    <published>2020-11-06T04:42:57.000Z</published>
-    <updated>2023-05-12T13:19:03.116Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&amp;emsp;&amp;emsp;2019年，终于从高考的牢笼中解脱出来的我，满怀憧憬地进入了电子科技大学，开始了我的大学生活。转眼间一年就这样过去了，蓦然回首只感觉时光飞逝，却不知道自己学到了什么、成就了什么。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://minatoxeon.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-    <category term="生活" scheme="https://minatoxeon.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-    <category term="总结" scheme="https://minatoxeon.github.io/tags/%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   

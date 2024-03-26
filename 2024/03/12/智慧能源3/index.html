@@ -13,7 +13,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>智慧能源1——计算机基础 |  Minato Xeon</title>
+      <title>智慧能源2——JuMP、MIDACO和plasmo |  Minato Xeon</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/images/Minato.png" />
@@ -74,7 +74,7 @@ ga('send', 'pageview');
     <main class="content on">
       <section class="outer">
   <article
-  id="post-智慧能源课程报告"
+  id="post-智慧能源3"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -85,7 +85,7 @@ ga('send', 'pageview');
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  智慧能源1——计算机基础
+  智慧能源2——JuMP、MIDACO和plasmo
 </h1>
  
 
@@ -93,8 +93,8 @@ ga('send', 'pageview');
     </header>
      
     <div class="article-meta">
-      <a href="/2024/03/05/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%90%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/" class="article-date">
-  <time datetime="2024-03-05T03:49:29.000Z" itemprop="datePublished">2024-03-05</time>
+      <a href="/2024/03/12/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%903/" class="article-date">
+  <time datetime="2024-03-11T16:29:09.000Z" itemprop="datePublished">2024-03-12</time>
 </a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
@@ -105,7 +105,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">2.2k</span>
+            <span class="post-count">1.8k</span>
         </span>
     </span>
 
@@ -114,7 +114,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">7 min</span>
+            <span class="post-count">6 min</span>
         </span>
     </span>
 </div>
@@ -129,53 +129,57 @@ ga('send', 'pageview');
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>&emsp;&emsp;本文配套视频为<a href="https://www.bilibili.com/video/BV1EW411u7th/" target="_blank">【计算机科学速成课】[40集全/精校] - Crash Course Computer Science</a>，这是一套计算机入门速成课视频。</p>
+  <h1 id="作业1"><a href="#作业1" class="headerlink" title="作业1"></a>作业1</h1><blockquote>
+<p>Julia运行一些JuMP的例子。</p>
+</blockquote>
 <span id="more"></span>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-11 144437.png" alt="JuMP示例运行结果"/>
 
-<p>&emsp;&emsp;本文链接：<a href="https://minatoxeon.github.io/2024/03/05/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%90%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/" target="_blank">智慧能源课程报告——计算机基础</a></p>
-<h1 id="一点心得"><a href="#一点心得" class="headerlink" title="一点心得"></a>一点心得</h1><p>&emsp;&emsp;坦白来讲，我和大部分能源学院的学生最大的不同，可能是我本科是一名纯计算机专业的学生。因此，相比于能源方面的知识——比如流体力学和汽轮机原理，我对计算机的知识熟悉很多。这套视频在老师发出之后我先去扫了一眼标题，发现视频的小标题基本都是我在本科时的专业课，但我还是按照老师的要求在课余时间将视频完整看了一遍（虽然我承认是开的二倍速）。</p>
-<p>&emsp;&emsp;这套视频讲的内容比我想象中更丰富。虽然我不认为计算机是可以速成的，但还是得承认视频做得很不错，这些知识对于非计算机科班出身的学生来说或许也够用。从最开始的ENIAC、仙童半导体裂解等基础知识，到数字逻辑的加法器锁存器，甚至讲了芯片光刻机的原理，然后讲到数据结构、计算机网络、操作系统、计算机组成原理等熟悉的课程。在图灵机那一章，我在大一的时候就听不懂，到了现在还是一样无法理解。在软件工程一节我本以为会介绍可行性分析、需求规约、详细设计等文档，但是并没有出现，不过很惊喜的是专门科普了面向对象编程，并包含了写代码的习惯，以及Git的基本概念。在文件系统一节还讲了.bmp文件的存储格式，涉及了计算机图形学的入门知识——到了屏幕&amp;2D、3D图形章节直接开始深入讲计算机图形学的知识。压缩一节提到了很多文件格式，比如JPEG，这些格式对数据的压缩和存储方式在本科时确实没有详细讲过，对我来说很有新鲜感。整体来看，在学习了半年的能动课程之后，看到这套视频对我来说有一种回到了本科的感觉，让我倍感亲切。</p>
-<p>&emsp;&emsp;说回视频课程本身，视频内容很生动易懂，字幕组也很用心，感觉比起我看的其他偏向于内容深度的课程来说（比如罗翔老师的《专题强化【理论卷】》刑法课程和翁恺老师的《C语言程序设计》），更注重于科普的广度，而没有太注重知识深度，但正因为如此，的确更能将入门时一些较难理解的内容讲清楚，而一旦掌握这些门槛性的内容之后，再在计算机上深入学习就简单多了。</p>
-<p>&emsp;&emsp;如果我大一的时候就看了这个视频，我肯定能对我将来要学的课程有更加深入的认识，能帮我更好地学习将来的课程。不过，这样或许我也不会转行能源了。</p>
-<p>&emsp;&emsp;我也认真学习了老师的“Julia简介”课件，并完成了Julia的安装。安装对我来说其实很简单，和本科配Python环境、用vscode写汇编代码一样没什么大区别，让我有感触的其实是介绍包管理的一页，让我想起了我在大二的时候完成线上实习实现在线音乐播放系统的时候，面对的是SpringBoot的pom.xml包管理文件。或许将来从事能源行业之后，我再也没有机会像当时一样写前后端分离项目这种类型的代码了。</p>
-<p>&emsp;&emsp;老师的Ai4Energy网站（记录一下文档链接<a href="https://ai4energy.github.io/Ai4EDocs/dev/" target="_blank">Home · Ai4EDocs</a>，后续方便进行学习）我只是大致浏览了一下。感觉这个网站的确能帮助我们快速上手计算机相关知识，从而实现这门课的初衷——“智慧能源”，将人工智能与能源领域相结合。我也很期待能在接下来的课程中在这门课中学到很多这样结合的成果，一定能让我大开眼界。</p>
-<h1 id="学习笔记"><a href="#学习笔记" class="headerlink" title="学习笔记"></a>学习笔记</h1><p>&emsp;&emsp;尽管我是计算机科班的学生，但必须承认视频中的有些东西是我没接触过的，因此我也做了一点笔记来充实自己。</p>
-<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-02 110202.png" alt="内存微观结构"/>
-&emsp;&emsp;内存的微观结构
+<h1 id="作业2"><a href="#作业2" class="headerlink" title="作业2"></a>作业2</h1><blockquote>
+<p>MIDACO学习一下：<br>a. Python或Julia调用；<br>b. 黑箱优化的逻辑</p>
+</blockquote>
+<h2 id="a"><a href="#a" class="headerlink" title="a."></a>a.</h2><p>从网站下载midaco.jl/.py，并在同一文件夹内放入midacoJL.dll/midacopy.dll，然后运行网页内的example（此处使用的是NLP的示例）</p>
+<p>分析示例的代码逻辑：</p>
+<p>以Julia语言的代码为例，Python代码的逻辑与之完全相同，只是语法略有差异（如Python代码中列表的索引从0开始，而Julia代码中数组的索引从1开始）。</p>
+<ol>
+<li>定义目标函数，如示例中的目标函数为$f(x)=(x_1-1)^2+(x_2-2)^2+(x_3-3)^2+(x_4-4)^2+1.23456789$</li>
+<li>使用字符串key存放MIDACO的许可证密钥，用于激活MIDACO。</li>
+<li>定义了两个字典<code>problem</code>和<code>option</code>，它们分别存储了问题的参数和算法的选项。在<code>problem</code>字典中，需要设置目标函数个数、变量个数、约束个数、变量上下界等参数；在<code>option</code>字典中，需要设置函数评价最大次数、算法运行的最长时间、输出最优解的频率、是否保存至文本文件等参数。</li>
+<li>调用<code>solution = midaco (problem, option, key)</code>，执行MIDACO算法，将问题参数、算法选项和许可证密钥作为输入，返回字典<code>solution</code>作为输出。<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-12 012054.png" alt="Julia运行示例代码"/>
+<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-12 002306.png" alt="Python运行示例代码"/>
+由于代码逻辑完全相同，从结果来看，果然没什么区别。</li>
+</ol>
+<h2 id="b"><a href="#b" class="headerlink" title="b."></a>b.</h2><p>MIDACO的黑箱算法逻辑：</p>
+<ol>
+<li>首先MIDACO使用一种称为蚁群优化（ACO）的进化算法，通过模拟蚂蚁在寻找食物时留下的信息素来搜索最优解。MIDACO可以处理连续、离散或混合整数变量，以及单目标或多目标优化问题。</li>
+<li>MIDACO使用Oracle惩罚方法约束条件转化为惩罚项，加到目标函数上，从而实现约束优化。Oracle惩罚方法是一种自适应的方法，可以根据问题的特点动态调整惩罚系数。</li>
+<li>然后MIDACO使用一种基于伪梯度的回溯线搜索方法，对每个候选解进行局部改进，以提高收敛速度和精度。伪梯度是一种无导数的梯度估计方法，可以用于黑盒优化问题，即目标函数和约束函数的具体形式未知，只能通过输入变量得到输出值的问题。</li>
+<li>MIDACO使用一种高效的并行化策略，可以同时评估多个候选解，从而加速CPU时间昂贵的应用程序。MIDACO的并行化方法不依赖于特定的语言或平台，可以用任何语言和方法来实现，例如OpenMP、MPI、GPGPU、Apache Spark等。</li>
+</ol>
+<h1 id="作业3"><a href="#作业3" class="headerlink" title="作业3"></a>作业3</h1><blockquote>
+<p>plasmo运行例子，及了解相应的思想</p>
+</blockquote>
+<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-12 012148.png" alt="plasmo示例运行结果"/>
 
-<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-02 140847.png" alt="雅卡尔织布机"/>
-&emsp;&emsp;雅卡尔织布机：来自织丝工家庭的约瑟夫·玛丽·雅卡尔，因不满单调重复的提线工作，将织布机改造成了可设计的雅卡尔织布机。这台机器利用穿孔卡片结构储存不同颜色的纱线的排列信息，织布机就能快速织出五颜六色的布料。
-
-<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-04 100823.png" alt="内核恐慌"/>
-&emsp;&emsp;内核恐慌（Panic）：内核错误在早期的Unix系统中被引入，显示了在Unix与Multics在设计哲学上的主要差异之一。Multics的开发者Tom van Vleck曾引述了一段在这个问题上与Unix开发者Dennis Ritchie的讨论：“我提醒Dennis说，我在Multics中写的近半数代码都是错误恢复代码。他说：我们不需要这些。我们有称为panic的子程序，如果发生了错误就可以调用这个函数，使得系统崩溃，然后你可以在大厅里面大叫：‘嘿，重启机器’。”
-
-<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-04 101526.png" alt="小圆圈阵列"/>
-&emsp;&emsp;存储方式，小圆圈可以加磁
-
-<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-04 103109.png" alt="光盘表面的微观结构"/>
-&emsp;&emsp;光盘表面的微观结构
-
-<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-04 143102.png" alt="Altair 8800"/>
-&emsp;&emsp;Altair 8800计算机：它是世界上第一台基于Intel 8080系列微处理器的计算机，也是商业上第一台成功的个人计算机。在Altair 8800发布后，MITS的创始人罗伯茨收到了Traf-O-Data公司的来信，询问他是否有兴趣购买他们编写的“BASIC语言”。
-
-<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-04 144840.png" alt="WIMP界面"/>
-&emsp;&emsp;WIMP界面：WIMP，即Windows（视窗）、Icon（图标）、Menu（选单）及Pointer（指标）的缩写，是电脑图形界面使用的一种界面规范。WIMP是人机互动领域之中使用最普遍的电脑互动界面，Windows、macOS等操作系统便以WIMP为界面规范。WIMP的全称便是它的四大组成元件。
-
-<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-05 122906.png" alt="Microsoft Bob"/>
-&emsp;&emsp;Microsoft Bob：Microsoft Bob旨在为Windows 3.1x、Windows 95和Windows NT提供更友好的人机交互界面，并以此取代Windows程序管理器。该程序于1995年3月11日发布，1996年初被取消。它的界面展示了一个“房屋”，其中的“房间”可以进入，并内含一些常见的物品，如放有笔和纸的桌子、支票簿和其他物品。这些物品与各个计算机程序对应，例如点击笔和纸会打开文字处理器。一只名叫Rover的卡通小狗以及其他卡通人物会使用对话框为用户提供指引。
-
-<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-04 222443.png" alt="网络中立性"/>
-&emsp;&emsp;网络中立性：网络中立性（net neutrality），亦称为互联网中立性（Internet neutrality），是一种原则，要求互联网服务供应商及政府应平等处理所有互联网上的资料，不差别对待或依不同用户、内容、网站、平台、应用、接取设备类型或通信模式而差别收费。这一词是由哥伦比亚大学媒体法教授吴修铭（Tim Wu）于2003年所提出，作为存在已久的公共运输业者这个概念之延伸。一个常被引用来作为违反网络中立性原则的例子为，互联网服务供应商Comcast暗中利用伪造的数据包减缓P2P文件分享的上传速率。
-
-<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-04 230709.png" alt="在用户名插入命令"/>
-&emsp;&emsp;朴实但又让人眼前一亮的破坏数据库的方法，直接“注入”数据库删除命令。
-
-<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-04 233234.png" alt="迪菲-赫尔曼密钥交换"/>
-&emsp;&emsp;Diffie–Hellman key exchange：迪菲-赫尔曼密钥交换可以让双方在完全没有对方任何预先信息的条件下通过不安全信道创建起一个密钥。这个密钥可以在后续的通讯中作为对称密钥来加密通讯内容。
-&emsp;&emsp;(1)爱丽丝与鲍伯协定使用 p=23以及base g=5. (2)爱丽丝选择一个秘密整数a=6，计算A = g^a mod p并发送给鲍伯。A = 5^6 mod 23 = 8. (3)鲍伯选择一个秘密整数b=15，计算B = g^b mod p并发送给爱丽丝。B = 5^15 mod 23 = 19. (4)爱丽丝计算s = B^a mod p  19^6 mod 23 = 2. (5)鲍伯计算s = A^b mod p  8^15 mod 23 = 2.
-
-<img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures@master/img/屏幕截图 2024-03-05 093412.png" alt="新奇的机器人用法"/>
-&emsp;&emsp;新奇的机器人用法 
+<h2 id="思想"><a href="#思想" class="headerlink" title="思想"></a>思想</h2><p>plasmo是一种建立在<code>JuMP.jl</code>建模语言的基础上的基于图的优化框架，提供了一种模块化的方式来构建和求解优化问题。它的运行思想和逻辑可分为以下几个步骤：</p>
+<ol>
+<li>创建一个<code>OptiGraph</code>对象，用于表示优化问题的图结构。<code>OptiGraph</code>对象由多个<code>OptiNode</code>对象和<code>OptiEdge</code>对象组成，分别表示图中的节点和边。每个<code>OptiNode</code>对象包含一个<code>JuMP.jl</code>模型，用于定义目标函数和约束条件。每个<code>OptiEdge</code>对象包含一个连接两个<code>OptiNode</code>对象的函数，用于定义节点之间的耦合关系。</li>
+<li>使用<code>Plasmo.jl</code>提供的函数或自定义的函数，对<code>OptiGraph</code>对象进行处理。例如可以使用<code>visualize</code>函数来可视化<code>OptiGraph</code>对象的图结构，使用<code>partition</code>函数来对<code>OptiGraph</code>对象进行图划分，或者使用<code>decompose</code>函数来对<code>OptiGraph</code>对象进行分解式求解。</li>
+<li>使用<code>JuMP.jl</code>提供的函数或自定义的函数，对<code>OptiGraph</code>对象中的<code>OptiNode</code>对象进行求解。例如，可以使用<code>optimize!</code>函数来调用不同的求解器，如<code>Ipopt</code>、<code>Gurobi</code>、<code>Cbc</code>等，来求解<code>OptiNode</code>对象中的<code>JuMP.jl</code>模型，或者使用<code>value</code>函数来获取<code>OptiNode</code>对象中的变量或表达式的值。</li>
+</ol>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>同时，由于我对优化了解很少，所以我又去阅读Ai4Energy的优化小节（链接<a href="https://ai4energy.cn/Ai4EDocs/dev/Optimization/1-%E4%BC%98%E5%8C%96%E7%9A%84%E6%A6%82%E5%BF%B5/" target="_blank">Optimization · Ai4EDocs</a>），目前只阅读了一点点。说实在的，在上一学期刚结束的时候，我甚至以为只能用机器学习等人工智能的方法进行优化。</p>
+<h2 id="一点小笔记："><a href="#一点小笔记：" class="headerlink" title="一点小笔记："></a>一点小笔记：</h2><h3 id="GAMS"><a href="#GAMS" class="headerlink" title="GAMS"></a>GAMS</h3><p>在GAMS中，我们使用”E=”表示等式约束，”L=”表示小于等于约束，”G=”表示大于等于约束。</p>
+<p><code>SET i /1*3/; //定义一个集合i，包含三个元素，分别是1, 2, 3</code></p>
+<p>帕累托最优：<a href="https://zhuanlan.zhihu.com/p/54691447" target="_blank">多目标优化之帕累托最优 - 知乎</a></p>
+<h3 id="优化算法入门"><a href="#优化算法入门" class="headerlink" title="优化算法入门"></a>优化算法入门</h3><ul>
+<li><strong>蚁群算法</strong>：<a href="https://zhuanlan.zhihu.com/p/404181189" target="_blank">一文搞懂什么是蚁群优化算法(Ant Colony Optimization, ACO)【附应用举例】 - 知乎</a></li>
+<li><strong>灰狼算法</strong>：<a href="https://blog.csdn.net/m0_58857684/article/details/132918529" target="_blank">灰狼算法Grey Wolf Optimizer跑23个经典测试函数|含源码-CSDN博客</a></li>
+<li><strong>飞蛾火焰算法</strong>：<a href="https://blog.csdn.net/qq_41255540/article/details/106858618" target="_blank">飞蛾火焰优化（MFO）算法——原理分析_基于死亡机制的蛾火优化算法及改进的火焰生成机制-CSDN博客</a></li>
+<li><strong>鲸群算法</strong>：<a href="https://zhuanlan.zhihu.com/p/580765291" target="_blank">优化算法 | 手把手教你改进鲸鱼优化算法（附8个算法创新点） - 知乎</a></li>
+</ul>
+<h3 id="群体智能优化算法与人工智能算法"><a href="#群体智能优化算法与人工智能算法" class="headerlink" title="群体智能优化算法与人工智能算法"></a>群体智能优化算法与人工智能算法</h3><p>&emsp;&emsp;蚁群算法、灰狼算法、飞蛾火焰算法都是一类<strong>群体智能优化算法</strong>，它们通过模拟自然界中不同生物的群体行为，来求解复杂的优化问题。它们的共同点是都是不确定的、概率型的、全局优化的、不依赖于问题本身的数学性质的、基于多个智能体的、具有本质并行性、突出性、自组织和进化性、稳健性的算法。它们的不同点是各自模拟的生物行为不同，因此具有不同的搜索策略、信息交流机制、参数设置、收敛性能等。</p>
+<p>&emsp;&emsp;机器学习、深度学习、强化学习都是一类<strong>人工智能</strong>的方法，它们通过从数据中学习规律和知识，来实现智能的任务。它们的共同点是都是基于数据的、具有学习能力的、可以处理复杂的非线性问题的方法。它们的不同点是各自的学习目标、数据类型、模型结构、评价指标等不同 。机器学习是一种广泛的概念，包括监督学习、无监督学习、半监督学习等多种类型，主要是利用已有的数据来训练模型，从而进行预测或分类等任务。深度学习是一种特殊的机器学习方法，主要是利用多层的神经网络来构建复杂的模型，从而挖掘数据中的深层特征和结构。强化学习是一种特殊的机器学习方法，主要是利用智能体与环境的交互来学习最优的行为策略，从而达到最大化的奖励或目标。</p>
+ 
       <!-- reward -->
       
       <div id="reword-out">
@@ -245,7 +249,7 @@ ga('send', 'pageview');
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://minatoxeon.github.io/2024/03/05/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%90%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://minatoxeon.github.io/2024/03/12/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%903/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -258,19 +262,19 @@ ga('send', 'pageview');
    
   <nav class="article-nav">
     
-      <a href="/2024/03/12/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%902/" class="article-nav-link">
+      <a href="/2024/03/23/WoA%E5%A4%A7%E6%88%98%E6%B7%B1%E4%BF%A1%E6%9C%8DaES/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            智慧能源2——JuMP、MIDACO和plasmo
+            Windows on ARM大战深信服EDR认证系统
           
         </div>
       </a>
     
     
-      <a href="/2024/02/14/%E8%AF%84%E6%B5%8B-%E4%B8%80%E5%8A%A07Pro/" class="article-nav-link">
+      <a href="/2024/03/12/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%902/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">评测-一加7 Pro离心中完美的MIX 4的距离，只有一个系统</div>
+        <div class="article-nav-title">智慧能源2——JuMP、MIDACO和plasmo</div>
       </a>
     
   </nav>
