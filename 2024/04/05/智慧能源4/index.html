@@ -13,7 +13,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>Archives |  Minato Xeon</title>
+      <title>智慧能源4——Temperature Control Lab |  Minato Xeon</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/images/Minato.png" />
@@ -73,273 +73,233 @@ ga('send', 'pageview');
       
     <main class="content on">
       <section class="outer">
-  
-  <ul class="ads">
+  <article
+  id="post-智慧能源4"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
     
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  智慧能源4——Temperature Control Lab
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2024/04/05/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%904/" class="article-date">
+  <time datetime="2024-04-05T04:23:21.000Z" itemprop="datePublished">2024-04-05</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">571</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">2 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="Temperature-Control-Lab-TCLab"><a href="#Temperature-Control-Lab-TCLab" class="headerlink" title="Temperature Control Lab (TCLab)"></a>Temperature Control Lab (TCLab)</h1><h2 id="什么是TCLab"><a href="#什么是TCLab" class="headerlink" title="什么是TCLab"></a>什么是TCLab</h2><p>TCLab是一款即插即用的Arduino设备，用于教授编程、传热、机器学习、数据科学、过程动力学和真实数据控制。</p>
+<p>课程视频：<a href="https://youtube.com/playlist?list=PLLBUgWXdTBDhAFjp_RdHt26SfIa5Og00s&si=8gIYxw-5BbEzuin_" target="_blank">TCLab Dynamics and Control - YouTube</a><br>网页：<a href="https://apmonitor.com/heat.htm" target="_blank">Temperature Control Lab</a><br>课程目录：<a href="https://apmonitor.com/pdc/index.php/Main/CourseSchedule" target="_blank">Course Schedule</a><br>TCLab有两个彼此相邻的执行器加热器和两个温度传感器。</p>
+<span id="more"></span>
+
+<p>基本语法形式（伪代码）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">lab = TCLab; %加载TCLab</span><br><span class="line">lab.LED(80); %将LED灯打开并将亮度设置为80%</span><br><span class="line">disp(lab.T1); %显示当前温度</span><br><span class="line">disp(lab.T2);</span><br><span class="line">lab.Q1(50); %将加热器调整到50%</span><br><span class="line">lab.Q2(0);</span><br></pre></td></tr></table></figure>
+
+<p>Python中使用：<code>import tclab</code><br>编程时同时也能使用语言中的特性，如数组、输入输出、画图等，这些基本函数并不随着TCLab的引入而失效。</p>
+<h2 id="ODEINT"><a href="#ODEINT" class="headerlink" title="ODEINT"></a>ODEINT</h2><p>ODEINT是Python中SciPy库的一部分，用于解决常微分方程（ODE）。它通过数值方法来求解ODE，特别是无法或难以找到解析解的方程，使用时需要提供一个定义ODE的函数、初始条件和自变量的值。<br>导入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">from scipy.integrate import odeint</span><br></pre></td></tr></table></figure>
+<p>使用方法示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># simulation</span><br><span class="line">def labsim(TC,t):</span><br><span class="line">    U = 10.0</span><br><span class="line">    A = 0.0012</span><br><span class="line">    Cp = 500</span><br><span class="line">    m = 0.004</span><br><span class="line">    alpha = 0.01</span><br><span class="line">    Ta = 23</span><br><span class="line">    dTCdt = (U*A*(Ta-TC)+alpha*50)/(m*Cp)</span><br><span class="line">    return dTCdt</span><br><span class="line">Tsim = odeint(labsim,23,tm)</span><br></pre></td></tr></table></figure>
+
+<h2 id="GEKKO"><a href="#GEKKO" class="headerlink" title="GEKKO"></a>GEKKO</h2><p>GEKKO是一个用于机器学习和优化的Python软件包，专门研究微分代数方程（DAE）系统的动态优化。它与大型求解器APOPT和IPOPT结合使用，可用于线性、二次、非线性和混合整数规划。功能包括机器学习、离散或连续状态空间模型、模拟、估计和控制。GEKKO支持多种问题类型，包括线性规划（LP）、二次规划（QP）、非线性规划（NLP）、混合整数线性规划（MILP）、混合整数二次规划（MIQP）、混合整数非线性规划（MINLP）、差分代数方程（DAEs）、具有互补约束的数学规划（MPCCs）、数据回归/机器学习、移动视界估计（MHE）、模型预测控制（MPC）和实时优化（RTO）等。</p>
+<p>导入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">from gekko import GEKKO</span><br></pre></td></tr></table></figure>
+
+<p>使用方法示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">m = GEKKO() %创建模型</span><br><span class="line">m.time = np.linspace(0,n,n+1)</span><br><span class="line">U = 10.0; A = 0.0012; Cp = 500</span><br><span class="line">mass = 0.004; alpha = 0.01; Ta = 23</span><br><span class="line">TC = m.Var(23)</span><br><span class="line">m.Equation(mass*Cp*TC.dt()==U*A*(Ta-TC)+alpha*50)</span><br><span class="line">m.options.IMODE = 4 #模式4是dynamic simulation</span><br><span class="line">m.solve(disp=False)</span><br></pre></td></tr></table></figure> 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          Donate
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
         <li>
-            <a target="_blank" rel="noopener" href="https://www.apple.com/">
-                <img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures/img/Apple_environment.jpg" width="300" alt="Apple Environment">
-            </a>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
         </li>
-    
-        <li>
-            <a target="_blank" rel="noopener" href="https://www.microsoft.com/">
-                <img src="https://cdn.jsdelivr.net/gh/MinatoXeon/Pictures/img/Microsoft_Better_future.png" width="300" alt="Microsoft Ethics">
-            </a>
-        </li>
-    
-</ul>
-  
-  
-  <article class="articles">
-    
-    
-    <h1 class="page-type-title">Archives</h1>
-    
-    
-  
-  
-  
-  
-  
-  
-  <div class="archives-wrap">
-    <div class="archive-year-wrap">
-      <a href="/archives/2021" class="archive-year">2021</a>
+      </ul>
     </div>
-    <div class="archives">
-      
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/03/27/%E8%AF%84%E6%B5%8B-OPPO-Find-X2-Pro%EF%BC%8C%E7%BB%BF%E5%8E%82%E7%9A%84%E4%B8%8D%E5%B0%86%E5%B0%B1/" class="archive-article-date">
-  <time datetime="2021-03-27T02:05:41.000Z" itemprop="datePublished">03/27</time>
-</a>
+    
+    <footer class="article-footer">
        
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2021/03/27/%E8%AF%84%E6%B5%8B-OPPO-Find-X2-Pro%EF%BC%8C%E7%BB%BF%E5%8E%82%E7%9A%84%E4%B8%8D%E5%B0%86%E5%B0%B1/"
-    >评测-OPPO Find X2 Pro，绿厂的不将就</a> 
-</h2>
- 
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        共享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
 
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/01/30/%E8%AF%84%E6%B5%8B-HUAWEI-Mate-30-Pro%EF%BC%8C%E4%B8%80%E5%8F%B0%E9%AB%98%E7%AB%AF%E7%9A%84%E8%89%BA%E6%9C%AF%E5%93%81%20-%20%E5%89%AF%E6%9C%AC/" class="archive-article-date">
-  <time datetime="2021-01-30T11:24:01.000Z" itemprop="datePublished">01/30</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2021/01/30/%E8%AF%84%E6%B5%8B-HUAWEI-Mate-30-Pro%EF%BC%8C%E4%B8%80%E5%8F%B0%E9%AB%98%E7%AB%AF%E7%9A%84%E8%89%BA%E6%9C%AF%E5%93%81%20-%20%E5%89%AF%E6%9C%AC/"
-    >评测-HUAWEI Mate 30 Pro，一台高端的艺术品</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/01/19/Win-10-Pro%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" class="archive-article-date">
-  <time datetime="2021-01-19T12:12:00.000Z" itemprop="datePublished">01/19</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2021/01/19/Win-10-Pro%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"
-    >Win 10 Pro远程桌面使用技巧</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-  
-  </div>
-  </div>
-  
-  
-  <div class="archives-wrap">
-    <div class="archive-year-wrap">
-      <a href="/archives/2020" class="archive-year">2020</a>
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://minatoxeon.github.io/2024/04/05/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%904/" alt="微信分享二维码">
     </div>
-    <div class="archives">
-      
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/11/06/2020%E6%80%BB%E7%BB%93%E4%B8%8E%E5%B1%95%E6%9C%9B/" class="archive-article-date">
-  <time datetime="2020-11-06T04:42:57.000Z" itemprop="datePublished">11/06</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/11/06/2020%E6%80%BB%E7%BB%93%E4%B8%8E%E5%B1%95%E6%9C%9B/"
-    >2020总结与展望：悟以往之不谏，知来者之可追</a> 
-</h2>
- 
+</div>
 
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/15/%E8%AF%84%E6%B5%8B-%E8%8D%A3%E8%80%80%E6%99%BA%E6%85%A7%E5%B1%8FX1%EF%BC%8C%E5%90%8D%E5%89%AF%E5%85%B6%E5%AE%9E%E7%9A%84%E9%9F%B3%E7%94%BB%E8%A1%A8%E7%8E%B0%E5%8A%9B/" class="archive-article-date">
-  <time datetime="2020-06-15T12:18:45.000Z" itemprop="datePublished">06/15</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/06/15/%E8%AF%84%E6%B5%8B-%E8%8D%A3%E8%80%80%E6%99%BA%E6%85%A7%E5%B1%8FX1%EF%BC%8C%E5%90%8D%E5%89%AF%E5%85%B6%E5%AE%9E%E7%9A%84%E9%9F%B3%E7%94%BB%E8%A1%A8%E7%8E%B0%E5%8A%9B/"
-    >图文评测-荣耀智慧屏X1，名副其实的音画表现力</a> 
-</h2>
- 
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li></ul>
 
-    </header>
-    
-    
+    </footer>
   </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/04/11/%E5%88%B7%E6%9C%BA%E5%B0%8F%E8%AE%B0-%E5%B0%8F%E7%B1%B33W%E5%88%B7%E5%85%A5MIUI11/" class="archive-article-date">
-  <time datetime="2020-04-11T12:56:07.000Z" itemprop="datePublished">04/11</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/04/11/%E5%88%B7%E6%9C%BA%E5%B0%8F%E8%AE%B0-%E5%B0%8F%E7%B1%B33W%E5%88%B7%E5%85%A5MIUI11/"
-    >刷机小记-小米3W刷入MIUI11</a> 
-</h2>
- 
 
-    </header>
+   
+  <nav class="article-nav">
+    
+      <a href="/2024/04/16/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%905/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            智慧能源5——物联网简单实现
+          
+        </div>
+      </a>
     
     
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/03/20/%E5%88%B7%E6%9C%BA%E5%B0%8F%E8%AE%B0-%E7%BA%A2%E7%B1%B3Note%E6%8B%AF%E6%95%91%E5%9F%BA%E5%B8%A6/" class="archive-article-date">
-  <time datetime="2020-03-20T00:42:29.000Z" itemprop="datePublished">03/20</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/03/20/%E5%88%B7%E6%9C%BA%E5%B0%8F%E8%AE%B0-%E7%BA%A2%E7%B1%B3Note%E6%8B%AF%E6%95%91%E5%9F%BA%E5%B8%A6/"
-    >刷机小记-红米Note拯救基带</a> 
-</h2>
- 
-
-    </header>
+      <a href="/2024/03/25/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%903/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">智慧能源3——Modelica入门</div>
+      </a>
     
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/03/06/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/" class="archive-article-date">
-  <time datetime="2020-03-06T04:36:58.000Z" itemprop="datePublished">03/06</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/03/06/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/"
-    >常用网站</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/03/03/%E8%AF%AD%E6%B3%95%E6%8A%80%E5%B7%A7%E4%B8%8E%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" class="archive-article-date">
-  <time datetime="2020-03-03T12:02:03.000Z" itemprop="datePublished">03/03</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/03/03/%E8%AF%AD%E6%B3%95%E6%8A%80%E5%B7%A7%E4%B8%8E%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"
-    >语法技巧与注意事项</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/02/29/%E6%9C%BA%E5%9E%8B%E4%BB%A3%E7%A0%81/" class="archive-article-date">
-  <time datetime="2020-02-29T00:46:16.000Z" itemprop="datePublished">02/29</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/02/29/%E6%9C%BA%E5%9E%8B%E4%BB%A3%E7%A0%81/"
-    >机型代码</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-      
-    </div>
-  </div>
-  
-  
-
-  
-  <nav class="page-nav">
-    
-    <a class="extend prev" rel="prev" href="/archives/page/2/">上一页</a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/archives/page/4/">4</a><a class="extend next" rel="next" href="/archives/page/4/">下一页</a>
   </nav>
-  
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "xCerGDrVQOv5NwuxeGEHsgC9-gzGzoHsz",
+    app_key: "SBmXMbgyYDyfEQakbz0hyqaK",
+    path: window.location.pathname,
+    avatar: "mp",
+    placeholder: "告诉我们您的想法。",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -524,6 +484,22 @@ ga('send', 'pageview');
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link
