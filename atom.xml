@@ -6,7 +6,7 @@
   <link href="https://minatoxeon.github.io/atom.xml" rel="self"/>
   
   <link href="https://minatoxeon.github.io/"/>
-  <updated>2024-04-19T15:35:50.274Z</updated>
+  <updated>2024-04-22T07:03:11.222Z</updated>
   <id>https://minatoxeon.github.io/</id>
   
   <author>
@@ -17,20 +17,14 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>智慧能源6——编程相关</title>
+    <title>智慧能源6——代码生成相关</title>
     <link href="https://minatoxeon.github.io/2024/04/19/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%906/"/>
     <id>https://minatoxeon.github.io/2024/04/19/%E6%99%BA%E6%85%A7%E8%83%BD%E6%BA%906/</id>
     <published>2024-04-19T07:08:05.000Z</published>
-    <updated>2024-04-19T15:35:50.274Z</updated>
+    <updated>2024-04-22T07:03:11.222Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
+    <summary type="html">&lt;h1 id=&quot;代码简介&quot;&gt;&lt;a href=&quot;#代码简介&quot; class=&quot;headerlink&quot; title=&quot;代码简介&quot;&gt;&lt;/a&gt;代码简介&lt;/h1&gt;&lt;p&gt;GitHub项目：&lt;a href=&quot;https://github.com/ircre/webpage&quot; target=&quot;_blank&quot;&gt;ircre/webpage&lt;/a&gt;&lt;br&gt;代码：&lt;a href=&quot;https://github.com/ircre/webpage/blob/master/bib7image/ircre.bib&quot; target=&quot;_blank&quot;&gt;webpage/bib7image/ircre.bib at master · ircre/webpage&lt;/a&gt;&lt;br&gt;生成的网页：&lt;a href=&quot;https://ircre.org/research.html&quot; target=&quot;_blank&quot;&gt;International Research Center for Renewable Energy&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
@@ -108,7 +102,7 @@
     <link href="https://minatoxeon.github.io/2024/03/23/WoA%E5%A4%A7%E6%88%98%E6%B7%B1%E4%BF%A1%E6%9C%8DaES/"/>
     <id>https://minatoxeon.github.io/2024/03/23/WoA%E5%A4%A7%E6%88%98%E6%B7%B1%E4%BF%A1%E6%9C%8DaES/</id>
     <published>2024-03-23T12:34:22.000Z</published>
-    <updated>2024-04-19T15:33:53.704Z</updated>
+    <updated>2024-04-22T07:00:31.074Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;本方案的实现方法并不稳定，同时笔者并不完全清楚其中的底层理论（感觉和计算机网络关系较大），但是Windows on ARM（下文统称WoA）的笔记本毕竟也得归为电脑类别，在办公室还是应该让它发挥出电脑的功能——像其他电脑一样正常查资料、写文件、敲代码等。但是由于绝大部分厂商发布Windows软件时不会特意编译原生ARM版（尤其是驱动等软件），在WoA使用深信服EDR不可行（亲测会经常闪退或无法安装）。本方法可能不稳定，但实属是无奈之举。&lt;br&gt;&amp;emsp;&amp;emsp;如果你的设备运行Linux系统，你应该已经发现不需要装任何软件即可正常使用网络。很遗憾本人没有macOS相关便携设备，也没有做相关研究。因此本文所阐述的方案仅仅基于Windows系统（但是我好奇一点，Chrome OS的电脑究竟会被发送端识别为Linux电脑，还是Android电脑，还是Android手机呢）。&lt;/p&gt;</summary>

@@ -13,7 +13,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>智慧能源6——编程相关 |  Minato Xeon</title>
+      <title>智慧能源6——代码生成相关 |  Minato Xeon</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/images/Minato.png" />
@@ -85,7 +85,7 @@ ga('send', 'pageview');
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  智慧能源6——编程相关
+  智慧能源6——代码生成相关
 </h1>
  
 
@@ -105,7 +105,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">5</span>
+            <span class="post-count">417</span>
         </span>
     </span>
 
@@ -121,13 +121,32 @@ ga('send', 'pageview');
  
     </div>
       
+    <div class="tocbot"></div>
+
 
 
 
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>GitHub项目：<a href="https://github.com/ircre/webpage" target="_blank">ircre/webpage</a></p>
+  <h1 id="代码简介"><a href="#代码简介" class="headerlink" title="代码简介"></a>代码简介</h1><p>GitHub项目：<a href="https://github.com/ircre/webpage" target="_blank">ircre/webpage</a><br>代码：<a href="https://github.com/ircre/webpage/blob/master/bib7image/ircre.bib" target="_blank">webpage/bib7image/ircre.bib at master · ircre/webpage</a><br>生成的网页：<a href="https://ircre.org/research.html" target="_blank">International Research Center for Renewable Energy</a></p>
+<span id="more"></span>
+
+<h1 id="代码生成"><a href="#代码生成" class="headerlink" title="代码生成"></a>代码生成</h1><p>从代码上来看，这些条目是类BibTeX格式的参考文献条目。<br>对比代码和网页内容可以看出，每个条目包含了一篇学术文章的详细信息，包括：</p>
+<ul>
+<li>作者（author）</li>
+<li>被引次数（cited）</li>
+<li>数字对象唯一标识符（doi）</li>
+<li>格式化的作者和标题（formattedauthor和formattedtitle）</li>
+<li>期刊影响因子（impactfactor）</li>
+<li>期刊名称（journal）</li>
+<li>发表月份、卷号、期号和页码（month, volume, number, pages）</li>
+<li>出版商（publisher）</li>
+<li>标题（title）</li>
+<li>文章链接（url和url_doi）</li>
+<li>相关图片和链接（image, hihoimage, hiholink）</li>
+<li>排序顺序（order）<br>等。<br>&emsp;&emsp;这些条目被网页根据不同的参考文献类型，按模板读取信息进行引用（参见<a href="https://www.bibtex.com/e/entry-types/" target="_blank">The 14 BibTeX entry types</a>），然后参与了网页中条目的构建。不过整个文件里面似乎并没有涉及页面的模块划分（页面中有Top 15 Most Cited Articles、Articles (886)等模块），猜测这些模块的排布以及每个模块中的排序结果都是凭借其他代码生成的，iecre.bib文件本体很可能是一个未经排序的数据库。<br>&emsp;&emsp;但是还有一部分网页我没有看懂，就是从International Conference / Workshop Talks (337)开始的一部分，这一部分并没有像之前的论文一样出现在ircre.bib文件中，甚至我搜索了整个webpage仓库，都没有找到相关的代码。所以暂时猜测这一部分代码是使用其他仓库中的代码进行更新/抓取的。</li>
+</ul>
  
       <!-- reward -->
       
